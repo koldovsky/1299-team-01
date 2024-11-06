@@ -4,7 +4,7 @@ This template repository includes preconfigured GitHub Action that will validate
 And htmx to load partials
 
 ```html
-<main data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.main.partial.html"></main>
+<main></main> data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.main.partial.html"
 ```
 
 
