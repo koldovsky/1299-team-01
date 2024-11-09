@@ -1,54 +1,91 @@
 <section class="about-conference">
-    <div class="about-conference__inner">
-        <div class="about-conference__content">
-            <div class="about-conference__item">
-                <p class="about-conference__item-text">FAQ</p>
-                <h2 class="about-conference__answers">
-                    Here are <span class="text-highlight text-highlight--yellow">answers</span> about the conference<span class="text-highlight text-highlight--pink">.</span>
-                </h2>
-                <p class="about-conference__block">Have questions? Browse the section below.</p>
-                <p class="about-conference__description">
-                    We kindly ask you to browse through this section to find answers to your questions about our conference, venue, tickets, etc. If you still have questions or inquiries, please fill out the form on the right.
-                </p>
-            </div>
-            <div class="about-conference__faq">
-                <div class="faq__item"> <!--to do js for drop down list-->
-                    <p class="faq__question">How will I receive updates?</p>
-                    <span class="faq__icon">+</span>
-                    <span class="faq__icon">-</span>
-                    <p class="faq__answer">All participants should receive email updates with the schedule, speakers, and events
-                        prior to the conference. If you haven't received any email updates, please contact the event organizer.
-                    </p>
-                </div>
-                <div class="faq__item">
-                    <p class="faq__question">Is there any food available during the day?</p>
-                    <span class="faq__icon">+</span>
-                    <span class="faq__icon">-</span>
-                    <p class="faq__answer">Yes, light meals and snacks will be available throughout the day. Additional
-                        refreshments may be during the day. We also serve hot lunch and coffee breaks.</p>
-                </div>
-                <div class="faq__item">
-                    <p class="faq__question">What should I bring to TechCon?</p>
-                    <span class="faq__icon">+</span>
-                    <span class="faq__icon">-</span>
-                    <p class="faq__answer">It is recommended to bring a laptop, notebooks and pens (or pencils) for taking
-                        notes, and your business cards for networking</p>
-                </div>
-            </div>
+  <div class="about-conference__inner">
+    <div class="about-conference__content">
+      <div class="about-conference__item">
+        <p class="about-conference__item-text">FAQ</p>
+        <h2 class="about-conference__answers">
+          Here are
+          <span class="text-highlight text-highlight--yellow">answers</span>
+          about the conference<span class="text-highlight text-highlight--pink">.</span>
+          <!--add css for pink and yellow colors-->
+        </h2>
+        <p class="about-conference__block">
+          Have questions? Browse the section below.
+        </p>
+        <p class="about-conference__description">
+          We kindly ask you to browse through this section to find answers to
+          your questions about our conference, venue, tickets, etc. If you still
+          have questions or inquiries, please fill out the form on the right.
+        </p>
+      </div>
+      <div class="about-conference__faq">
+        <div class="faq__item">
+          <!--to do js for drop down list-->
+          <p class="faq__question">How will I receive updates?</p>
+          <span class="faq__icon">+</span>
+          <span class="faq__icon">-</span>
+          <p class="faq__answer">
+            All participants should receive email updates with the schedule,
+            speakers, and events prior to the conference. If you haven't
+            received any email updates, please contact the event organizer.
+          </p>
         </div>
-        <div class="form">
-            <form class="contact-form" action="#" method="post">
-                <fieldset class="contact-form__fieldset">
-                    <legend class="contact-form__legend">Don't miss the opportunity to meet your tribe!</legend>
-                    <input class="contact-form__input" type="text" name="name" placeholder="Your Name*" required>
-                    <input class="contact-form__input" type="tel" name="phone" placeholder="Phone Number*" required>
-                    <!--to do js to fill only numeric-->
-                    <input class="contact-form__input" type="email" name="email" placeholder="Email*" required>
-                    <button class="contact-form__button" type="submit">
-                        <span class="contact form__button--text">Leave a request</span>
-                    </button>
-                </fieldset>
-            </form>
+        <div class="faq__item">
+          <p class="faq__question">
+            Is there any food available during the day?
+          </p>
+          <span class="faq__icon">+</span>
+          <span class="faq__icon">-</span>
+          <p class="faq__answer">
+            Yes, light meals and snacks will be available throughout the day.
+            Additional refreshments may be during the day. We also serve hot
+            lunch and coffee breaks.
+          </p>
         </div>
+        <div class="faq__item">
+          <p class="faq__question">What should I bring to TechCon?</p>
+          <span class="faq__icon">+</span>
+          <span class="faq__icon">-</span>
+          <p class="faq__answer">
+            It is recommended to bring a laptop, notebooks and pens (or pencils)
+            for taking notes, and your business cards for networking
+          </p>
+        </div>
+      </div>
     </div>
+    <div class="form">
+      <form class="contact-form" action="#" method="post">
+        <fieldset class="contact-form__fieldset">
+          <legend class="contact-form__legend">
+            Don't miss the opportunity to meet your tribe!
+          </legend>
+          <input
+            class="contact-form__input"
+            type="text"
+            name="name"
+            placeholder="Your Name*"
+            required
+          />
+          <input
+            class="contact-form__input"
+            type="tel"
+            name="phone"
+            placeholder="Phone Number*"
+            required
+          />
+          <!--to do js to fill only numeric-->
+          <input
+            class="contact-form__input"
+            type="email"
+            name="email"
+            placeholder="Email*"
+            required
+          />
+          <button class="contact-form__button" type="submit">
+            <span class="contact form__button--text">Leave a request</span>
+          </button>
+        </fieldset>
+      </form>
+    </div>
+  </div>
 </section>
