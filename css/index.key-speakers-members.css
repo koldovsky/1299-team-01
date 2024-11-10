@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Comme:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 *,
 *::after,
 *::before {
@@ -15,14 +19,20 @@
     --highlight-color3: rgb(255, 19, 146);
 
     background-color: var(--background-color);
+    font-family: Comme, sans-serif;
+    font-size: 1.0625rem; /* 17px */
 
     .member__name {
         color: var(--h3-color);
+        font-family: "Albert Sans", sans-serif;
+        font-size: 2.125rem; /* 34px */
     }
 
     .member__roles {
         text-transform: uppercase;
         color: var(--highlight-color2);
+        font-family: "Anonymous Pro", monospace;
+        font-size: 0.6875rem; /* 11px */
     }
 
     .member__description {
