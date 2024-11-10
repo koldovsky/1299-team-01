@@ -25,6 +25,13 @@
     flex-direction: column;
     text-align: center;
 
+    .member__info {
+        padding: 47px 29px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 
     .member__name {
         color: var(--h3-color);
@@ -49,19 +56,31 @@
     }
 
     .member__socials {
-        display: flex;
+        display: inline-flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        gap: 15px;
 
-    svg.member__socials-icon {
-        display: block;
-        width: 100px;
-        border-radius: 50%;
-        fill: var(--highlight-color1);
+        svg.member__socials-icon {
+            display: block;
+            width: 52px;
+            border-radius: 50%;
+            fill: var(--highlight-color1);
 
-        .logo {
-            fill: var(--background-color);
+            .logo {
+                fill: var(--background-color);
+            }
+        }
+    }
+
+    .additional-info {
+        color: var(--h3-color);
+        font-family: "Albert Sans", sans-serif;
+        font-size: 2.125rem;
+
+        .additional-info__accent-color {
+            color: var(--highlight-color3);
         }
     }
 }
