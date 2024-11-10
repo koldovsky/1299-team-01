@@ -13,26 +13,30 @@
 .members-list {
     --background-color: #151419;
     --h3-color: rgb(255, 255, 255);
-    --text-color: rgba(255,255,255,0.72);
+    --text-color: rgba(255, 255, 255, 0.72);
     --highlight-color1: rgb(114, 240, 225);
     --highlight-color2: #fbe159;
     --highlight-color3: rgb(255, 19, 146);
 
     background-color: var(--background-color);
     font-family: Comme, sans-serif;
-    font-size: 1.0625rem; /* 17px */
+    font-size: 1.0625rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
 
     .member__name {
         color: var(--h3-color);
         font-family: "Albert Sans", sans-serif;
-        font-size: 2.125rem; /* 34px */
+        font-size: 2.125rem;
     }
 
     .member__roles {
         text-transform: uppercase;
         color: var(--highlight-color2);
         font-family: "Anonymous Pro", monospace;
-        font-size: 0.6875rem; /* 11px */
+        font-size: 0.6875rem;
     }
 
     .member__description {
@@ -43,6 +47,13 @@
         color: var(--text-color);
         text-decoration: none;
     }
+
+    .member__socials {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
     svg.member__socials-icon {
         display: block;
         width: 100px;
@@ -53,3 +64,4 @@
             fill: var(--background-color);
         }
     }
+}
