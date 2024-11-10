@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.members-list {
+    --background-color: #151419;
+    --h3-color: rgb(255, 255, 255);
+    --text-color: rgba(255,255,255,0.72);
+    --highlight-color1: rgb(114, 240, 225);
+    --highlight-color2: #fbe159;
+    --highlight-color3: rgb(255, 19, 146);
+
+    background-color: var(--background-color);
+
+    .member__name {
+        color: var(--h3-color);
+    }
+
+    .member__roles {
+        text-transform: uppercase;
+        color: var(--highlight-color2);
+    }
+
+    .member__description {
+        color: var(--text-color);
+    }
+
+    .member__email a {
+        color: var(--text-color);
+        text-decoration: none;
+    }
+    svg.member__socials-icon {
+        display: block;
+        width: 100px;
+        border-radius: 50%;
+        fill: var(--highlight-color1);
+
+        .logo {
+            fill: var(--background-color);
+        }
+    }
