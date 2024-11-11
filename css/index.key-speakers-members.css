@@ -8,6 +8,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    /* outline: 1px solid red; */
 }
 
 .members-list {
@@ -94,6 +96,30 @@
 
         .additional-info__accent-color {
             color: var(--highlight-color3);
+        }
+    }
+
+    @media (min-width: 768px) {
+        .member {
+            display: flex;
+            flex-direction: row;
+            max-width: 100%;
+
+        
+        }
+
+        .member--1st .stolen-from-passport-member-photo, .member--3rd .stolen-from-passport-member-photo {
+            order: 2;
+        }
+
+        .stolen-from-passport-member-photo {
+            flex: 1 1 auto; /* Адаптивная ширина: растягивается и сжимается */
+            max-width: 50%; /* Ограничиваем ширину до 50% */
+        }
+    
+        .member__info {
+            flex: 1 1 auto; /* Текст занимает оставшееся место */
+            max-width: 50%; /* Ограничиваем ширину до 50% */
         }
     }
 }
