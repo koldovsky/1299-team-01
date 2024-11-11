@@ -1,125 +1,130 @@
-@import url('https://fonts.googleapis.com/css2?family=Comme:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comme:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
-    /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 .members-list {
-    --background-color: #151419;
-    --h3-color: rgb(255, 255, 255);
-    --text-color: rgba(255, 255, 255, 0.72);
-    --highlight-color1: rgb(114, 240, 225);
-    --highlight-color2: #fbe159;
-    --highlight-color3: rgb(255, 19, 146);
+  --background-color: #151419;
+  --h3-color: rgb(255, 255, 255);
+  --text-color: rgba(255, 255, 255, 0.72);
+  --highlight-color1: rgb(114, 240, 225);
+  --highlight-color2: #fbe159;
+  --highlight-color3: rgb(255, 19, 146);
 
-    background-color: var(--background-color);
-    font-family: Comme, sans-serif;
-    font-size: 1.0625rem;
+  background-color: var(--background-color);
+  font-family: Comme, sans-serif;
+  font-size: 1.0625rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  .member {
+    max-width: 1200px;
+    padding: 0 15px;
+  }
+
+  .member__info {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    gap: 20px;
+  }
+
+  .member__name {
+    color: var(--h3-color);
+    font-family: "Albert Sans", sans-serif;
+    font-size: 2.125rem;
+  }
+
+  .member__roles {
+    text-transform: uppercase;
+    color: var(--highlight-color2);
+    font-family: "Anonymous Pro", monospace;
+    font-size: 0.6875rem;
+  }
+
+  .member__description {
+    color: var(--text-color);
+  }
+
+  .member__email a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+
+  .member__socials {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    svg.member__socials-icon {
+      display: block;
+      width: 52px;
+      border-radius: 50%;
+      /* fill: var(--highlight-color1); */
+
+      .logo {
+        fill: var(--background-color);
+      }
+    }
+  }
+
+  .member__socials--color1 .member__socials-icon {
+    fill: var(--highlight-color1);
+  }
+
+  .member__socials--color2 .member__socials-icon {
+    fill: var(--highlight-color2);
+  }
+
+  .member__socials--color3 .member__socials-icon {
+    fill: var(--highlight-color3);
+  }
+
+  .additional-info {
+    color: var(--h3-color);
+    font-family: "Albert Sans", sans-serif;
+    font-size: 2.125rem;
+
+    .additional-info__accent-color {
+      color: var(--highlight-color3);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .member {
+      display: flex;
+      flex-direction: row;
+      margin: 0 auto;
+      align-items: center;
+      gap: 2%;
+      padding: 30px 0;
+    }
+
+    .member--1st .stolen-from-passport-member-photo,
+    .member--3rd .stolen-from-passport-member-photo {
+      order: 2;
+    }
+
+    .stolen-from-passport-member-photo {
+      flex: 1 1 auto; /* Адаптивная ширина: растягивается и сжимается */
+      max-width: 50%;
+      max-height: 100%;
+    }
 
     .member__info {
-        padding: 47px 29px;
-
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+      flex: 1 1 auto; /* Текст занимает оставшееся место */
+      max-width: 50%;
     }
-
-    .member__name {
-        color: var(--h3-color);
-        font-family: "Albert Sans", sans-serif;
-        font-size: 2.125rem;
-    }
-
-    .member__roles {
-        text-transform: uppercase;
-        color: var(--highlight-color2);
-        font-family: "Anonymous Pro", monospace;
-        font-size: 0.6875rem;
-    }
-
-    .member__description {
-        color: var(--text-color);
-    }
-
-    .member__email a {
-        color: var(--text-color);
-        text-decoration: none;
-    }
-
-    .member__socials {
-        display: inline-flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-
-        svg.member__socials-icon {
-            display: block;
-            width: 52px;
-            border-radius: 50%;
-            /* fill: var(--highlight-color1); */
-
-            .logo {
-                fill: var(--background-color);
-            }
-        }
-
-    }
-
-    .member__socials--color1 .member__socials-icon {
-        fill: var(--highlight-color1);
-    }
-
-    .member__socials--color2 .member__socials-icon {
-        fill: var(--highlight-color2);
-    }
-
-    .member__socials--color3 .member__socials-icon {
-        fill: var(--highlight-color3);
-    }
-
-    .additional-info {
-        color: var(--h3-color);
-        font-family: "Albert Sans", sans-serif;
-        font-size: 2.125rem;
-
-        .additional-info__accent-color {
-            color: var(--highlight-color3);
-        }
-    }
-
-    @media (min-width: 768px) {
-        .member {
-            display: flex;
-            flex-direction: row;
-            max-width: 100%;
-
-        
-        }
-
-        .member--1st .stolen-from-passport-member-photo, .member--3rd .stolen-from-passport-member-photo {
-            order: 2;
-        }
-
-        .stolen-from-passport-member-photo {
-            flex: 1 1 auto; /* Адаптивная ширина: растягивается и сжимается */
-            max-width: 50%; /* Ограничиваем ширину до 50% */
-        }
-    
-        .member__info {
-            flex: 1 1 auto; /* Текст занимает оставшееся место */
-            max-width: 50%; /* Ограничиваем ширину до 50% */
-        }
-    }
+  }
 }
