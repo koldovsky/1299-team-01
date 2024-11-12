@@ -5,6 +5,7 @@
   --highlight-color1: rgb(114, 240, 225);
   --highlight-color2: #fbe159;
   --highlight-color3: rgb(255, 19, 146);
+  --highlight-color4: rgb(226, 255, 116);
   --carousel-button-color: rgba(255, 255, 255, 0.5);
 
   --responsive-coefficient: 1;
@@ -18,6 +19,9 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  max-width: 0 auto;
+  padding: 30px 15px;
+  max-width: 650px;
 
   .members-carousel__button {
     width: 50px;
@@ -33,5 +37,59 @@
 
   .members-carousel__button--left svg {
     transform: scaleX(-1);
+  }
+
+  .members-carousel__additional-members {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    width: 100%;
+    overflow: hidden;
+
+    .members-carousel__additional-member {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      max-width: 200px;
+
+      .members-carousel__member-name {
+        font-family: "Albert Sans", sans-serif;
+        font-size: 1.375rem;
+        color: var(--h3-color);
+        margin: 0 auto;
+      }
+
+      .members-carousel__member-role {
+        font-family: "Anonymous Pro", monospace;
+        font-size: 0.6875rem;
+        margin: 0 auto;
+        text-transform: uppercase;
+      }
+    }
+
+    .members-carousel__additional-member-cyan {
+      .members-carousel__member-role {
+        color: var(--highlight-color1);
+      }
+    }
+
+    .members-carousel__additional-member-purple {
+      .members-carousel__member-role {
+        color: var(--highlight-color3);
+      }
+    }
+
+    .members-carousel__additional-member-yellow {
+      .members-carousel__member-role {
+        color: var(--highlight-color2);
+      }
+    }
+
+    .members-carousel__additional-member-green {
+      .members-carousel__member-role {
+        color: var(--highlight-color4);
+      }
+    }
   }
 }
