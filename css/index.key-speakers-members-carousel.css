@@ -1,0 +1,37 @@
+.members-carousel {
+  --background-color: #151419;
+  --h3-color: rgb(255, 255, 255);
+  --text-color: rgba(255, 255, 255, 0.72);
+  --highlight-color1: rgb(114, 240, 225);
+  --highlight-color2: #fbe159;
+  --highlight-color3: rgb(255, 19, 146);
+  --carousel-button-color: rgba(255, 255, 255, 0.5);
+
+  --responsive-coefficient: 1;
+
+  background-color: var(--background-color);
+  font-family: Comme, sans-serif;
+  font-size: calc(1rem * var(--responsive-coefficient));
+
+  display: flex;
+  flex-direction: raw;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  .members-carousel__button {
+    width: 50px;
+    height: 50px;
+
+    fill: var(--background-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--carousel-button-color);
+  }
+
+  .members-carousel__button--left svg {
+    transform: scaleX(-1);
+  }
+}
