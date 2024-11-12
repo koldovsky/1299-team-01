@@ -159,6 +159,7 @@
       .additional-info {
         display: block;
         text-align: left;
+        padding-left: 15px;
       }
     }
   }
