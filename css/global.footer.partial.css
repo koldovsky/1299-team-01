@@ -1,7 +1,36 @@
-*,
-*::after,
-*::before {
-    margin: 0;
+.footer-section__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-section__columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section__about,
+.footer-section__navigation,
+.footer-section__subscribe {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-section__logo {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.footer-section__title {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.footer-section__menu {
+    list-style: none;
     padding: 0;
-    box-sizing: border-box;
+}
+
+.footer-section__menu-item {
+    margin-bottom: 10px;
 }
