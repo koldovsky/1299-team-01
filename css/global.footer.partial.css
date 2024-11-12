@@ -34,3 +34,24 @@
 .footer-section__menu-item {
     margin-bottom: 10px;
 }
+
+.footer-section {
+    background-color: #151419;
+}
+
+.footer-section__description {
+    color: #A2A2A4;
+}
+
+.footer-section__title {
+    color: #FFFFFF;
+}
+
+.footer-section__menu-item {
+    text-decoration: none;
+    color: #A2A2A4; 
+}
+
+.footer-section__menu-item:hover {
+    color: #FBE159
+}
