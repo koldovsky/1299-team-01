@@ -1,4 +1,8 @@
-
+/* *,
+*::after,
+*::before {
+  outline: 1px solid red;
+} */
 
 .members-list {
   --background-color: #151419;
@@ -14,10 +18,13 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
+  gap: 60px;
 
   .member {
-    max-width: 1200px;
     padding: 0 15px;
+    /* max-width: 650px;
+    margin: 0 auto; */
   }
 
   .member__info {
@@ -41,6 +48,8 @@
 
   .member__description {
     color: var(--text-color);
+    /* max-width: 600px;
+    margin: 0 auto; */
   }
 
   .member__email a {
@@ -59,7 +68,6 @@
       display: block;
       width: 52px;
       border-radius: 50%;
-      /* fill: var(--highlight-color1); */
 
       .logo {
         fill: var(--background-color);
@@ -95,8 +103,38 @@
       flex-direction: row;
       margin: 0 auto;
       align-items: center;
-      gap: 2%;
-      padding: 30px 0;
+      gap: 3%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 2%;
+
+      .member__info {
+        flex: 1 1 515px;
+      }
+
+      .member__name {
+        text-align: left;
+      }
+
+      .member__roles {
+        text-align: left;
+      }
+
+      .member__email {
+        text-align: left;
+      }
+
+      .member__description {
+        text-align: left;
+      }
+
+      .member__socials {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        gap: 15px;
+      }
     }
 
     .member--1st .stolen-from-passport-member-photo,
@@ -105,14 +143,8 @@
     }
 
     .stolen-from-passport-member-photo {
-      flex: 1 1 auto; /* Адаптивная ширина: растягивается и сжимается */
-      max-width: 50%;
-      max-height: 100%;
-    }
-
-    .member__info {
-      flex: 1 1 auto; /* Текст занимает оставшееся место */
-      max-width: 50%;
+      flex: 1 1 50%;
+      max-width: 500px;
     }
   }
 }
