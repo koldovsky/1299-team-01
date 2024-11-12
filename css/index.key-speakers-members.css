@@ -1,8 +1,8 @@
-*,
+/* *,
 *::after,
 *::before {
   outline: 1px solid red;
-}
+} */
 
 .members-list {
   --background-color: #151419;
@@ -12,63 +12,68 @@
   --highlight-color2: #fbe159;
   --highlight-color3: rgb(255, 19, 146);
 
+  --responsive-coefficient: 1;
+
   background-color: var(--background-color);
   font-family: Comme, sans-serif;
-  font-size: 1.0625rem;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  gap: 60px;
+  font-size: calc(1rem * var(--responsive-coefficient));
 
-  .member {
-    padding: 0 15px;
-    max-width: 650px;
-    margin: 0 auto;
-  }
-
-  .member__info {
+  .members-list__container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-  }
-
-  .member__name {
-    color: var(--h3-color);
-    font-family: "Albert Sans", sans-serif;
-    font-size: 2.125rem;
-  }
-
-  .member__roles {
-    text-transform: uppercase;
-    color: var(--highlight-color2);
-    font-family: "Anonymous Pro", monospace;
-    font-size: 0.6875rem;
-  }
-
-  .member__description {
-    color: var(--text-color);
-  }
-
-  .member__email a {
-    color: var(--text-color);
-    text-decoration: none;
-  }
-
-  .member__socials {
-    display: inline-flex;
-    flex-direction: row;
+    text-align: center;
     justify-content: center;
-    align-items: center;
-    gap: 15px;
+    gap: calc(40px * var(--responsive-coefficient));
 
-    svg.member__socials-icon {
-      display: block;
-      width: 52px;
-      border-radius: 50%;
+    .member {
+      padding: 0 15px;
+      max-width: 650px;
+      margin: 0 auto;
+    }
 
-      .logo {
-        fill: var(--background-color);
+    .member__info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .member__name {
+      color: var(--h3-color);
+      font-family: "Albert Sans", sans-serif;
+      font-size: calc(2.125rem * var(--responsive-coefficient));
+    }
+
+    .member__roles {
+      text-transform: uppercase;
+      color: var(--highlight-color2);
+      font-family: "Anonymous Pro", monospace;
+      font-size: calc(0.6875rem * var(--responsive-coefficient));
+    }
+
+    .member__description {
+      color: var(--text-color);
+    }
+
+    .member__email a {
+      color: var(--text-color);
+      text-decoration: none;
+    }
+
+    .member__socials {
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+
+      svg.member__socials-icon {
+        display: block;
+        width: 52px;
+        border-radius: 50%;
+
+        .logo {
+          fill: var(--background-color);
+        }
       }
     }
   }
@@ -88,7 +93,7 @@
   .additional-info {
     color: var(--h3-color);
     font-family: "Albert Sans", sans-serif;
-    font-size: 2.125rem;
+    font-size: calc(2.125rem * var(--responsive-coefficient));
 
     .additional-info__accent-color {
       color: var(--highlight-color3);
@@ -96,8 +101,9 @@
   }
 
   @media (min-width: 768px) {
+    --responsive-coefficient: 1.15;
+
     .members-list__container {
-      /* border: 1px solid blue; */
       width: fit-content;
       margin: 0 auto;
 
@@ -155,5 +161,9 @@
         text-align: left;
       }
     }
+  }
+
+  @media (min-width: 1100px) {
+    --responsive-coefficient: 1.4;
   }
 }
