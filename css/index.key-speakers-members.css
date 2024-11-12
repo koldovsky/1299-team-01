@@ -1,8 +1,8 @@
-/* *,
+*,
 *::after,
 *::before {
   outline: 1px solid red;
-} */
+}
 
 .members-list {
   --background-color: #151419;
@@ -23,8 +23,8 @@
 
   .member {
     padding: 0 15px;
-    /* max-width: 650px;
-    margin: 0 auto; */
+    max-width: 650px;
+    margin: 0 auto;
   }
 
   .member__info {
@@ -48,8 +48,6 @@
 
   .member__description {
     color: var(--text-color);
-    /* max-width: 600px;
-    margin: 0 auto; */
   }
 
   .member__email a {
@@ -98,53 +96,64 @@
   }
 
   @media (min-width: 768px) {
-    .member {
-      display: flex;
-      flex-direction: row;
+    .members-list__container {
+      /* border: 1px solid blue; */
+      width: fit-content;
       margin: 0 auto;
-      align-items: center;
-      gap: 3%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 30px 2%;
 
-      .member__info {
-        flex: 1 1 515px;
-      }
-
-      .member__name {
-        text-align: left;
-      }
-
-      .member__roles {
-        text-align: left;
-      }
-
-      .member__email {
-        text-align: left;
-      }
-
-      .member__description {
-        text-align: left;
-      }
-
-      .member__socials {
-        display: inline-flex;
+      .member {
+        display: flex;
         flex-direction: row;
-        justify-content: left;
+        margin: 0 auto;
         align-items: center;
-        gap: 15px;
+        gap: 5%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 30px 2%;
+
+        .member__info {
+          flex: 1 1 515px;
+        }
+
+        .member__name {
+          text-align: left;
+        }
+
+        .member__roles {
+          text-align: left;
+        }
+
+        .member__email {
+          text-align: left;
+        }
+
+        .member__description {
+          text-align: left;
+        }
+
+        .member__socials {
+          display: inline-flex;
+          flex-direction: row;
+          justify-content: left;
+          align-items: center;
+          gap: 15px;
+        }
       }
-    }
 
-    .member--1st .stolen-from-passport-member-photo,
-    .member--3rd .stolen-from-passport-member-photo {
-      order: 2;
-    }
+      .member--1st .stolen-from-passport-member-photo,
+      .member--3rd .stolen-from-passport-member-photo {
+        order: 2;
+      }
 
-    .stolen-from-passport-member-photo {
-      flex: 1 1 50%;
-      max-width: 500px;
+      .stolen-from-passport-member-photo {
+        flex: 1 1 50%;
+        max-width: 500px;
+      }
+
+      .additional-info {
+        display: block;
+        text-align: left;
+      }
     }
   }
 }
