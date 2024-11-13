@@ -57,6 +57,19 @@
     .member__email a {
       color: var(--text-color);
       text-decoration: none;
+      border-bottom: 2px solid transparent;
+    }
+
+    .member__email--color1 a:hover {
+      border-bottom-color: var(--highlight-color1);
+    }
+
+    .member__email--color2 a:hover {
+      border-bottom-color: var(--highlight-color2);
+    }
+
+    .member__email--color3 a:hover {
+      border-bottom-color: var(--highlight-color3);
     }
 
     .member__socials {
@@ -75,6 +88,15 @@
           fill: var(--background-color);
         }
       }
+
+      .member__socials-link {
+        transition: transform 0.3s ease; /* Плавный переход */
+      }
+
+      .member__socials-link:hover {
+        transform: scale(1.3); /* Увеличиваем активную иконку */
+      }
+
     }
   }
 
