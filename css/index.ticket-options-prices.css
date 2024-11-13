@@ -50,9 +50,7 @@ p.ticket-options__text {
     justify-content: center;
     margin: 0 auto;
     margin-top: 50px;
-    margin-left: 0;
-    margin-right: 0;
-    max-height: 500px
+    max-height: 500px;
     overflow: hidden;
 }
 .carousel {
