@@ -55,3 +55,39 @@
 .footer-section__menu-item:hover {
     color: #FBE159
 }
+
+.footer-section__button {
+    width: 127.4;
+    height: 56;
+}
+
+.albert-sans-footer-section__title {
+    font-family: "Albert Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@media (min-width: 770px) {
+    .footer-section__navigation {
+        flex-direction: row;
+    }
+}
+
+.comme-footer-section__description {
+    font-family: "Comme", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .footer-section__socials {
+    display: flex;
+    gap: 10px; 
+}
+
+.footer-section__social-icon {
+    width: 24px; 
+    height: 24px;
+}
+
