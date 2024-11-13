@@ -139,10 +139,6 @@ p.ticket-options__text {
 .ticket__button:hover {
     background-color: #000
 }
-svg {
-    width: 24px;
-    height: 20px;
-}
 .ticket--one-day {
     background-color: rgb(114, 240, 225);
 }
