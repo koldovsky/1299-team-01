@@ -75,6 +75,7 @@ p.ticket-options__text {
     align-items: stretch;
     flex: 1;
     overflow: hidden;
+    text-align: left;
 }
 .ticket__text--small {
     font-size: var(--font-size-small);
