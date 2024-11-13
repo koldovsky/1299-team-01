@@ -1,0 +1,70 @@
+.expect-container{
+    font-family: Comme, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2ff74;
+}
+.expect-container {
+    display: flex;
+    gap: 20px;
+    background-color: #e2ff74;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.expect-item {
+    text-align: center;
+    color: #333;
+}
+
+.expect-item img {
+    width: 40px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.expect-item h2 {
+    font-size: 20px;
+    color: #000;
+}
+
+.expect-item h3 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.expect-item p {
+    font-size: 14px;
+}
+
+.web__content{
+    background-color:#222030;
+    padding: 170px;
+    font-family:Comme, sans-serif;
+}
+
+.text ,.web__content {
+    color: #ffffff;
+   
+    
+}
+.countdown-container {
+    display: flex;
+    gap: 20px;
+}
+
+.countdown-item {
+    text-align: center;
+    color: #fff;
+}
+
+.count-number {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.count-label {
+    font-size: 16px;
+    color: #b0b0b0;
+}
