@@ -1,0 +1,40 @@
+<!--css not ready yet-->
+h2 {
+    color: #808080;
+    text-transform: capitalize;
+    
+}
+
+.key-topics__description {
+    display: flex;
+    width: 263px;
+    height: 158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 5px;
+    color: #151419;
+    font-size: 34px;
+    box-sizing: border-box;
+}
+
+.key-topics__highlight {
+    color: #FF1392;
+    
+}
+
+.highlight-dot {
+    color: #72F0E1;
+}
+
+.key-topics__items {
+    display: block;
+    width: 302px;
+    height: 158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 5px;
+    color: #151419;
+    font-size: 34px;
+    box-sizing: border-box;
+    
+}
