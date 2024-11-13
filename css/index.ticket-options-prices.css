@@ -139,10 +139,6 @@ p.ticket-options__text {
 .ticket__button:hover {
     background-color: #000
 }
-svg {
-    width: 24px;
-    height: 20px;
-}
 .ticket--one-day {
     background-color: rgb(114, 240, 225);
 }
@@ -154,4 +150,35 @@ svg {
 }
 .ticket--one-day-early {
     background-color: rgb(226, 255, 116);
+}
+@media (max-width: 320px) {
+    .ticket {
+        padding: 27px 31px 27px 31px;
+        text-align: left;
+    }
+    .ticket__title {
+        font-size: 22px;
+        line-height: 26.4px;
+    }
+    .ticket__feature {
+        line-height: 21px;
+    }
+    .ticket__button {
+       white-space: nowrap; 
+    }
+}
+@media (max-width: 845px) {
+    .ticket {
+        padding: 27px 31px 27px 31px;
+        text-align: left;
+    }
+    .ticket__price {
+        white-space: nowrap;
+    }
+    .ticket-options__text--title {
+        font-size: 41px;     
+    }
+    .carousel-container {
+        width: 100%;
+    }  
 }
