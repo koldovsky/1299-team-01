@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Comme:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Comme:wght@100..900&display=swap');
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    scroll-behavior: smooth;
+    --text-color: rgb(128, 128, 128); 
+    --text-color-pink: rgb(255, 19, 146);
+    --text-color-blue: rgb(114, 240, 225);
+    --font-size-small: 11px;
+    --text-color-black: rgb(21, 20, 25);
+}
+.ticket-options {
+    position: relative;
+    padding-top: 140px;
+    text-align: center; 
+}
+.ticket-options__header {
+    margin: 0 -15px 0 -15px;
+    padding: 0 15px 0 15px;
+}
+.ticket-options__text--small {
+    font-size: var(--font-size-small);
+    font-family: "Anonymous Pro", monospace;
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
+    font-weight: 700;
+}
+.ticket-options__text--title {
+    margin-top: 20px;
+    font-size: 2.12rem;
+    font-family: "Albert Sans", sans-serif;
+    color: rgb(21, 20, 25)
+}
+.text-highlight--pink {
+    color: var(--text-color-pink);
+}
+.text-highlight--blue {
+    color: var(--text-color-blue);
+}
+p.ticket-options__text {
+    margin-top: 25px;
+    font-size: 1.19rem;
+    font-family: Comme, sans-serif;
+    color: var(--text-color);
+    font-weight: 500;
+}
+.carousel-container {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.carousel {
+    display: flex;
+    flex-direction: row;
+}
+.carousel__arrow-control {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  background-color: #000;
+}
+.carousel__slides {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 30px;
+    overflow: hidden;
+}
+.ticket {
+    padding: 30px 40px 30px 40px;
+    align-items: stretch;
+    flex: 1;
+}
+.ticket__text--small {
+    font-size: var(--font-size-small);
+    font-family: "Anonymous Pro", monospace;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgba(34, 32, 48, 0.6);
+    letter-spacing: 2.2px;
+    line-height: 14.3px;
+}
+.ticket__title {
+    margin-top: 20px;
+    color: var(--text-color-black);
+    font-family: "Albert Sans", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 31.2px;
+}
+.ticket__text--line-through {
+    font-size: 21px;
+}
+.ticket__price {
+    font-size: 21px;
+}
+.ticket__description {
+    margin-top: 20px;
+    color: rgba(34, 32, 48, 0.7);
+    font-family: Comme, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25.5px;
+}
+.ticket__features {
+    margin: 20px 0 0 0; 
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0;   
+}
+.ticket__feature {
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 25.5px;
+    font-weight: 400;
+    color: rgba(34, 32, 48, 0.6);
+    font-family: Comme, sans-serif;
+}
+.ticket__option {
+    margin-left: 10px;
+}
+.ticket__button {
+    margin-top: 20px;
+    padding: 21px 38px 21px 38px;
+    background-color: rgb(34, 32, 48);
+    border: none;
+    font-family: Comme, sans-serif;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+}
+.ticket__button:hover {
+    background-color: #000
+}
+svg {
+    width: 24px;
+    height: 20px;
+}
+.ticket--one-day {
+    background-color: rgb(114, 240, 225);
+}
+.ticket--full-pass {
+    background-color: rgb(254, 117, 191);
+}
+.ticket--early-bird {
+    background-color: rgb(251, 225, 89);
+}
+.ticket--one-day-early {
+    background-color: rgb(226, 255, 116);
+}
