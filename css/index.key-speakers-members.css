@@ -1,17 +1,4 @@
-/* *,
-*::after,
-*::before {
-  outline: 1px solid red;
-} */
-
 .members-list {
-  --background-color: #151419;
-  --h3-color: rgb(255, 255, 255);
-  --text-color: rgba(255, 255, 255, 0.72);
-  --highlight-color1: rgb(114, 240, 225);
-  --highlight-color2: #fbe159;
-  --highlight-color3: rgb(255, 19, 146);
-
   --responsive-coefficient: 1;
 
   background-color: var(--background-color);
@@ -96,7 +83,6 @@
       .member__socials-link:hover {
         transform: scale(1.3); /* Увеличиваем активную иконку */
       }
-
     }
   }
 
