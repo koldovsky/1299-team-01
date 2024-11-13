@@ -25,7 +25,7 @@
 }
 .ticket-options__text--title {
     margin-top: 20px;
-    font-size: 34px;
+    font-size: 48px;
     font-family: "Albert Sans", sans-serif;
     color: rgb(21, 20, 25)
 }
@@ -75,6 +75,7 @@ p.ticket-options__text {
     align-items: stretch;
     flex: 1;
     overflow: hidden;
+    text-align: left;
 }
 .ticket__text--small {
     font-size: var(--font-size-small);
