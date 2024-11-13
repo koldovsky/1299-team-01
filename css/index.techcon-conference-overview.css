@@ -11,7 +11,9 @@
     background-color: #e2ff74;
     padding: 20px;
     border-radius: 10px;
+    
 }
+
 
 .expect-item {
     text-align: center;
@@ -37,6 +39,7 @@
 .expect-item p {
     font-size: 14px;
 }
+
 
 .web__content{
     background-color:#222030;
