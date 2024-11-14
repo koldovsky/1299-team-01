@@ -1,0 +1,102 @@
+.key-speakers-top {
+    --background-color: #151419;
+    --h2-h3-color: #ffffff;
+    --text-color: #bdbdbf;
+    --highlight-color2: #fbe159;
+    --highlight-color3: #ff1392;
+    --icon-background: #222030;
+
+    .background__key-speakers {
+        background-color: var(--background-color);
+        padding: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .key-speakers__title {
+        color: var(--highlight-color2);
+        font-size: 11px;
+        font-family: 'Anonymous Pro', monospace;
+        font-weight: bold;
+    }
+
+    .key-speakers__down-title {
+        font-size: 48px;
+        font-family: 'Albert Sans', sans-serif;
+        font-weight: bold;
+    }
+
+    .key-speakers__down-title span {
+        color: var(--h2-h3-color);
+    }
+
+    .key-speakers__down-title .highlight {
+        color: var(--highlight-color3);
+    }
+
+    .key-speakers__down-title .dot {
+        color: var(--highlight-color2);
+    }
+
+    .key-speakers__subtitle {
+        color: var(--text-color);
+        font-size: 19px;
+        font-family: 'Comme', sans-serif;
+        font-weight: 500;
+    }
+
+    .key-speakers__description {
+        color: var(--text-color);
+        font-size: 17px;
+        font-family: 'Comme', sans-serif;
+        font-weight: 400
+    }
+
+    .key-speakers__benefits {
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .key-speakers__benefit-item {
+        text-align: center;
+        max-width: 300px;
+    }
+
+    .key-speakers__icon-wrapper {
+        background-color: var(--icon-background);
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .key-speakers__icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .key-speakers__benefit-title {
+        color: var(--h2-h3-color);
+        font-size: 22px;
+        font-family: 'Albert Sans', sans-serif;
+        margin-top: 10px;
+    }
+
+    .key-speakers__benefit-description {
+        color: var(--text-color);
+        font-size: 17px;
+        font-family: 'Comme', sans-serif;
+    }
+
+    .key-speakers__image {
+        display: block;
+        margin: 30px auto 0;
+        width: 100%;
+        max-width: 1012px;
+        height: auto;
+    }
+}

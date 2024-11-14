@@ -25,7 +25,7 @@
 }
 .ticket-options__text--title {
     margin-top: 20px;
-    font-size: 2.12rem;
+    font-size: 48px;
     font-family: "Albert Sans", sans-serif;
     color: rgb(21, 20, 25)
 }
@@ -37,7 +37,7 @@
 }
 p.ticket-options__text {
     margin-top: 25px;
-    font-size: 1.19rem;
+    font-size: 19px;
     font-family: Comme, sans-serif;
     color: var(--text-color);
     font-weight: 500;
@@ -50,6 +50,8 @@ p.ticket-options__text {
     justify-content: center;
     margin: 0 auto;
     margin-top: 50px;
+    max-height: 500px;
+    overflow: hidden;
 }
 .carousel {
     display: flex;
@@ -67,12 +69,13 @@ p.ticket-options__text {
     flex-wrap: nowrap;
     justify-content: center;
     gap: 30px;
-    overflow: hidden;
 }
 .ticket {
     padding: 30px 40px 30px 40px;
     align-items: stretch;
     flex: 1;
+    overflow: hidden;
+    text-align: left;
 }
 .ticket__text--small {
     font-size: var(--font-size-small);
@@ -90,6 +93,7 @@ p.ticket-options__text {
     font-size: 26px;
     font-weight: 600;
     line-height: 31.2px;
+    white-space: nowrap;
 }
 .ticket__text--line-through {
     font-size: 21px;
@@ -150,4 +154,35 @@ p.ticket-options__text {
 }
 .ticket--one-day-early {
     background-color: rgb(226, 255, 116);
+}
+@media (max-width: 320px) {
+    .ticket {
+        padding: 27px 31px 27px 31px;
+        text-align: left;
+    }
+    .ticket__title {
+        font-size: 22px;
+        line-height: 26.4px;
+    }
+    .ticket__feature {
+        line-height: 21px;
+    }
+    .ticket__button {
+       white-space: nowrap; 
+    }
+}
+@media (max-width: 845px) {
+    .ticket {
+        padding: 27px 31px 27px 31px;
+        text-align: left;
+    }
+    .ticket__price {
+        white-space: nowrap;
+    }
+    .ticket-options__text--title {
+        font-size: 41px;     
+    }
+    .carousel-container {
+        width: 100%;
+    }  
 }
