@@ -87,8 +87,24 @@
     gap: 10px; 
 }
 
-.footer-section__social-icon {
-    width: 24px; 
-    height: 24px;
+
+
+.footer-section__social-icon--twitter {
+    width: 32px;
+    height: 32px;
 }
 
+.footer-section__social-icon--facebook {
+    width: 32px;
+    height: 32px;
+}
+
+.footer-section__social-icon--instagram {
+    width: 32px;
+    height: 32px;
+}
+
+.footer-section__social-icon--youtube {
+    width: 32px;
+    height: 32px;
+}
