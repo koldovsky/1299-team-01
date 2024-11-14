@@ -1,16 +1,22 @@
-<!--css not ready yet-- > 
+.key-topics {
+  margin-top: 80px;
+  margin-left: 24px;
+  margin-right: 24px;
+  align-content: center;
+}
 
-h2 {
-  color: #808080;
-  padding: 15px
+.key-topics__title {
+  color: var(--sub-text-color);
+  font: var(--f)
+  font-size: 11px;
+  text-align: left;
+  vertical-align: baseline
 }
 
 .key-topics__description {
   display: block;
-  width: 263px;
-  height: 158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: auto;
+  height: auto;
   border: 5px;
   color: #151419;
   font-size: 34px;
@@ -27,7 +33,8 @@ h2 {
 
 .key-topics__list {
   display: block;
-  width: 337px;
+  width: auto;
+  height: auto;
   padding: 15px;
   margin-top: 50;
   border: 5px;
@@ -43,6 +50,7 @@ h2 {
 
 
   .key-topics__three-images-container {
+    box-sizing: border-box;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -78,9 +86,8 @@ h2 {
     font-size: 17px;
     text-align: center;
 }
-<!--uf
-dd {
-  display: list-item;
-  list-style-type: "";
-  padding-inline-start: 1ch;
+li {
+  list-style-image: url(../img/key-topics/yellow-checked-checkbox-19px.png);
+  height: auto;
+ 
 }

@@ -8,6 +8,11 @@
   /* outline: 1px solid red; */
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 /* VARIABLES */
 :root {
   --background-color: #151419;
@@ -18,4 +23,5 @@
   --highlight-color3: rgb(255, 19, 146);
   --highlight-color4: rgb(226, 255, 116);
   --carousel-button-color: rgba(255, 255, 255, 0.5);
-}
+  --sub-text-color: #808080;
+  }
