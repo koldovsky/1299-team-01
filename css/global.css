@@ -24,4 +24,7 @@ img {
   --highlight-color4: rgb(226, 255, 116);
   --carousel-button-color: rgba(255, 255, 255, 0.5);
   --sub-text-color: #808080;
+  --list-text-color: #15141985;
+  
+  scroll-behavior: smooth;
   }
