@@ -109,7 +109,7 @@ p.ticket-options__text {
     font-weight: 400;
     line-height: 25.5px;
 }
-.ticket__features {
+.ticket-prices__features {
     margin: 20px 0 0 0; 
     list-style: none;
     display: flex;
