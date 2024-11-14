@@ -1,14 +1,42 @@
 .expect-container{
     font-family: Comme, sans-serif;
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
-    background-color: #e2ff74;
+    background-color:#e2ff74;
+    padding: 20px;
+}
+.expect-item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    max-width: 200px; 
+}
+.expect-item__icon {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.expect-item__title {
+    font-size: 1.2em;
+    color:var(--list-text-color);
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+.expect-item__description {
+    font-size: 0.9em;
+    color:var(--sub-text-color);
+    text-align: center;
+    margin-top: 5px;
 }
 .expect-container {
     display: flex;
     gap: 20px;
-    background-color: #e2ff74;
+    background-color:var(--highlight-color2);
     padding: 20px;
     border-radius: 10px;
     
@@ -17,7 +45,7 @@
 
 .expect-item {
     text-align: center;
-    color: #333;
+    color: var(--sub-text-color);
 }
 
 .expect-item img {
@@ -28,7 +56,7 @@
 
 .expect-item h2 {
     font-size: 20px;
-    color: #000;
+    color:var(--list-text-color);
 }
 
 .expect-item h3 {
@@ -42,13 +70,59 @@
 
 
 .web__content{
-    background-color:#222030;
+    background-color:var(--background-color2);
     padding: 170px;
     font-family:Comme, sans-serif;
+    margin: 0 auto;
+    font-size:20px ;
 }
 
+.web__content_logo h2 {
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 1.2;
+    color:var(--h3-color);
+}
+.web__content_logo h2 span {
+    color: inherit;
+}
+
+.text span {
+    color: var(--highlight-color3);
+}
+
+.text span:nth-of-type(2) {
+    color: var(--highlight-color2);
+}
+
+.text span:nth-of-type(3) {
+    color: var(--highlight-color1);
+}
+.web__content p {
+    font-size: 1em;
+    color: var(carousel-button-color);
+    line-height: 1.6;
+    margin-top: 20px;
+}
+.web__content p em {
+    font-style: italic;
+}
+.web__content p u {
+    text-decoration: underline;
+}
+.web__content p strong {
+    font-weight: bold;
+}
+.web__content_footer {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+
 .text ,.web__content {
-    color: #ffffff;
+    color:var(--h3-color);
    
     
 }
@@ -59,15 +133,45 @@
 
 .countdown-item {
     text-align: center;
-    color: #fff;
+    color:var(--h3-color);
 }
 
 .count-number {
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 2.5em;
+    font-weight: 700;
+    color:var(--h3-color);
 }
 
 .count-label {
     font-size: 16px;
-    color: #b0b0b0;
+    color:var(--sub-text-color);
+    margin-top: 5px;
+    display: block;
 }
+
+.countdown__separator_1Cd {
+    position: relative;
+    flex-grow: 1;
+}
+.countdown__separator_1Cd:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    max-height: 90px;
+    top: 0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: currentColor;
+    opacity: .125
+}
+
+.vertical-line {
+    width: 1px;
+    height: 100px;
+    border: none;
+    background-color:var(--sub-text-color); 
+    margin:0px;
+  }
+  

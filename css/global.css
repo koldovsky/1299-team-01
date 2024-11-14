@@ -16,6 +16,7 @@ img {
 /* VARIABLES */
 :root {
   --background-color: #151419;
+  --background-color2: #222030;
   --h3-color: rgb(255, 255, 255);
   --text-color: rgba(255, 255, 255, 0.72);
   --highlight-color1: rgb(114, 240, 225);
@@ -25,6 +26,5 @@ img {
   --carousel-button-color: rgba(255, 255, 255, 0.5);
   --sub-text-color: #808080;
   --list-text-color: #15141985;
-  
   scroll-behavior: smooth;
   }
