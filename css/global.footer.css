@@ -1,4 +1,4 @@
-@import url(fonts.css);
+
 .footer-section__container {
     max-width: 1200px;
     margin: 0 auto;
@@ -42,6 +42,7 @@
 
 .footer-section__description {
     color: #A2A2A4;
+    font-size: 18px;
 }
 
 .footer-section__title {
@@ -63,10 +64,11 @@
 }
 
 .albert-sans-footer-section__title {
-    font-family: "Albert Sans", sans-serif;
+    font-family: "Albert Sans", serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 700;
     font-style: normal;
+    font-size: 26px;
 }
 
 @media (min-width: 770px) {
@@ -76,7 +78,7 @@
 }
 
 .comme-footer-section__description {
-    font-family: "Comme", sans-serif;
+    font-family: "Comme", serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
@@ -108,3 +110,8 @@
     width: 32px;
     height: 32px;
 }
+
+.footer-section__description {
+    gap: 1.5px;
+}
+
