@@ -1,10 +1,16 @@
-.expect-container{
+.expectations{
+--responsive-coefficient:0;
+}
+.expect-container {
     font-family: Comme, sans-serif;
+    background-color: var(--highlight-color2);
+    position: relative;
     display: flex;
     justify-content:space-between;
     align-items: center;
-    background-color:#e2ff74;
-    padding: 20px;
+    padding: 0 px;
+    overflow: hidden;
+    margin: 0 auto;
 }
 .expect-item {
     display: flex;
@@ -34,11 +40,12 @@
     margin-top: 5px;
 }
 .expect-container {
+    position:relative;
     display: flex;
     gap: 20px;
-    background-color:var(--highlight-color2);
-    padding: 20px;
-    border-radius: 10px;
+    background-color:var(--highlight-color4);
+    padding: 50px;
+    border-radius: 0px;
     
 }
 
@@ -69,11 +76,10 @@
 }
 
 
-.web__content{
+.web__content {
     background-color:var(--background-color2);
     padding: 170px;
     font-family:Comme, sans-serif;
-    margin: 0 auto;
     font-size:20px ;
 }
 
@@ -82,26 +88,27 @@
     font-weight: 700;
     line-height: 1.2;
     color:var(--h3-color);
+    padding: 170px;
+    align-items: center;
 }
-.web__content_logo h2 span {
-    color: inherit;
-}
+.text-highlight-conference {
+  color: var(--highlight-color3);
+ }
 
-.text-highlight--conference{
-    color:var(--highlight-color3);  
-}
-.text-highlight--technology{
-    color:var(--highlight-color2);
-}
-.text-highlight--innovation{
-    color:var(--highlight-color1);
-}
-.text-highlight--dot{
-    color:var(--highlight-color3); 
-}
+ .text-highlight-technology {
+   color: var(--highlight-color4);
+ }
+ 
+ .text-highlight-innovation {
+  color: var(--highlight-color1);
+ }
 
-.text span {
+ .text-highlight-dot {
     color: var(--highlight-color3);
+ }
+
+.text_logo{
+    align-items: center;
 }
 
 .text span:nth-of-type(2) {

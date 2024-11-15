@@ -1,0 +1,124 @@
+.about-conference {
+    background-color: rgba(41, 39, 52, 1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 220px 15px 175px 15px; 
+    max-height: 965px;       
+}
+about-conference__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -40px;
+    margin-right: -40px;
+    
+}
+.about-conference__content {
+    display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1250px;
+}
+.about-conference__block {
+    flex: 1;
+    flex-basis: 50%;
+    justify-content: flex-start;
+    max-width: 50%;  
+    padding-left: 40px;
+    padding-right: 40px; 
+}
+.about-conference__item-text {
+    display: block;
+    font-family: "Anonymous Pro", monospace;
+    text-transform: uppercase;
+    font-size: var(--font-size-small11);
+    color: var(--prices-color-blue);
+    font-weight: 700;
+}
+.about-conference__answers {
+    margin-top: 20px;
+    font-family: "Albert Sans", sans-serif;
+    color: var(--prices-ticket-bt);
+    font-weight: 700;
+    line-height: 55.2px;
+    font-size: var(--h2-font-size);
+}
+.text-highlight--yellow {
+    color: var(--prices-color-slide3);
+}
+.text-highlight--pink {
+    color: var(--prices-color-pink);
+}
+.about-conference__name {
+    margin-top: 24px;
+    font-family:  Comme, sans-serif;
+    color: var(--prices-ticket-bt);
+    font-size: var(--ac-block-font-size);
+    font-weight: 500;
+    line-height: 26.6px;
+}
+.about-conference__description {
+    margin-top: 25px;
+    font-family: Comme, sans-serif;
+    color: var(--ac-text-color-072);
+    font-size: 17px;
+    line-height: 25.5px;
+}
+about-conference__faq {
+    margin-top: 20px;
+}
+.contact-form {
+    background-color: rgba(30, 29, 42, 1);
+    display: flex;
+    justify-content: center;
+    padding: 60px 80px 60px 80px !important;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    box-shadow: none;
+}
+.contact-form__legend {
+    font-family: "Albert Sans", sans-serif;
+    font-size: 26px;
+    line-height: 31.2px;
+    font-weight: 600;
+    color: var(--prices-ticket-bt);
+}
+.contact-form__input {
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 24px;
+    padding: 21px 38px 21px 38px !important;
+    background-color: rgba(255, 255, 255, 0.02);
+    cursor: text;
+    font-size: 18px;
+    font-family: Comme, cans-serif;
+    font-weight: 400;
+    border: none;
+    color: var(--h3-color);
+}
+.contact-form__button {
+    margin-top: 56px;
+    width: 100%;
+    background-color: rgb(251, 225, 89);
+    transition: background-color 0.5s;
+} 
+.contact-form__button:hover {
+    background-color: rgb(254, 117, 191);
+}
+.contact-form__button--text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 21px 39px 21px 38px !important;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+}

@@ -1,0 +1,55 @@
+.invitation {
+    display: flex;
+    padding: 165px 30px;
+    background-color: var(--background-color);
+    max-width: 100%;
+    height: 577px;
+}
+.invitation__container {
+    display: block;
+    box-sizing: content-box;
+    padding: 0 15px 0 15px;
+    width: 1200px;
+    height: 577px;
+    margin: auto;
+}
+.invitation__header {
+    padding: 0 15px 0 15px;
+}
+.invitation__title {
+    text-align: center;
+    font-family: "Albert Sans", sans-serif;
+    font-size: var(--h2-font-size);
+    color: var(--h3-color);
+    font-weight: 700;
+    line-height: 55.2px;
+}
+.invitation__title--yellow {
+    color: var(--highlight-color2);
+}
+.invitation__title--pink {
+    color: var(--highlight-color3);
+}
+.invitation__title--blue {
+    color: var(--highlight-color1);
+}
+.invitation__cta {
+    margin-top: 25px;
+    font-size: 26px;
+    text-align: center;
+    font-weight: 600;
+    font-family: "Albert Sans", sans-serif;
+    color: var(--h3-color);
+}
+.photo-carousel {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.photo-carousel__slides {
+    display: flex;
+    flex-direction: row;
+}
+.photo-carousel__slide {
+    padding: 0 15px 0 15px;
+}
