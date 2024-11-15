@@ -4,8 +4,7 @@
   margin-right: 24px;
   margin-bottom: 80px;
   align-content: center;
-  
-}
+  }
 
 .key-topics__title {
   color: var(--sub-text-color);
@@ -61,6 +60,8 @@ li {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .key-topics__image-container {
@@ -108,12 +109,12 @@ li {
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   .key-topics__three-images-container {
       flex-direction: column; 
       gap: 30px; 
+      height: 323px;
   }
-
 }
 
 .key-topics__overlay-title {
@@ -128,6 +129,9 @@ li {
 color: var(--overlay-text-color);
 font-family: "Comme", sans-serif;
 font-size: 17px;
+font-weight: 400;
+line-height: 1.5;
+
 }
 
 .key-topics__stats {
