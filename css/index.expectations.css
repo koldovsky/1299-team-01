@@ -87,6 +87,19 @@
     color: inherit;
 }
 
+.text-highlight--conference{
+    color:var(--highlight-color3);  
+}
+.text-highlight--technology{
+    color:var(--highlight-color2);
+}
+.text-highlight--innovation{
+    color:var(--highlight-color1);
+}
+.text-highlight--dot{
+    color:var(--highlight-color3); 
+}
+
 .text span {
     color: var(--highlight-color3);
 }
