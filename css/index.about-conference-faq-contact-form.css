@@ -83,7 +83,7 @@ about-conference__faq {
     text-align: center;
     box-shadow: none;
 }
-    .contact-form__legend {
+.contact-form__legend {
     font-family: "Albert Sans", sans-serif;
     font-size: 26px;
     line-height: 31.2px;
@@ -94,7 +94,7 @@ about-conference__faq {
     width: 100%;
     margin-top: 32px;
     margin-bottom: 24px;
-    padding-top: 21px 38px 21px 38px !important;
+    padding: 21px 38px 21px 38px !important;
     background-color: rgba(255, 255, 255, 0.02);
     cursor: text;
     font-size: 18px;
