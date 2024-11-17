@@ -2,6 +2,7 @@
 @import "global.css";
 @import "global.header.css";
 @import "global.header-nav.partial.css";
+@import "index.about-conference-accordion.css"
 @import "index.header-hero.partial.css";
 @import "index.techcon-conference-overview.css";
 @import "index.key-topics.css";
