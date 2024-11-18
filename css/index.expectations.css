@@ -101,8 +101,8 @@
   .countdown {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Вирівнює елементи вертикально */
-    gap: 20px; /* Простір між елементами */
+    align-items: flex-start;
+    gap: 20px;
   }
   
   .countdown-item {
@@ -123,7 +123,7 @@
   
   .separator {
     width:1px;;
-    height: 86px;; /* Висота лінії */
+    height: 86px;;
     background-color:var( --overlay-text-color); /* Колір лінії */
-    margin: 0 40px; /* Простір з боків лінії */
+    margin: 0 40px; 
   }
