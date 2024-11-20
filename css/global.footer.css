@@ -120,3 +120,18 @@
   }
 }
 
+.footer-section__menu-item {
+  color: #a2a2a4;
+  font-size: 17px;
+  font-family: "Comme", serif;
+  font-weight: 400;
+  gap: 3.5px;
+  line-height: 35px;
+}
+
+.footer-section__input {
+  color : #212025;
+  padding: 21px, 38px;
+  width: 21px;
+  height: 38px;
+}
