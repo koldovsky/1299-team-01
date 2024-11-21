@@ -1,4 +1,4 @@
-  .navbar {
+.navbar__about {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,25 +7,25 @@
     color: rgba(255, 255, 255, 0.408);
   }
   
-  .nav-links {
+  .nav-links__about {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
   }
   
-  .nav-links li {
+  .nav-links__about li {
     margin: 0 15px;
   }
   
-  .nav-links a {
+  .nav-links__about a {
     text-decoration: none;
     color: #dcdcdc94;
     font-size: 0.9rem;
     transition: color 0.3s ease;
   }
   
-  .nav-links a:hover {
+  .nav-links__about a:hover {
     color: rgb(255, 255, 255);
   }
   
