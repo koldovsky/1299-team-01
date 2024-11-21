@@ -1,0 +1,220 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.about-features {
+  background-color: #151419;
+  color: #ffffff;
+  padding: 60px 20px;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+/* Центрування контейнера */
+.about-features .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Who We Are */
+.who-we-are {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.who-we-are-image {
+  flex: 1;
+  position: relative;
+  max-width: 50%; /* Встановлюємо максимальну ширину */
+}
+
+.who-we-are-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Забезпечує відповідні пропорції */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  max-width: 100%;
+  max-height: 100%;
+
+  @media (max-width: 768px) {
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Коло "TechCon" */
+.techcon-circle {
+  position: absolute;
+  top: 5%;
+  left: -10%;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.techcon-circle {
+  top: -5%;
+  left: -5%;
+  width: 80px;
+  height: 80px;
+}
+
+/* Правий блок тексту */
+.who-we-are-content {
+  flex: 1;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.section-label {
+  font-size: 10px; /* Розмір шрифту для "WHO WE ARE" */
+  color: #ffdd00; /* Жовтий колір */
+  text-transform: uppercase; /* Усі літери великі */
+  font-weight: bold; /* Жирний шрифт */
+  margin-bottom: -30px; /* Відступ знизу */
+  display: inline-block;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #bbbbbb;
+  margin-bottom: 20px;
+}
+
+/* Особливості */
+.features {
+  margin-top: 40px;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  flex: 1 1 calc(25% - 20px);
+  text-align: center;
+}
+
+.dot {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  background-color: currentColor;
+}
+
+.dot2 {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #ff007f;
+  border-radius: 50%;
+  margin-left: -4px;
+  margin-bottom: -7px;
+  vertical-align: middle;
+}
+
+.yellow {
+  color: rgb(255, 225, 89, 1);
+}
+
+.pink {
+  color: rgb(255, 19, 146, 1);
+}
+
+.blue {
+  color: rgb(114, 240, 255, 1);
+}
+
+.green {
+  color: rgb(226, 255, 116, 1);
+}
+
+.highlight-blue {
+  color: rgb(114, 240, 255, 1);
+}
+
+.highlight-pink {
+  color: rgb(255, 19, 146, 1);
+}
+
+.who-we-are-yellow {
+  color: rgb(255, 225, 89, 1);
+}
+.presentation-yellow {
+  color: rgb(255, 225, 89, 1);
+}
+
+.information-pink {
+  color: rgb(255, 19, 146, 1);
+}
+.expert-speakers-blue {
+  color: rgb(114, 240, 255, 1);
+}
+.networking-green {
+  color: rgb(226, 255, 116, 1);
+}
+
+.feature-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.feature-description-italic-text {
+  font-family: "Comme", sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .who-we-are {
+    flex-direction: column;
+  }
+
+  .who-we-are-image {
+    max-width: 100%;
+  }
+
+  .techcon-circle {
+    left: 10%;
+    top: -5%;
+  }
+
+  .feature-list {
+    flex-direction: column;
+  }
+
+  .feature-item {
+    flex: none;
+  }
+}

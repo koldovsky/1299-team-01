@@ -1,0 +1,145 @@
+/* Загальні стилі для секції */
+.about-techcon {
+  background-color: #1a1a2e; /* Темний фон */
+  color: #ffffff; /* Білий текст */
+  padding: 50px 20px;
+  font-family: "Arial", sans-serif;
+}
+
+/* Фон зображення для about-container */
+.about-container {
+  position: relative; /* Відносне позиціонування, щоб фон був у межах цього блоку */
+  background-image: url('/img/about/header-background4.png'); /* Встановлюємо фон */
+  background-size: cover; /* Зображення заповнює весь блок */
+  background-repeat: no-repeat; /* Забороняємо повторення */
+  background-position: center 10%; /* Центруємо зображення */
+  padding: 50px; /* Додаємо внутрішні відступи для контенту */
+  margin: -50px -20px;
+}
+
+.about-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 1;
+}
+
+.about-container > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Затемнення поверх зображення */
+.about-container::before {
+  content: ''; /* Псевдоелемент для затемнення */
+  position: absolute; /* Абсолютне позиціонування всередині блоку */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Чорне затемнення з прозорістю 50% */
+  z-index: 1; /* Розміщення затемнення під контентом */
+}
+
+/* Контент поверх фону */
+.about-container > * {
+  position: relative; /* Відносне позиціонування для контенту */
+  z-index: 2; /* Контент зверху затемнення */
+}
+
+/* Стилі для заголовка */
+.title {
+  flex: 1; /* Заголовок займає одну частину ширини */
+}
+
+.title h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+}
+
+.title h1 span {
+  color: #ff007f; /* Рожевий колір для "TechCon" */
+}
+
+/* Стилі для хлібних крихт */
+.breadcrumb {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ffd700; /* Світло-сірий */
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #ffd700; /* Золотистий колір для посилань */
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* Стилі для тексту справа */
+.right-text {
+  flex: 1; /* Текст займає другу частину ширини */
+  max-width: 600px;
+  text-align: left; /* Вирівнювання тексту по лівій стороні */
+  margin-left: 625px; /* Відступ справа від заголовка */
+  margin-top: -75px; /*Вирівнювання по висоті */
+}
+
+.right-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #dcdcdc; /* Світло-сірий текст */
+  margin: 0;
+}
+
+/* Адаптивність: Середні екрани (768px - 1024px) */
+@media (max-width: 1024px) {
+  .about-container {
+    flex-wrap: wrap; /* Дозволяємо перенос елементів */
+    justify-content: center; /* Центруємо елементи */
+  }
+
+  .right-text {
+    max-width: 100%; /* Розтягуємо блок на всю ширину */
+    margin-left: 0; /* Забираємо відступ */
+    margin-top: 20px; /* Додаємо відступ зверху для візуального відокремлення */
+  }
+
+  .title h1 {
+    font-size: 40px; /* Зменшуємо заголовок */
+  }
+}
+
+/* Адаптивність: Малі екрани (до 768px) */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Елементи стають вертикальними */
+    align-items: center; /* Центруємо елементи */
+  }
+
+  .title h1 {
+    font-size: 32px; /* Ще більше зменшуємо заголовок */
+    text-align: center; /* Центруємо текст заголовка */
+  }
+
+  .breadcrumb {
+    text-align: center; /* Центруємо хлібні крихти */
+  }
+
+  .right-text {
+    text-align: center; /* Центруємо текст */
+    max-width: 100%; /* Розтягуємо текстовий блок */
+    margin-top: 20px; /* Додаємо відступ зверху */
+  }
+
+  .right-text p {
+    font-size: 16px; /* Зменшуємо розмір шрифту для читабельності */
+  }
+}
