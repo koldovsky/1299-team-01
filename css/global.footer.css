@@ -2,7 +2,6 @@
   background-color: #151419;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 20px;
 }
 
@@ -13,6 +12,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; 
+  gap: 20px;
 }
 
 .footer-section__columns {
@@ -21,7 +21,8 @@
 }
 
 .footer-section__columns > section {
-  flex: 1 1 250px;
+  flex: 1 1 200px;
+  max-width: 300px;
 }
 
 .footer-section__about,
