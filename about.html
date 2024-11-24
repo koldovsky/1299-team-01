@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="about.css">
-</head>
-
-<body>
-    <header>
-        <nav class="navbar__about">
-            <div>
-                <a href="index.html">
-                    <img class="logo" width="168" src="img/global/logo-main.svg" alt="TechCon Logo">
-                </a>
-            </div>
-            <ul class="nav-links__about">
-                <li><a href="about.html">About</a></li>
-                <li><a href="#">Schedule</a></li>
-                <li><a href="#">Speakers</a></li>
-                <li><a href="#">Sponsors</a></li>
-                <li><a href="#">Contacts</a></li>
-            </ul>
-        </nav>
-        <header>
-            <h1 class="about-header__title">About <span style="color: #FF1392;">TechCon</span></h1>
-            <h2 class="about-header__title-menu">Home > <span>ABOUT US</span></h2>
-            <p class="about-header__decription">One of the biggest NY conferences focused on business, design, marketing, and innovation. We host meaningful and industry-leading events for experts in different niches.</p>
-        </header>
-        <main>
-            <section class="section-who-we-are">
-                <picture src="img/global/circle.picture"></picture>
-            </section>
-        </main>
-    </header>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechCon</title>
+    <link
+      rel="shortcut icon"
+      href="img/index/favicon.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/about.css" />
+  </head>
 </html>
+<body>
+  <header>
+    <!--Євгеній Ткаченко-->
+    <nav
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="global.header-nav.partial.html"
+    ></nav>
+    <!-- Mykhailo Tymoshchuk (Title) -->
+    <div
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="about.header-title.html"
+    ></div>
+  </header>
+  <main>
+    <!--Mykhailo Tymoshchuk (Who we are!?)-->
+    <div
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="about.section-whoweare.html"
+    ></div>
+    <!---->
+  </main>
+</body>

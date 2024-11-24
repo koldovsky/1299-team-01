@@ -53,6 +53,7 @@
       justify-content: space-between;
       overflow: hidden;
       flex-wrap: nowrap;
+      min-height: 300px;
 
       .members-carousel__additional-member {
         display: flex;
