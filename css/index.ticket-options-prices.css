@@ -1,14 +1,7 @@
-:root {
-    scroll-behavior: smooth;
-    --text-color: rgb(128, 128, 128); 
-    --text-color-pink: rgb(255, 19, 146);
-    --text-color-blue: rgb(114, 240, 225);
-    --font-size-small: 11px;
-    --text-color-black: rgb(21, 20, 25);
-}
 .ticket-options {
     position: relative;
     padding-top: 140px;
+    padding-bottom: 140px;
     text-align: center; 
 }
 .ticket-options__header {
@@ -109,7 +102,7 @@ p.ticket-options__text {
     font-weight: 400;
     line-height: 25.5px;
 }
-.ticket__features {
+.ticket-prices__features {
     margin: 20px 0 0 0; 
     list-style: none;
     display: flex;

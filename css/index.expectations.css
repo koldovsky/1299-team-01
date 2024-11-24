@@ -1,0 +1,139 @@
+.expectations {
+    background-color: var(--highlight-color4); 
+  }
+  
+  .expect-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px; 
+    padding: 15px 0px;
+  }
+  
+  .expect-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+    color: var(--prices-text-small-07);
+    margin-top: 10px;
+  }
+  
+  .expect-item img {
+    width: 50px;
+    height: auto;
+  }
+  
+  .expect-item h2 {
+    display: flex;
+    text-align: start;
+    font-family: Comme, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    color: var(--overlay-background-color);
+  }
+  
+  .expect-item h3 {
+    font-family: Comme, sans-serif;
+    font-size: 1.2em;
+    margin: 0;
+    font-weight: 500;
+    color: var(--sub-text-color);
+  }
+  
+  .expect-item p {
+    font-family: Comme, sans-serif;
+    font-size: 1em;
+    margin: 0;
+    color: var(--sub-text-color);
+  }
+  
+  .expect-item div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .web__content {
+    margin: 0;
+    background-color: var(--background-color2);
+    padding: 170px 0px 165px;
+    font-family: Comme, sans-serif;
+    font-size: 20px;
+    color: var(--h3-color);
+  }
+  
+  .intro-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 44px;
+    line-height: 1.4;
+    margin-bottom: 40px;
+  }
+  
+  .highlight-pink {
+    color: var(--highlight-color3);
+  }
+  
+  .highlight-yellow {
+    color:var(--highlight-color2);
+  }
+  .highlight-blue {
+    color: var(--highlight-color1)
+  }
+  
+  .description {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #b7c1c5;
+    margin-bottom: 40px;
+  }
+  
+  .description em {
+    font-style: italic;
+    color: var(--overlay-text-color);
+  }
+  
+  .description strong {
+    font-weight: bold;
+    color: var(--h3-color);
+  }
+  
+  .countdown {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 80px;
+  }
+  
+  .countdown-item {
+    text-align: center;
+  }
+  
+  .count-value {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--h3-color);
+    display: block;
+  }
+  
+  .count-label {
+    font-size: 1em;
+    color: var(--overlay-text-color);
+  }
+  
+  .separator {
+    width:1px;;
+    height: 86px;;
+    background-color:var( --overlay-text-color); /* Колір лінії */
+    margin: 0 40px; 
+  }

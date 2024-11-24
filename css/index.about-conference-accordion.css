@@ -1,0 +1,53 @@
+.about-conference__faq {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+.faq__container {
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    border-bottom: 1px solid var(--ac-text-color-072);
+}
+.faq__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Albert Sans", sans-serif;
+    font-size: 26px;
+    color: var(--prices-ticket-bt);
+    font-weight: 600;
+    line-height: 31.2px;
+} 
+.faq__icon {
+    font-weight: 400;
+    position: relative;
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.faq__content {
+    max-height: 0;
+    font-family:  Comme, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25.5px;
+    color: var(--ac-text-color-072);
+    overflow: hidden;
+}
+.faq__content.open {
+    margin-top: 20px;
+    display: flex;
+    max-height: 100%;
+    max-width: 100%;
+    overflow: visible;
+}
+input[type="checkbox"] {
+    display: none;
+}

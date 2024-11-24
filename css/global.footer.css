@@ -1,145 +1,97 @@
-.footer-section {
-    background-color: #222030;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-    padding: 40px 20px;
-}
-
 .footer-section__container {
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    padding: 20px;
 }
 
 .footer-section__columns {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
     justify-content: space-between;
-    width: 100%;
 }
 
 .footer-section__about,
 .footer-section__navigation,
 .footer-section__subscribe {
-    flex: 1 1 calc(33.333% - 20px);
-    min-width: 280px;
+    flex: 1;
+    margin: 0 10px;
 }
 
 .footer-section__logo {
-    margin-bottom: 20px;
     display: block;
-}
-
-.footer-section__description {
-    font-size: 14px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-.footer-section__socials {
-    display: flex;
-    gap: 10px;
-}
-
-.footer-section__social-icon--twitter,
-.footer-section__social-icon--facebook,
-.footer-section__social-icon--instagram,
-.footer-section__social-icon--youtube {
-    width: 32px;
-    height: 32px;
-    fill: #40e0d0;
-    cursor: pointer;
-    transition: transform 0.3s ease, fill 0.3s ease;
-}
-
-.footer-section__social-icon--twitter:hover,
-.footer-section__social-icon--facebook:hover,
-.footer-section__social-icon--instagram:hover,
-.footer-section__social-icon--youtube:hover {
-    fill: #ffffff;
-    transform: scale(1.1);
+    margin-bottom: 15px;
 }
 
 .footer-section__title {
-    font-size: 18px;
     font-weight: bold;
-    margin-bottom: 10px;
-    color: #40e0d0;
+    margin-top: 20px;
 }
 
 .footer-section__menu {
     list-style: none;
     padding: 0;
-    margin: 0 0 20px 0;
 }
 
 .footer-section__menu-item {
-    margin-bottom: 10px;
+  color: #a2a2a4;
+  font-size: 17px;
+  font-family: "Comme", serif;
+  font-weight: 400;
+  text-decoration: none;
 }
 
-.footer-section__menu-item a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 14px;
-    transition: color 0.3s ease;
-}
-
-.footer-section__menu-item a:hover {
-    color: #40e0d0;
-}
-
-.footer-section__form {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.footer-section__input {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #40e0d0;
-    border-radius: 5px;
-    font-size: 14px;
-    color: #222030;
-}
-
-.footer-section__input::placeholder {
-    color: #888888;
-}
-
-.footer-section__button {
-    background-color: #40e0d0;
-    color: #222030;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.footer-section__button:hover {
-    background-color: #ffffff;
-    color: #40e0d0;
+.footer-section {
+    background-color: #151419;
 }
 
 .footer-section__description {
-    background-color: #ffe4e1; /* Светло-розовый фон */
-    color: #222030; /* Темный текст для контраста */
-    font-size: 16px; /* Немного увеличенный размер шрифта */
-    line-height: 1.6; /* Увеличенная высота строки для удобства чтения */
-    padding: 15px; /* Внутренние отступы */
-    border-radius: 8px; /* Скругленные углы */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для объема */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавные изменения */
+    color: #A2A2A4;
 }
 
-/* Эффект при наведении */
-.footer-section__description:hover {
-    transform: scale(1.05); /* Легкое увеличение элемента */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Увеличение тени */
-    background-color: #ffd1dc; /* Немного более яркий розовый фон */
+.footer-section__title {
+    color: #FFFFFF;
 }
+
+.footer-section__menu-item {
+    text-decoration: none;
+    color: #A2A2A4; 
+}
+
+.footer-section__menu-item:hover {
+    color: #FBE159
+}
+
+.footer-section__button {
+    width: 127.4;
+    height: 56;
+}
+
+.albert-sans-footer-section__title {
+    font-family: "Albert Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@media (min-width: 770px) {
+    .footer-section__navigation {
+        flex-direction: row;
+    }
+}
+
+.comme-footer-section__description {
+    font-family: "Comme", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .footer-section__socials {
+    display: flex;
+    gap: 10px; 
+}
+
+.footer-section__social-icon {
+    width: 24px; 
+    height: 24px;
+}
+
