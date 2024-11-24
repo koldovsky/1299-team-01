@@ -50,13 +50,39 @@ function renderSlides() {
   );
   slidesContainer.innerHTML = slides[currIdx];
 
-  if (window.matchMedia("(min-width: 768px)").matches) {
+  const imgWidth = 180;
+  const innerContainerGap = 20;
+  const btnGap = 20;
+  const btnWidth = 50;
+  const outterContainerPadding = 15;
+  let gapCoef = 1;
+  let minWidth =
+    2 * imgWidth +
+    1 * innerContainerGap * gapCoef +
+    2 * (btnGap + btnWidth + outterContainerPadding);
+  if (window.matchMedia(`(min-width: ${minWidth}px)`).matches) {
     const secondSlideIdx = currIdx + 1 >= slides.length ? 0 : currIdx + 1;
     slidesContainer.innerHTML += slides[secondSlideIdx];
 
-    if (window.matchMedia("(min-width: 1024px)").matches) {
-      const thirdSlideIdx = secondSlideIdx + 1 >= slides.length ? 0 : secondSlideIdx + 1;
+    gapCoef = 2;
+    minWidth =
+      3 * imgWidth +
+      2 * innerContainerGap * gapCoef +
+      2 * (btnGap + btnWidth + outterContainerPadding);
+    if (window.matchMedia(`(min-width: ${minWidth}px)`).matches) {
+      const thirdSlideIdx =
+        secondSlideIdx + 1 >= slides.length ? 0 : secondSlideIdx + 1;
       slidesContainer.innerHTML += slides[thirdSlideIdx];
+
+      minWidth =
+        4 * imgWidth +
+        3 * innerContainerGap * gapCoef +
+        2 * (btnGap + btnWidth + outterContainerPadding);
+      if (window.matchMedia(`(min-width: ${minWidth}px)`).matches) {
+        const fourthSlideIdx =
+          thirdSlideIdx + 1 >= slides.length ? 0 : thirdSlideIdx + 1;
+        slidesContainer.innerHTML += slides[fourthSlideIdx];
+      }
     }
   }
 }

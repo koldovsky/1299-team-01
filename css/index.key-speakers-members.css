@@ -16,6 +16,10 @@
       padding: 0 15px;
       max-width: 650px;
       margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
     }
 
     .member__info {

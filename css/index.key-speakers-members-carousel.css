@@ -1,110 +1,152 @@
 .members-carousel {
   --responsive-coefficient: 1;
+  --gap-coefficient: 2;
+  --horizontal-gap-carousel: 20px;
 
   background-color: var(--background-color);
   font-family: Comme, sans-serif;
   font-size: calc(1rem * var(--responsive-coefficient));
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 30px 15px;
 
-  .members-carousel__container {
-    display: flex;
-    flex-direction: raw;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
+  .members-carousel-limit {
     max-width: 1200px;
+    margin: 0 auto;
 
-    .members-carousel__button {
-      width: 50px;
-      height: 50px;
-
-      border-radius: 50%;
+    .members-carousel__container {
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: var(--carousel-button-color);
-      background-size: cover;
-    }
-
-    .members-carousel__button:active {
-      background-color: transparent;
-      border: none;
-      border-radius: 0;
-      background-image: url("../img/index/poop.png");
-    }
-
-    .members-carousel__button:active svg {
-      visibility: hidden;
-    }
-
-    .members-carousel__button--left svg {
-      transform: scaleX(-1);
-    }
-
-    .members-carousel__additional-members {
-      display: flex;
       gap: 20px;
       width: 100%;
-      justify-content: space-between;
-      overflow: hidden;
-      flex-wrap: nowrap;
-      min-height: 300px;
+      max-width: 1200px;
 
-      .members-carousel__additional-member {
+      .members-carousel__button {
+        width: 50px;
+        height: 50px;
+
+        border-radius: 50%;
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        gap: 10px;
-        width: 180px;
-        text-align: center;
-
-        .members-carousel__member-name {
-          font-family: "Albert Sans", sans-serif;
-          font-size: 1.375rem;
-          color: var(--h3-color);
-          margin: 0 auto;
-        }
-
-        .members-carousel__member-role {
-          font-family: "Anonymous Pro", monospace;
-          font-size: 0.6875rem;
-          margin: 0 auto;
-          text-transform: uppercase;
-        }
+        align-items: center;
+        background-color: var(--carousel-button-color);
+        background-size: cover;
       }
 
-      .members-carousel__additional-member-cyan {
-        .members-carousel__member-role {
-          color: var(--highlight-color1);
-        }
+      .members-carousel__button:active {
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        background-image: url("../img/index/poop.png");
       }
 
-      .members-carousel__additional-member-purple {
-        .members-carousel__member-role {
-          color: var(--highlight-color3);
-        }
+      .members-carousel__button:active svg {
+        visibility: hidden;
       }
 
-      .members-carousel__additional-member-yellow {
-        .members-carousel__member-role {
-          color: var(--highlight-color2);
-        }
+      .members-carousel__button--left svg {
+        transform: scaleX(-1);
       }
 
-      .members-carousel__additional-member-green {
-        .members-carousel__member-role {
-          color: var(--highlight-color4);
+      .members-carousel__additional-members {
+        display: flex;
+        gap: var(--horizontal-gap-carousel); /* 20px */
+        width: 100%;
+        justify-content: center;
+        flex-wrap: nowrap;
+        min-height: 300px;
+
+        .members-carousel__additional-member {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 10px;
+          width: 180px;
+          text-align: center;
+
+          .members-carousel__member-name {
+            font-family: "Albert Sans", sans-serif;
+            font-size: 1.375rem;
+            color: var(--h3-color);
+            margin: 0 auto;
+          }
+
+          .members-carousel__member-role {
+            font-family: "Anonymous Pro", monospace;
+            font-size: 0.6875rem;
+            margin: 0 auto;
+            text-transform: uppercase;
+          }
+        }
+
+        .members-carousel__additional-member-cyan {
+          .members-carousel__member-role {
+            color: var(--highlight-color1);
+          }
+        }
+
+        .members-carousel__additional-member-purple {
+          .members-carousel__member-role {
+            color: var(--highlight-color3);
+          }
+        }
+
+        .members-carousel__additional-member-yellow {
+          .members-carousel__member-role {
+            color: var(--highlight-color2);
+          }
+        }
+
+        .members-carousel__additional-member-green {
+          .members-carousel__member-role {
+            color: var(--highlight-color4);
+          }
         }
       }
     }
-  }
 
-  @media (min-width: 650px) {
-    max-width: 100%;
+    /* 1 person */
+    @media (min-width: 375px) {
+      .members-carousel__container {
+        margin: 0 auto;
+        width: 345px;
+      }
+    }
+
+    /* 2 persons */
+    @media (min-width: 550px) {
+      .members-carousel__container {
+        margin: 0 auto;
+        width: 520px;
+      }
+    }
+
+    /* 3 persons */
+    @media (min-width: 790px) {
+      .members-carousel__container {
+        margin: 0 auto;
+        width: 760px;
+
+        .members-carousel__additional-members {
+          gap: calc(
+            var(--horizontal-gap-carousel) * var(--gap-coefficient)
+          ); /* 20px * 2 */
+        }
+      }
+    }
+
+    /* 4 persons */
+    @media (min-width: 1010px) {
+      .members-carousel__container {
+        margin: 0 auto;
+        width: 980px;
+
+        .members-carousel__additional-members {
+          gap: calc(
+            var(--horizontal-gap-carousel) * var(--gap-coefficient)
+          ); /* 20px * 2 */
+        }
+      }
+    }
   }
 }
