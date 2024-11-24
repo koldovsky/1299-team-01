@@ -168,12 +168,48 @@
         max-width: 500px;
       }
 
+      /* Hide a system cursor */
+      .stolen-from-passport-member-photo:hover {
+        cursor: none;
+      }
+
       .additional-info {
         display: block;
         text-align: left;
         padding-left: 15px;
       }
     }
+  }
+
+  .important-fact {
+    display: none;
+    position: absolute;
+    background-color: rgba(100, 100, 100, 0.8);
+    padding: 5px;
+    border-radius: 15px;
+    pointer-events: none;
+    width: 200px;
+    text-align: center;
+    font-family: "Quantico", monospace, sans-serif;
+
+    .important-fact__line--one {
+      font-weight: bold;
+      color: yellow;
+    }
+
+    .important-fact__line--two {
+      margin-top: 10px;
+    }
+  }
+
+  .custom-cursor {
+    display: none; /* A custom cursor is invisible by default, JS decides when to show it*/
+    position: absolute; /* The cursor image should position ragardless other elements */
+    width: 42px;
+    height: 80px;
+    background-image: url("../img/index/clippy.png");
+    background-size: cover;
+    pointer-events: none; /* Ignore events of stantart cursor (like clicking?) — unless it doesn't work */
   }
 
   @media (min-width: 1100px) {

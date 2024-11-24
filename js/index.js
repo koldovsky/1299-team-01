@@ -1,6 +1,6 @@
 function init() {
   import("./index.key-speakers-members-carousel.js");
-  import('./index.ticket-prices-carousel.js');
+  import("./index.key-speakers-members.js");
 }
 
 const totalPartials = document.querySelectorAll(
