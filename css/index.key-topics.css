@@ -51,7 +51,7 @@
   box-sizing: border-box;
 }
 
-li {
+.key-topics__item {
   list-style-image: url(../img/key-topics/yellow-checked-checkbox-19px.png);
   max-width: 15 px;
 }
