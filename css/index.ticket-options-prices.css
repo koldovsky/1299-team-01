@@ -1,7 +1,6 @@
 .ticket-options {
     position: relative;
-    padding-top: 140px;
-    padding-bottom: 140px;
+    padding: 140px 40px 140px 40px;
     text-align: center; 
 }
 .ticket-options__header {
@@ -32,59 +31,52 @@ p.ticket-options__text {
     margin-top: 25px;
     font-size: 19px;
     font-family: Comme, sans-serif;
-    color: var(--text-color);
+    color: var(--sub-text-color);
     font-weight: 500;
 }
-.carousel-container {
+.carousel__container {
     display: flex;
-    width: 80%;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 50px;
+    margin: 50px auto; 
     max-height: 500px;
+    max-width: 1170px;
     overflow: hidden;
+    transition: transform 0.5s ease-in-out;
 }
 .carousel__slides {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 30px;
-    height: 100%;
-}
-.carousel__arrow-container{
-    display: flex;
+    align-items: stretch;
     justify-content: center;
     align-items: center;
-    padding: 0 15px 0 15px;
+    gap: 30px;
+}
+.carousel__arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .carousel__arrow-control {
     all: unset;
     height: 100%;
+    position: absolute;
+    cursor: pointer;
+    transform: translateY(-50%);
+    z-index: 10;     
+    width: 30px;
+    height: 30px;
   }  
 .carousel__arrow-control--next {
-    position: absolute;
-    cursor: pointer;
-    z-index: 10;     
-    width: 30px;
-    height: 30px;  
+    right: 50px;
 }
 .carousel__arrow-control--prev {
-    position: absolute;
-    cursor: pointer;
-    transform: rotate(180deg); 
-    z-index: 10;     
-    width: 30px;
-    height: 30px;  
+    transform: rotate(180deg);  
+    left: 50px;  
 }
 .ticket {
+    flex: 1;
     padding: 30px 40px 30px 40px;
     align-items: stretch;
-    flex: 1;
     overflow: hidden;
-    text-align: left;
+    text-align: left;  
 }
 .ticket__text--small {
     font-size: var(--font-size-small);
