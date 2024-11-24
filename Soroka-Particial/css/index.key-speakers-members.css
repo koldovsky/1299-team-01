@@ -1,0 +1,182 @@
+.members-list {
+  --responsive-coefficient: 1;
+
+  background-color: var(--background-color);
+  font-family: Comme, sans-serif;
+  font-size: calc(1rem * var(--responsive-coefficient));
+
+  .members-list__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: calc(40px * var(--responsive-coefficient));
+
+    .member {
+      padding: 0 15px;
+      max-width: 650px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+    }
+
+    .member__info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .member__name {
+      color: var(--h3-color);
+      font-family: "Albert Sans", sans-serif;
+      font-size: calc(2.125rem * var(--responsive-coefficient));
+    }
+
+    .member__roles {
+      text-transform: uppercase;
+      color: var(--highlight-color2);
+      font-family: "Anonymous Pro", monospace;
+      font-size: calc(0.6875rem * var(--responsive-coefficient));
+    }
+
+    .member__description {
+      color: var(--text-color);
+    }
+
+    .member__email a {
+      color: var(--text-color);
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+    }
+
+    .member__email--color1 a:hover {
+      border-bottom-color: var(--highlight-color1);
+    }
+
+    .member__email--color2 a:hover {
+      border-bottom-color: var(--highlight-color2);
+    }
+
+    .member__email--color3 a:hover {
+      border-bottom-color: var(--highlight-color3);
+    }
+
+    .member__socials {
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+
+      svg.member__socials-icon {
+        display: block;
+        width: 52px;
+        border-radius: 50%;
+
+        .logo {
+          fill: var(--background-color);
+        }
+      }
+
+      .member__socials-link {
+        transition: transform 0.3s ease; /* Плавный переход */
+      }
+
+      .member__socials-link:hover {
+        transform: scale(1.3); /* Увеличиваем активную иконку */
+      }
+    }
+  }
+
+  .member__socials--color1 .member__socials-icon {
+    fill: var(--highlight-color1);
+  }
+
+  .member__socials--color2 .member__socials-icon {
+    fill: var(--highlight-color2);
+  }
+
+  .member__socials--color3 .member__socials-icon {
+    fill: var(--highlight-color3);
+  }
+
+  .additional-info {
+    color: var(--h3-color);
+    font-family: "Albert Sans", sans-serif;
+    font-size: calc(2.125rem * var(--responsive-coefficient));
+
+    .additional-info__accent-color {
+      color: var(--highlight-color3);
+    }
+  }
+
+  @media (min-width: 768px) {
+    --responsive-coefficient: 1.15;
+
+    .members-list__container {
+      width: fit-content;
+      margin: 0 auto;
+
+      .member {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        align-items: center;
+        gap: 5%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 30px 2%;
+
+        .member__info {
+          flex: 1 1 515px;
+        }
+
+        .member__name {
+          text-align: left;
+        }
+
+        .member__roles {
+          text-align: left;
+        }
+
+        .member__email {
+          text-align: left;
+        }
+
+        .member__description {
+          text-align: left;
+        }
+
+        .member__socials {
+          display: inline-flex;
+          flex-direction: row;
+          justify-content: left;
+          align-items: center;
+          gap: 15px;
+        }
+      }
+
+      .member--1st .stolen-from-passport-member-photo,
+      .member--3rd .stolen-from-passport-member-photo {
+        order: 2;
+      }
+
+      .stolen-from-passport-member-photo {
+        flex: 1 1 50%;
+        max-width: 500px;
+      }
+
+      .additional-info {
+        display: block;
+        text-align: left;
+        padding-left: 15px;
+      }
+    }
+  }
+
+  @media (min-width: 1100px) {
+    --responsive-coefficient: 1.4;
+  }
+}
