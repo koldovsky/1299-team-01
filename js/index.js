@@ -1,5 +1,6 @@
 function init() {
   import("./index.key-speakers-members-carousel.js");
+  import("./index.key-speakers-members-carousel-clippy.js");
   import("./index.key-speakers-members.js");
 }
 

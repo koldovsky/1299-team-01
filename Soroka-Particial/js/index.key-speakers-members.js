@@ -30,13 +30,12 @@ hoverElements.forEach((hoverElement) => {
   });
 });
 
-// Объявляем обработчик отдельно
+// Cursor and facts mover function
 function moveCursor(event) {
   customCursor.style.left = `${event.pageX}px`;
   customCursor.style.top = `${event.pageY}px`;
 
-  const containerWidth = 200;
-  const cursorWidth = 42;
-  importantFact.style.left = `${event.pageX - containerWidth / 2 + cursorWidth / 2}px`;
-  importantFact.style.top = `${event.pageY + 78}px`;
+  const gap = 78;
+  importantFact.style.left = `${event.pageX - importantFact.offsetWidth / 2 + customCursor.offsetWidth / 2}px`;
+  importantFact.style.top = `${event.pageY + gap}px`;
 }

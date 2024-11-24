@@ -1,6 +1,6 @@
 const customCursor = document.getElementById("customCursor"); // getElementByID works faster than querySelector
 const hoverElements = document.querySelectorAll(
-  ".stolen-from-passport-member-photo"
+  ".members-carousel__member-photo-from-onlyfans"
 );
 const importantFact = document.getElementById("importantFact");
 
@@ -21,7 +21,6 @@ hoverElements.forEach((hoverElement) => {
     document.addEventListener("mousemove", moveCursor);
   });
 
-  // Hide custom cursor when it hovers the elements
   hoverElement.addEventListener("mouseleave", () => {
     customCursor.style.display = "none";
     importantFact.style.display = "none";
@@ -30,12 +29,13 @@ hoverElements.forEach((hoverElement) => {
   });
 });
 
-// Cursor and facts mover function
 function moveCursor(event) {
-  customCursor.style.left = `${event.pageX}px`;
-  customCursor.style.top = `${event.pageY}px`;
-
-  const gap = 78;
-  importantFact.style.left = `${event.pageX - importantFact.offsetWidth / 2 + customCursor.offsetWidth / 2}px`;
-  importantFact.style.top = `${event.pageY + gap}px`;
-}
+    customCursor.style.left = `${event.pageX}px`;
+    customCursor.style.top = `${event.pageY}px`;
+  
+    const gap = 10;
+    importantFact.style.left = `${
+      event.pageX - importantFact.offsetWidth / 2 + customCursor.offsetWidth / 2
+    }px`;
+    importantFact.style.top = `${event.pageY - importantFact.offsetHeight - gap}px`;
+  }

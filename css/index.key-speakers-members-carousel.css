@@ -48,11 +48,20 @@
         transform: scaleX(-1);
       }
 
+      .members-carousel__button--left:active {
+        transform: rotate(-90deg);
+      }
+
+      .members-carousel__button--right:active {
+        transform: rotate(90deg);
+      }
+
       .members-carousel__additional-members {
         display: flex;
         gap: var(--horizontal-gap-carousel); /* 20px */
         width: 100%;
         justify-content: center;
+        align-items: end;
         flex-wrap: nowrap;
         min-height: 300px;
 
@@ -76,6 +85,11 @@
             font-size: 0.6875rem;
             margin: 0 auto;
             text-transform: uppercase;
+          }
+
+          /* Hide a system cursor */
+          .members-carousel__member-photo-from-onlyfans {
+            cursor: none;
           }
         }
 
@@ -103,6 +117,37 @@
           }
         }
       }
+    }
+
+    .important-fact {
+      display: none;
+      position: absolute;
+      background-color: rgba(100, 100, 100, 0.8);
+      padding: 5px;
+      border-radius: 15px;
+      pointer-events: none;
+      width: 200px;
+      text-align: center;
+      font-family: "Quantico", monospace, sans-serif;
+
+      .important-fact__line--one {
+        font-weight: bold;
+        color: yellow;
+      }
+
+      .important-fact__line--two {
+        margin-top: 10px;
+      }
+    }
+
+    .custom-cursor {
+      display: none; /* A custom cursor is invisible by default, JS decides when to show it*/
+      position: absolute; /* The cursor image should position ragardless other elements */
+      width: 42px;
+      height: 80px;
+      background-image: url("../img/index/clippy.png");
+      background-size: cover;
+      pointer-events: none; /* Ignore events of stantart cursor (like clicking?) — unless it doesn't work */
     }
 
     /* 1 person */

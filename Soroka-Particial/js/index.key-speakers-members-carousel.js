@@ -3,7 +3,8 @@ const slides = [
         <img
           class="members-carousel__member-photo-from-onlyfans"
           src="img/index/additional-speaker-my-ex.png"
-          alt="My ex"/>
+          alt="My ex"
+          stupid-joke="Clippy AI Fact | Today is a good day to get scared of asking her out again"/>
         <h3 class="members-carousel__member-name">Jane Twine</h3>
         <p class="members-carousel__member-role">Marketing Director</p>
     </div>`,
@@ -12,7 +13,8 @@ const slides = [
         <img
           class="members-carousel__member-photo-from-onlyfans"
           src="img/index/additional-speaker-washing-powder.png"
-          alt="Paul washing powder"/>
+          alt="Paul washing powder"
+          stupid-joke="Clippy AI Fact | According to the surname he is a washing powder"/>
         <h3 class="members-carousel__member-name">Paul Tide</h3>
         <p class="members-carousel__member-role">Chief technology officer</p>
     </div>`,
@@ -20,7 +22,8 @@ const slides = [
         <img
           class="members-carousel__member-photo-from-onlyfans"
           src="img/index/additional-speaker-i-have-no-chances-with.png"
-          alt="Blonde that I have no chances with"/>
+          alt="Blonde that I have no chances with"
+          stupid-joke="Clippy AI Fact | You are a pretty cake but let's be optimistic, you have no chances with her"/>
         <h3 class="members-carousel__member-name">Lucy Smith</h3>
         <p class="members-carousel__member-role">Human relations expert</p>
     </div>`,
@@ -28,7 +31,8 @@ const slides = [
         <img
           class="members-carousel__member-photo-from-onlyfans"
           src="img/index/additional-speaker-prost-lol.png"
-          alt="Dean. Prosto Dean"/>
+          alt="Dean. Prosto Dean"
+          stupid-joke="Clippy AI Fact | This guy is so cool so that he doesn't need a surname. It's Dean. Prosto Dean"/>
         <h3 class="members-carousel__member-name">Dean Prost</h3>
         <p class="members-carousel__member-role">AI engineer</p>
     </div>`,
@@ -36,7 +40,8 @@ const slides = [
         <img
           class="members-carousel__member-photo-from-onlyfans"
           src="img/index/additional-speaker-not-so-well.png"
-          alt="Samantha not-so-WELL-as-she-thinks"/>
+          alt="Samantha not-so-WELL-as-she-thinks"
+          stupid-joke="Clippy AI Fact | Samantha Well is not so well, because of her glasses at least — eyes work poor"/>
         <h3 class="members-carousel__member-name">Samantha Well</h3>
         <p class="members-carousel__member-role">Data analyst</p>
     </div>`,
