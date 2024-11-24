@@ -23,10 +23,10 @@
     color: rgb(21, 20, 25)
 }
 .text-highlight--pink {
-    color: var(--text-color-pink);
+    color: var(--prices-color-pink);
 }
 .text-highlight--blue {
-    color: var(--text-color-blue);
+    color: var(--prices-color-blue);
 }
 p.ticket-options__text {
     margin-top: 25px;
@@ -46,22 +46,38 @@ p.ticket-options__text {
     max-height: 500px;
     overflow: hidden;
 }
-.carousel {
-    display: flex;
-    flex-direction: row;
-}
-.carousel__arrow-control {
-  display: flex;
-  align-items: center;
-  justify-self: center;
-  background-color: #000;
-}
 .carousel__slides {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     gap: 30px;
+    height: 100%;
+}
+.carousel__arrow-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px 0 15px;
+}
+.carousel__arrow-control {
+    all: unset;
+    height: 100%;
+  }  
+.carousel__arrow-control--next {
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;     
+    width: 30px;
+    height: 30px;  
+}
+.carousel__arrow-control--prev {
+    position: absolute;
+    cursor: pointer;
+    transform: rotate(180deg); 
+    z-index: 10;     
+    width: 30px;
+    height: 30px;  
 }
 .ticket {
     padding: 30px 40px 30px 40px;
@@ -96,7 +112,7 @@ p.ticket-options__text {
 }
 .ticket__description {
     margin-top: 20px;
-    color: rgba(34, 32, 48, 0.7);
+    color: var(--prices-text-small-opacity);
     font-family: Comme, sans-serif;
     font-size: 17px;
     font-weight: 400;
@@ -115,7 +131,7 @@ p.ticket-options__text {
     font-size: 14px;
     line-height: 25.5px;
     font-weight: 400;
-    color: rgba(34, 32, 48, 0.6);
+    color: var(--prices-text-small-opacity);
     font-family: Comme, sans-serif;
 }
 .ticket__option {
@@ -137,16 +153,16 @@ p.ticket-options__text {
     background-color: #000
 }
 .ticket--one-day {
-    background-color: rgb(114, 240, 225);
+    background-color: var(--prices-color-slide1);
 }
 .ticket--full-pass {
-    background-color: rgb(254, 117, 191);
+    background-color: var(--prices-color-slide2);
 }
 .ticket--early-bird {
-    background-color: rgb(251, 225, 89);
+    background-color: var(--prices-color-slide3);
 }
 .ticket--one-day-early {
-    background-color: rgb(226, 255, 116);
+    background-color: var(--prices-color-slide4);
 }
 @media (max-width: 320px) {
     .ticket {
