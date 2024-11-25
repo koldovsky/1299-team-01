@@ -63,15 +63,3 @@
         </div>  
     </div>
 </section>
-<script>
-    function toggleAccordion(event) {
-    const icon = event.target;
-    const faqItem = icon.closest('.faq__item');
-    const content = faqItem.nextElementSibling;
-
-    icon.classList.toggle('open');
-    content.classList.toggle('open');
-
-    icon.textContent = icon.textContent === '+' ? '-' : '+';
-}
-  </script>
