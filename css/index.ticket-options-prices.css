@@ -34,48 +34,22 @@ p.ticket-options__text {
     color: var(--sub-text-color);
     font-weight: 500;
 }
-.carousel__container {
-    display: flex;
-    margin: 50px auto; 
-    max-height: 500px;
-    max-width: 1170px;
-    overflow: hidden;
-    transition: transform 0.5s ease-in-out;
+.carousel {
+    position: relative;
+    margin: 50px auto;
+    overflow: hidden;    
+    max-width: 1200px;
+    max-height: 450px;
 }
 .carousel__slides {
+    width: 100%;
     display: flex;
-    align-items: stretch;
-    justify-content: center;
-    align-items: center;
     gap: 30px;
+    transition: transform 0.5s ease;
 }
-.carousel__arrow-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.carousel__arrow-control {
-    all: unset;
-    height: 100%;
-    position: absolute;
-    cursor: pointer;
-    transform: translateY(-50%);
-    z-index: 10;     
-    width: 30px;
-    height: 30px;
-  }  
-.carousel__arrow-control--next {
-    right: 50px;
-}
-.carousel__arrow-control--prev {
-    transform: rotate(180deg);  
-    left: 50px;  
-}
-.ticket {
-    flex: 1;
+.carousel .ticket {
+    min-width: 33.33%; 
     padding: 30px 40px 30px 40px;
-    align-items: stretch;
-    overflow: hidden;
     text-align: left;  
 }
 .ticket__text--small {
@@ -147,14 +121,30 @@ p.ticket-options__text {
 .ticket--one-day {
     background-color: var(--prices-color-slide1);
 }
-.ticket--full-pass {
+.ticket--fullpass {
     background-color: var(--prices-color-slide2);
 }
-.ticket--early-bird {
+.ticket--earlybird {
     background-color: var(--prices-color-slide3);
 }
 .ticket--one-day-early {
     background-color: var(--prices-color-slide4);
+}
+.carousel .carousel__arrow-control {
+    all: unset;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-25%);   
+    width: 30px;
+    height: 30px;
+  }  
+.carousel .carousel__arrow-control--next {
+    right: 20px;
+}
+.carousel .carousel__arrow-control--prev {
+    transform: rotate(180deg);  
+    left: 20px; 
 }
 @media (max-width: 320px) {
     .ticket {
