@@ -43,7 +43,6 @@ about-conference__inner {
     font-family: "Albert Sans", sans-serif;
     color: var(--prices-ticket-bt);
     font-weight: 700;
-    text-align: left;
     line-height: 55.2px;
     font-size: var(--h2-font-size);
 }
