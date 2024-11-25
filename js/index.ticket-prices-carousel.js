@@ -1,3 +1,5 @@
+// ще в процесі редагування та підлаштування 
+
 const carousel = document.querySelector('.carousel');
 const carouselInner = carousel.querySelector('.carousel__slides');
 const prevButton = carousel.querySelector('.carousel__arrow-control--prev');

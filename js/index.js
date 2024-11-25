@@ -3,7 +3,7 @@ function init() {
   import("./index.key-speakers-members-carousel-clippy.js");
   import("./index.key-speakers-members.js");
   import("./index.ticket-prices-carousel.js");
-  import("./index.about-conference.js");
+  import("./index.about-conference-accordion.js");
 }
 
 const totalPartials = document.querySelectorAll(

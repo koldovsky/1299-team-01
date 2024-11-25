@@ -12,7 +12,6 @@ about-conference__inner {
     flex-wrap: wrap;
     gap: 20px;
     flex-direction: row;
-    align-items: center;
     margin-left: -40px;
     margin-right: -40px;
     
@@ -44,6 +43,7 @@ about-conference__inner {
     font-family: "Albert Sans", sans-serif;
     color: var(--prices-ticket-bt);
     font-weight: 700;
+    text-align: left;
     line-height: 55.2px;
     font-size: var(--h2-font-size);
 }
@@ -75,7 +75,7 @@ about-conference__faq {
     background-color: rgba(30, 29, 42, 1);
     display: flex;
     justify-content: center;
-    padding: 60px 80px 60px 80px !important;
+    padding: 60px 80px 60px 80px;
     width: 100%;
     flex-direction: column;
     justify-content: center;
@@ -90,11 +90,11 @@ about-conference__faq {
     font-weight: 600;
     color: var(--prices-ticket-bt);
 }
-.contact-form__input {
+.contact-form--input {
     width: 100%;
     margin-top: 32px;
     margin-bottom: 24px;
-    padding: 21px 38px 21px 38px !important;
+    padding: 21px 38px 21px 38px;
     background-color: rgba(255, 255, 255, 0.02);
     cursor: text;
     font-size: 18px;
@@ -116,7 +116,7 @@ about-conference__faq {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 21px 39px 21px 38px !important;
+    padding: 21px 39px 21px 38px;
     border: none;
     cursor: pointer;
     font-weight: 700;
