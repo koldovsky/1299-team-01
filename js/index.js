@@ -1,6 +1,5 @@
 function init() {
-  import("./index.key-speakers-members-carousel.js");
-  import("./index.key-speakers-members-carousel-clippy.js");
+  import("./index.key-speakers-members-carousel-with-clippy.js");
   import("./index.key-speakers-members.js");
   import("./index.ticket-prices-carousel.js");
   import("./index.about-conference-accordion.js");
