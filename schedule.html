@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schedule</title>
+    <link rel="shortcut icon" href="img/index/favicon.png" type="image/x-icon" />
+    <script src="https://unpkg.com/htmx.org@1.9.10"
+        integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/global.footer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/schedule-header.css">
+</head>
+<body>
+    <header>
+        <nav 
+        data-hx-trigger="load" 
+        data-hx-swap="outerHTML" 
+        data-hx-get="global.header-nav.partial.html"
+        ></nav>
+        <div
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="schedule.header-title.html"
+    ></div>
+    </header>
+    <main>
+
+    </main>
+    <footer data-hx-get="global.footer.partial.html" data-hx-trigger="load"></footer>
+</body>
+
+</html>

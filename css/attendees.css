@@ -1,0 +1,131 @@
+/* Загальні стилі */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    box-sizing: border-box;
+  }
+  
+  section.attendees {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    padding: 2rem;
+    align-items: start;
+  }
+
+  .attendees__picture--book {
+    display: flex;
+    height: 439p;
+    position: relative;
+  }
+  
+  .attendees__picture--maker-space {
+    gap: 30px;
+    display: block;
+    justify-content: right;
+  }
+
+ .attendees__picture--project {
+    position: relative;
+    width: 50%;
+    height: 439px;
+    
+  }
+   
+.container-first-attendees__pictures {
+  align-items: center;
+  display: flex;
+}
+
+  .attendees__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  
+  .attendees__description--left {
+    grid-column: span 2;
+  }
+  
+  .attendees__subtitle {
+    font-size: 1rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0;
+  }
+  
+  .attendees__title {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.4;
+    color: #333;
+    margin: 0 0 1rem;
+  }
+  
+  .attendees__highlight {
+    color: #00cec9;
+  }
+  
+  .attendees__list-right,
+  .attendees__list-left {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .attendees__item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+  
+  .attendees__number {
+    font-weight: bold;
+    color: #ff4757;
+    margin-right: 0.5rem;
+    font-size: 1.25rem;
+  }
+
+  /* Зображення презентації */
+  .attendees__picture--project {
+    grid-column: span 2;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .attendees__picture--project img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Адаптивність */
+  @media (max-width: 1024px) {
+    section.attendees {
+      grid-template-columns: 1fr;
+    }
+  
+    .attendees__picture--project {
+      grid-column: span 1;
+    }
+  
+    .attendees__description--left {
+      grid-column: span 1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .attendees__title {
+      font-size: 1.5rem;
+    }
+  
+    .attendees__subtitle {
+      font-size: 0.875rem;
+    }
+  }
+  
