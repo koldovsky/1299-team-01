@@ -1,0 +1,67 @@
+@import url(fonts.css);
+@import url(index.css);
+.buy-ticket {
+    background-color: #151419;
+    gap: 70px;
+}
+
+.buy-ticket__subtitles {
+    color: #F5DC58;
+    font-size: 16px;
+    font-family: "Comme", sans-serif;
+    font-weight: 300;
+    
+}
+
+.zagolovok {
+    font-weight: 700;
+    font-size: 80px;
+    color: #ffffff;
+    margin-top: 20px;
+    font-family: "Albert Sans", serif; 
+}
+
+.chance {
+    color: #72F0E1;
+}
+
+.punkt {
+    color: #FF1392;
+
+}
+
+.buy-ticket__discription {
+    color: #B6B5B7;
+    font-size: 17px;
+    font-family: "Comme", sans-serif;
+    font-weight: 300;
+}
+
+.price-ticket {
+    color: #FF1392;
+    height: 96px;
+}
+
+.buy-a-ticket {
+    border: none;
+    background-color: #fbe159;
+    color: #222030;
+    cursor: pointer;
+    height: 50px;
+    font-size: 14px;
+    font-family: "Comme", sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+  
+.buy-a-ticket:hover {
+    background-color: #fe75bf;
+  }
+
+.early-bird {
+    font-weight: 700;
+    font-size: 26px;
+    color: #ffffff;
+    margin-top: 20px;
+    font-family: "Albert Sans", sans-serif; 
+}
