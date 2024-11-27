@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 
   /* outline: 1px solid red; */
 }
@@ -47,5 +48,5 @@ img {
     --h2-font-size: 48px;
     --ac-block-font-size: 19px;
     --ac-text-color-072: var(--text-color);
-    
+    --button-text-color: rgb(34, 32, 48);
 }
