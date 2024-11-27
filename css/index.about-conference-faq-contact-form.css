@@ -1,5 +1,5 @@
 .about-conference {
-    background: url('.../img/index/background-about.png') no-repeat center center;
+    background: url('../img/index/background-about.png') no-repeat center center;
     max-height: 980px;  
     background-size: cover; 
 }
