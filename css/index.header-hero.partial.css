@@ -1,1 +1,100 @@
-/* */
+.hero {
+  --responsive-coefficient: 1;
+
+  font-family: "Albert Sans", sans-serif;
+  font-size: calc(1rem * var(--responsive-coefficient));
+  color: var(--h3-color);
+
+  background-image: url("../img/index/cover-hero.png");
+  background-size: cover;
+
+  padding-top: 90px;
+  padding-bottom: 80px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  .hero__header {
+    color: var(--highlight-color2);
+    text-transform: uppercase;
+    font-family: "Anonymous Pro", monospace;
+    font-size: calc(0.6875rem * var(--responsive-coefficient));
+  }
+
+  .hero__main-thought {
+    margin-top: calc(20px * var(--responsive-coefficient));
+    font-size: calc(2.375rem * var(--responsive-coefficient));
+    font-weight: 600;
+    text-align: left;
+    overflow-wrap: break-word;
+    line-height: 1;
+
+    span.hero__accent-color-one {
+      color: var(--highlight-color1);
+    }
+
+    span.hero__accent-color-two {
+      color: var(--highlight-color3);
+    }
+  }
+
+  .hero__description {
+    margin-top: calc(45px * var(--responsive-coefficient));
+    font-size: calc(1.1875rem * var(--responsive-coefficient));
+
+    span.hero__accent-color {
+      color: var(--highlight-color2);
+    }
+  }
+
+  .hero__noodle-about-partners {
+    margin-top: calc(25px * var(--responsive-coefficient));
+    font-size: calc(0.875rem * var(--responsive-coefficient));
+    color: rgb(183, 181, 203);
+    text-decoration: underline;
+  }
+
+  .hero__partners-logos {
+    margin-top: calc(20px * var(--responsive-coefficient));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 12px;
+
+    .hero__partners-logo-container {
+      width: calc(138px * var(--responsive-coefficient));
+      height: calc(78px * var(--responsive-coefficient));
+      display: flex;
+      align-items: center;
+      justify-items: center;
+
+      svg.hero__partner-logo {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .hero__buy-ticket {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    font-family: Comme, sans-serif;
+    gap: 10px;
+
+    button.hero__buy-ticket-button {
+        text-align: center;
+        width: 158px;
+        height: 56px;
+        color: var(--button-text-color);
+        background-color: var(--highlight-color2);
+        font-size: 0.875rem;
+        font-weight: 700;
+    }
+
+    .hero__buy-ticket-discover-schedule {
+        font-size: 0.9425rem;
+        font-style: italic;
+        color: var(--highlight-color2);
+    }
+  }
+}
