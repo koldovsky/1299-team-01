@@ -12,6 +12,7 @@
         transform-origin: center;
         margin: 0;
         align-items: center;
+        width: 100%;
     }
 
     .background__key-speakers {
@@ -19,6 +20,7 @@
         padding: 20px;
         position: relative;
         overflow: hidden;
+        margin-top: -1px;
     }
     .key-speakers__image {
         display: block;
