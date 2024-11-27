@@ -77,8 +77,8 @@
 }
 .photo-carousel__arrow-control--prev {
     transform: rotate(180deg);
-    margin-right: 20px;
+    margin-right: 15px;
 }
 .photo-carousel__arrow-control--next {
-    margin-left: 20px; 
+    margin-left: 15px; 
 }

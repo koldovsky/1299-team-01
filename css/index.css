@@ -2,11 +2,11 @@
 @import "global.css";
 @import "global.header.css";
 @import "global.header-nav.partial.css";
+@import "global.invitation-event.css";
+@import "global.schedule-contacts.css";
 @import "index.header-hero.partial.css";
 @import "index.about-conference-accordion.css";
 @import "index.about-conference-faq-contact-form.css";
-@import "index.invitation-event.css";
-@import "index.schedule-contacts.css";
 @import "index.key-topics.css";
 @import "index.key-speakers-top.css";
 @import "index.key-speakers-members.css";
