@@ -1,10 +1,12 @@
 .about-conference {
-    background-color: rgba(41, 39, 52, 1);
-    padding: 220px 15px 175px 15px;   
-    max-height: 965px;   
+    background: url('/img/index/background-about.png') no-repeat center center;
+    max-height: 980px;  
+    background-size: cover; 
 }
+
 .about-conference__container {
     display: flex; 
+    padding: 220px 15px 175px 15px;
     max-width: 1300px;
     margin: auto; 
 }
