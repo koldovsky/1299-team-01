@@ -1,0 +1,416 @@
+.features-should-visit-techcon {
+    --background-color: #151419;
+    --h2-h3-color: #ffffff;
+    --text-color: #bdbdbf;
+    --highlight-color2: #fbe159;
+    --highlight-color3: #ff1392;
+    --highlight-color4: #72f0e1;
+    --icon-background: #222030;
+    
+    /* background*/
+    .background__features {
+        background-image: url('/img/about/header-background4.png');
+        overflow: hidden;
+        margin-top: -1px;
+        margin-bottom: 1;
+        margin: 0%;
+        align-items: start;
+    }
+    .roof-top-background {
+        background-image: url('/img/about/header-background4.png');
+        transform: scaleY(-1);
+        transform-origin: center;
+        margin: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    .roof-bottom-background {
+        background-image: url('/img/about/header-background4.png');
+        transform: scaleX(-1);
+        transform-origin: center;
+        margin: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    /*card*/
+    .features__container {
+        height: auto;
+        width: auto;
+        top: 60px;
+        left: calc(50% - 300px);
+        display: flex;
+        margin-left: 1.7%;
+        margin-top: 3%;
+    }
+
+    .card__features-inspiration {
+        display: flex;
+        height: 350px;
+        width: 450px;
+        min-width: 180px;
+        background-color: #fbe159;
+        border-radius: 10px;
+        box-shadow: 2px 0 3rem #000;
+        transition: 3s ease-out;
+        position: relative;
+        left: 0px;
+        margin-bottom: 3%;
+    }
+
+    .card__features-inspiration:not(:first-child) {
+        margin-left: -120px;
+    }
+
+    .card__features-inspiration:hover {
+        transform: translateY(-320px);
+        transition: 0.4s ease-out;
+    }
+
+    .card__features-inspiration:hover~.card__features-inspiration {
+        position: relative;
+        left: 50px;
+        transition: 0.4s ease-out;
+    }
+
+    .card__features-community {
+        display: flex;
+        height: 350px;
+        width: 450px;
+        min-width: 180px;
+        background-color: #fe75bf;
+        border-radius: 10px;
+        box-shadow: 2px 0 3rem #000;
+        transition: 3s ease-out;
+        position: relative;
+        left: 0px;
+        margin-bottom: 3%;
+    }
+
+    .card__features-community:not(:first-child) {
+        margin-left: -120px;
+    }
+
+    .card__features-community:hover {
+        transform: translateY(-320px);
+        transition: 0.4s ease-out;
+    }
+
+    .card__features-community:hover~.card__features-community {
+        position: relative;
+        left: 50px;
+        transition: 0.4s ease-out;
+    }
+
+    .card__features-encouragement {
+        display: flex;
+        height: 350px;
+        width: 450px;
+        min-width: 210px;
+        background-color: #e2ff74;
+        border-radius: 10px;
+        box-shadow: 2px 0 3rem #000;
+        transition: 3s ease-out;
+        position: relative;
+        left: 0px;
+        margin-bottom: 3%;
+    }
+
+    .card__features-encouragement:not(:first-child) {
+        margin-left: -120px;
+    }
+
+    .card__features-encouragement:hover {
+        transform: translateY(-320px)translateX(-50%);
+        transition: 0.4s ease-out;
+    }
+
+    .card__features-encouragement:hover~.card__features-encouragement {
+        position: relative;
+        left: 50px;
+        transition: 0.4s ease-out;
+    }
+
+    .card__features-challenge {
+        display: flex;
+        height: 350px;
+        width: 450px;
+        min-width: 180px;
+        background-color: #72f0e1;
+        box-shadow: 2px 0 3rem #000;
+        border-radius: 10px;
+        transition: 3s ease-out;
+        position: relative;
+        left: 0px;
+        margin-bottom: 3%;
+    }
+
+    .card__features-challenge:not(:first-child) {
+        margin-left: -120px;
+    }
+
+    .card__features-challenge:hover {
+        transform: translateY(-320px);
+
+        transition: 0.4s ease-out;
+    }
+
+    .card__features-challenge:hover~.card__features-challenge {
+        position: relative;
+        left: 50px;
+        transition: 0.4s ease-out;
+    }
+
+    /**/
+    /*text*/
+    .title-features {
+        color: var(--highlight-color4);
+        font-family: 'Anonymous Pro', monospace;
+        font-size: 11px;
+        display: flex;
+        align-items: flex-start;
+        margin-left: 4%;
+    }
+
+    .bottom-title__features {
+        color: var(--h2-h3-color);
+        font-family: 'Comme', sans-serif;
+        font-size: 48px;
+        margin-left: 4%;
+    }
+
+    .dot {
+        color: var(--highlight-color3);
+        font-size: 48px;
+    }
+
+    .highlight {
+        color: var(--highlight-color2);
+        font-size: 48px;
+    }
+
+    .price {
+        color: var(--highlight-color3);
+        font-family: 'Comme', sans-serif;
+        font-size: 21px;
+    }
+
+    .early_bird_ticket_text {
+        color: var(--h2-h3-color);
+        font-family: 'Comme', sans-serif;
+        font-weight: 500;
+        font-size: 21px;
+        margin-left: 4%;
+    }
+
+    .early_bird_ticket_dottom_text {
+        color: var(--text-color);
+        font-family: 'Comme', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        margin-left: 4%;
+    }
+
+    .features__title {
+        font-family: "Albert Sans", sans-serif;
+        font-size: 26px;
+        font-weight: 600;
+        margin: 5%;
+    }
+
+    .features__description {
+        margin-left: 5%;
+        font-family: 'comme', sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+        color: var(--text-color);
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    .features__learn-more {
+        color: black;
+        font-family: "Anonymous Pro", monospace;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 5%;
+    }
+
+
+    /**/
+    /*icon*/
+
+    .early_bird_ticket_icon {
+        display: block;
+        width: 100%;
+        max-width: 70px;
+        align-items: right;
+        display: flex;
+        flex-direction: end;
+        margin-left: 5%;
+    }
+
+    .features__icon_inspiration {
+        background-color: #ead14d;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+
+    .features__icon_community {
+        background-color: #f067b1;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+
+    .features__icon_challenge {
+        background-color: #6ce2d4;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+
+    .features__icon_encouragement {
+        background-color: #d4f067;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+
+
+    /**/
+    /*position*/
+    .features__early-bird {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    /**/
+    @media (min-width: 465px) {
+        .card__features-community:not(:first-child) {
+            margin-left: -100px;
+        }
+
+        .card__features-encouragement:not(:first-child) {
+            margin-left: -100px;
+        }
+
+        .card__features-challenge:not(:first-child) {
+            margin-left: -100px;
+        }
+
+        .card__features-inspiration:not(:first-child) {
+            margin-left: -100px;
+        }
+    }
+
+    @media (min-width: 800px) {
+        .card__features-community:not(:first-child) {
+            margin-left: -50px;
+        }
+
+        .card__features-encouragement:not(:first-child) {
+            margin-left: -50px;
+        }
+
+        .card__features-challenge:not(:first-child) {
+            margin-left: -50px;
+        }
+
+        .card__features-inspiration:not(:first-child) {
+            margin-left: -50px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .features__icon_inspiration {
+            background-color: #ead14d;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 15%;
+            margin-top: 5%;
+            margin-right: 10%
+        }
+
+        .features__icon_community {
+            background-color: #f067b1;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 15%;
+            margin-top: 5%;
+            margin-right: 10%
+        }
+
+        .features__icon_challenge {
+            background-color: #6ce2d4;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 15%;
+            margin-top: 5%;
+            margin-right: 10%
+        }
+
+        .features__icon_encouragement {
+            background-color: #d4f067;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 15%;
+            margin-top: 5%;
+            margin-right: 10%;
+        }
+        .features__container {
+            height: auto;
+            width: auto;
+            top: 60px;
+            left: calc(50% - 300px);
+            display: flex;
+            margin-left: 6%;
+            margin-top: 10%;
+        }
+    }
+
+    @media(min-width: 400px) {
+        .card__features-encouragement:hover {
+            transform: translateY(-320px);
+            transition: 0.4s ease-out;
+        }
+    }
+}
