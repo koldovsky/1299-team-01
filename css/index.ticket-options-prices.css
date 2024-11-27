@@ -41,6 +41,7 @@ p.ticket-options__text {
 }
 .carousel__container {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     max-height: 450px;
@@ -139,15 +140,25 @@ p.ticket-options__text {
     z-index: 10;
     all: unset;
     cursor: pointer;
-    width: 35px;
-    height: 35px;
+    width: clamp(30px, 3vw, 35px);
+    height: clamp(30px, 3vw, 35px);
+    position: absolute;
 }  
+.arrow-svg {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: clamp(15px, 3vw, 25px);
+    height: clamp(15px, 3vw, 25px);
+}
 .carousel__arrow-control--prev {
     transform: rotate(180deg);  
-    margin-right: 20px;
+    left: -50px;
+   
 }
 .carousel__arrow-control--next {
-    margin-left: 20px;
+    right: -50px;
+    
 }
 @media (max-width: 320px) {
     .ticket {
@@ -176,4 +187,21 @@ p.ticket-options__text {
     .carousel-container {
         width: 100%;
     }  
+}
+@media (max-width: 1200px) {
+    .carousel__arrow-control {
+        border-radius: 50%;
+        background-color: rgb(21, 20, 25);
+        opacity: 0.85;
+        transition: opacity .2s ease-out;
+        }
+    .arrow-svg {
+        fill: rgb(255, 255, 255);
+    } 
+    .carousel__arrow-control--next {
+        right: -30px;
+    }
+    .carousel__arrow-control--prev { 
+        left: -30px;
+    }
 }

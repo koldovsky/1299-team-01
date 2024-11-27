@@ -72,7 +72,6 @@ const slides = [
         
     }
     
-
     function nextSlide() {
         currIdx = currIdx + 1 >= slides.length ? 0 : currIdx + 1;
         renderCarousel();
