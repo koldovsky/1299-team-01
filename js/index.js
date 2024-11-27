@@ -4,7 +4,6 @@ function init() {
   import("./index.ticket-prices-carousel.js");
   import("./index.about-conference-accordion.js");
   import("./global.invitation-carousel.js");
-  import("./index.invitation-carousel.js");
   import("./index.expectations-countdown.js");
 }
 
