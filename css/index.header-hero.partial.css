@@ -80,21 +80,45 @@
     align-items: left;
     font-family: Comme, sans-serif;
     gap: 10px;
+    margin-top: 50px;
 
     button.hero__buy-ticket-button {
-        text-align: center;
-        width: 158px;
-        height: 56px;
-        color: var(--button-text-color);
-        background-color: var(--highlight-color2);
-        font-size: 0.875rem;
-        font-weight: 700;
+      text-align: center;
+      width: 158px;
+      height: 56px;
+      color: var(--button-text-color);
+      background-color: var(--highlight-color2);
+      font-size: 0.875rem;
+      font-weight: 700;
     }
 
     .hero__buy-ticket-discover-schedule {
-        font-size: 0.9425rem;
-        font-style: italic;
-        color: var(--highlight-color2);
+      font-size: 0.9425rem;
+      font-style: italic;
+      color: var(--highlight-color2);
+    }
+  }
+
+  .hero__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 80px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: var(--highlight-color2);
+
+    font-family: "Anonymous Pro", monospace;
+    font-size: calc(0.6875rem * var(--responsive-coefficient));
+
+    .hero__footer-socials {
+      display: flex;
+      gap: 10px;
+    }
+
+    .hero__footer-arrow {
+      color: var(--highlight-color3);
+      width: 50px;
     }
   }
 }
