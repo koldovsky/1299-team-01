@@ -1,0 +1,95 @@
+.event-schedule-contacts {
+    display: flex;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 30px 0 10px 0;
+    max-width: 1200px;
+    margin: 20px auto;
+    font-family: Comme, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 26.6px;
+    gap: 20px;
+}
+.event__info {
+    display: flex;
+}
+.event__info--one {
+    flex-direction: column;
+    max-width: 600px;
+}
+.event__info--two {
+    display: flex;
+    flex: 1;
+}
+.event-contacts__inner {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+}
+.schedule__name {
+    color: rgba(255, 255, 255, 1);
+    font-family: "Albert Sans", sans-serif;
+    font-size: clamp(22px, 4vw, 26px);
+    font-weight: 600;
+    line-height: 31.2px;
+}
+.schedule__text {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Comme, sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 26.6px;
+}
+.schedule__text--in {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Comme, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 26.6px;
+}
+.event-contacts__item {
+    display: flex; 
+    padding: 7.5px 0 7.5px 0;
+}
+.contacts__info {
+    margin: 7.5px;
+}
+.contacts__picture {
+    display: flex;
+    padding: 15px;
+    height: 70px;
+    width: 70px; 
+    border-radius: 50%;
+    background-color: rgb(34, 32, 48);
+}
+.contacts--icon {
+   color: rgb(255, 255, 255);
+   height: 40px;
+   width: 40px 
+}
+.contacts__text {
+    color: rgb(251, 225, 89);
+    font-family: "Anonymous Pro", monospace;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: 2.2px;
+    line-height: 14.3px;
+}
+.contacts__date, .contacts__link {
+    color: rgba(255,255,255,0.72);
+    font-family: Comme, sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    line-height: 25.5px;
+    font-weight: 400;
+    text-decoration: none;
+}
+@media (max-width: 1200px) {
+    .event-schedule-contacts {
+     flex-direction: column;
+    }
+}

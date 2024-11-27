@@ -1,6 +1,4 @@
 .about-conference__faq {
-    display: block;
-    position: relative;
     width: 100%;
 }
 .faq__container {
@@ -16,7 +14,7 @@
     align-items: center;
     justify-content: space-between;
     font-family: "Albert Sans", sans-serif;
-    font-size: 26px;
+    font-size: clamp(22px, 4vw, 26px);
     color: var(--prices-ticket-bt);
     font-weight: 600;
     line-height: 31.2px;

@@ -1,7 +1,7 @@
 .invitation {
-    display: flex;
-    flex-direction: column;
+    position: relative;
     background-color: var(--background-color);
+    padding: 165px 15px 30px 15px;
     max-width: 100%;
 }
 .invitation__container {
@@ -9,10 +9,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 165px 15px 30px 15px;
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
-    height: 577px;
+    max-height: 577px;
 }
 .invitation__header {
     padding: 0 15px 0 15px;
@@ -20,10 +19,10 @@
 .invitation__title {
     text-align: center;
     font-family: "Albert Sans", sans-serif;
-    font-size: var(--h2-font-size);
+    font-size: clamp(34px, 4vw, 48px);
     color: var(--h3-color);
     font-weight: 700;
-    line-height: 55.2px;
+    line-height: clamp(39px, 4vw, 55.2px);
 }
 .invitation__title--yellow {
     color: var(--highlight-color2);
@@ -42,15 +41,44 @@
     font-family: "Albert Sans", sans-serif;
     color: var(--h3-color);
 }
+.invitation__cta--link {
+    color: var(--highlight-color3);
+}
 .photo-carousel {
-    margin-top: 50px;
+    margin: 30px auto;
     display: flex;
-    flex-direction: row;
+    width: 1300px;
+}
+.photo-carousel__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 260px;
+    width: 100%;
 }
 .photo-carousel__slides {
     display: flex;
-    flex-direction: row;
+    width: 100%;
 }
 .photo-carousel__slide {
     padding: 0 15px 0 15px;
+    white-space: nowrap;
+}
+.photo-carousel__arrow-control {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    fill: rgb(255, 255, 255);
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+}
+.photo-carousel__arrow-control--prev {
+    transform: rotate(180deg);
+    margin-right: 20px;
+}
+.photo-carousel__arrow-control--next {
+    margin-left: 20px; 
 }
