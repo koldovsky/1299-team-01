@@ -88,6 +88,11 @@
     font-weight: 400;
     text-decoration: none;
 }
+.decor__line {
+    display: flex;
+    max-width: 1300px;
+    margin: auto;
+}
 @media (max-width: 1200px) {
     .event-schedule-contacts {
      flex-direction: column;
