@@ -9,7 +9,7 @@
   background-size: cover;
 
   padding-top: 90px;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
   padding-left: 15px;
   padding-right: 15px;
 
@@ -130,9 +130,15 @@
         gap: 10px;
       }
 
-      .hero__footer-arrow {
-        color: var(--highlight-color3);
-        width: 50px;
+      .hero__footer-more-speakers-arrow {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .hero__footer-arrow {
+          color: var(--highlight-color3);
+          width: 50px;
+        }
       }
     }
   }
@@ -153,8 +159,21 @@
 
     background-position: 30% 50%;
 
-    .hero__description {
-      max-width: 465px;
+    .hero__container {
+      .hero__description {
+        max-width: 465px;
+      }
+
+      .hero__footer {
+        margin-top: 0px;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 60%;
+
+        .hero__footer-socials {
+          align-items: flex-end;
+        }
+      }
     }
   }
 }
