@@ -104,12 +104,27 @@
         background-color: var(--highlight-color2);
         font-size: 0.875rem;
         font-weight: 700;
+        border: 0px;
+
+        transition-property: background-color;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in;
+      }
+
+      button.hero__buy-ticket-button:hover {
+        background-color: var(--prices-color-slide2);
+        cursor: pointer;
       }
 
       .hero__buy-ticket-discover-schedule {
         font-size: 0.9425rem;
         font-style: italic;
         color: var(--highlight-color2);
+      }
+
+      .hero__buy-ticket-discover-schedule:hover {
+        text-decoration: underline;
+        cursor: pointer;
       }
     }
 
@@ -128,6 +143,10 @@
       .hero__footer-socials {
         display: flex;
         gap: 10px;
+        
+        a {
+          color: var(--highlight-color2);
+        }
       }
 
       .hero__footer-more-speakers-arrow {
@@ -138,6 +157,10 @@
         .hero__footer-arrow {
           color: var(--highlight-color3);
           width: 50px;
+        }
+
+        .hero__footer-more-speakers:hover {
+          cursor: pointer;
         }
       }
     }
@@ -150,6 +173,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    gap: 20px;
   }
 }
 
