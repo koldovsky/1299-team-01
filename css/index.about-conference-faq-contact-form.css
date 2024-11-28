@@ -1,29 +1,27 @@
 .about-conference {
-    background: url('../img/index/background-about.png') no-repeat center center;
-    max-height: 1070px;  
+    background: url('../img/index/background-about.png') no-repeat;
+    background-position: center; 
     background-size: cover; 
+    min-height: 970px;
 }
 
 .about-conference__container { 
     max-width: 1300px;
     padding: 220px 15px 175px 15px;
     margin: auto; 
-    max-height: 100%;
+    
 }
 .about-conference__content {
     display: flex;
     justify-content: center;
-    
     width: 100%;
-    max-height: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
-    gap: 50px;
+    height: 100%;
+    gap: 30px;
 }
 .about-conference__block {  
     display: flex;
+    padding: 0 40px 0 40px;
     max-height: 100%;
-    gap: 20px;
     flex-direction: column;
     flex: 1;
 }
@@ -31,18 +29,18 @@
     display: block;
     font-family: "Anonymous Pro", monospace;
     text-transform: uppercase;
-    font-size: var(--font-size-small11);
+    font-size: var(--font-size-small);
     color: var(--prices-color-blue);
     font-weight: 700;
 }
-.about-conference__answers {
+.about-conference__caption {
     margin-top: 20px;
     font-family: "Albert Sans", sans-serif;
     text-align: left;
     color: var(--prices-ticket-bt);
     font-weight: 700;
     line-height: clamp(39px, 4vw, 55.2px);
-    font-size: clamp(34px, 4vw, 48px);
+    font-size: clamp(2.125rem, 4vw, 3rem);
 }
 .text-highlight--yellow {
     color: var(--prices-color-slide3);
@@ -55,31 +53,30 @@
     font-family:  Comme, sans-serif;
     color: var(--prices-ticket-bt);
     font-size: var(--ac-block-font-size);
-    font-weight: 500;
+    font-weight: 700;
     line-height: 26.6px;
 }
 .about-conference__description {
     margin-top: 25px;
     font-family: Comme, sans-serif;
-    color: var(--ac-text-color-072);
-    font-size: 17px;
+    color: var(--ac-text-color);
+    font-size: var(--sch-in-font-size);
     line-height: 25.5px;
-}
-about-conference__faq {
-    margin-top: 20px;
+    font-weight: 500;
 }
 .contact-form {
-    background-color: rgba(30, 29, 42, 1);
+    background-color: var(--ac-form-color);
     display: flex;
     justify-content: center;
-    padding: clamp(39px, 4vw, 60px) clamp(47px, 4vw, 80px);
+    padding: clamp(40px, 4vw, 60px) clamp(50px, 4vw, 80px);
     flex-direction: column;
     text-align: center;
     box-shadow: none;
+    height: 100%;
 }
 .contact-form__legend {
     font-family: "Albert Sans", sans-serif;
-    font-size: 26px;
+    font-size: 1.625rem;
     line-height: 31px;
     font-weight: 600;
     color: var(--prices-ticket-bt);
@@ -88,36 +85,36 @@ about-conference__faq {
     width: 100%;
     margin-top: 32px;
     padding: 21px 38px 21px 38px;
-    background-color: rgba(255, 255, 255, 0.02);
+    background-color: var(--ac-form-back);
     cursor: text;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: Comme, cans-serif;
-    font-weight: 400;
+    font-weight: 600;
     border: none;
-    color: var(--h3-color);
+    color: var(--ac-form-back);
 }
 .contact-form__button {
     margin-top: 56px;
     padding: 21px 38px 21px 38px;
     width: 100%;
-    background-color: rgb(251, 225, 89);
+    border: none;
+    background-color: var(--highlight-color2);
     transition: background-color 0.5s;
 } 
 .contact-form__button:hover {
-    background-color: rgb(254, 117, 191);
+    background-color: var(--prices-color-slide2);
 }
 .contact-form__button--text {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 21px 39px 21px 38p;
     border: none;
     cursor: pointer;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 @media (max-width: 780px) {
-    .about-conference {
+    .about-conference__container {
         padding: 110px 0 115px 0; 
         max-height: 100%;
     }
@@ -133,5 +130,6 @@ about-conference__faq {
 @media (max-width: 1020px) {
     .about-conference__container {
         padding: 165px 0 135px 0;
+        max-height: 100%;
     }
 }

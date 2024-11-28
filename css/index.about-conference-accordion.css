@@ -1,7 +1,7 @@
 .about-conference__faq {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 .faq__container {
     display: flex;
@@ -9,7 +9,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     flex-direction: column;
-    border-bottom: 1px solid var(--ac-text-color-072);
+    border-bottom: 1px solid var(--ac-text-color);
 }
 .faq__item {
     display: flex;
@@ -20,8 +20,15 @@
     font-family: "Albert Sans", sans-serif;
     font-size: clamp(1.375rem, 2vw, 1.625rem);
     color: var(--prices-ticket-bt);
-    font-weight: 600;
+    font-weight: 700;
     line-height: 31.2px;
+}
+.faq__answer {
+    font-family: Comme, sans-serif;
+    color: var(--ac-text-color);
+    font-size: var(--sch-in-font-size);
+    line-height: 25.5px;
+    font-weight: 500;
 }
 .faq__icon {
     font-weight: 400;

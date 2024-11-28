@@ -38,15 +38,17 @@ img {
   --prices-text-title: var(--background-color);
   --prices-ticket-b-hover: rgb(0, 0, 0);
   --prices-text-small-opacity: rgba(35, 33, 49, 0.6);
-  --font-size-small: 0.6875rem;
   --prices-color-slide1: var(--highlight-color1);
-  --prices-color-slide2: #fe75bf;
+  --prices-color-slide2: rgb(254, 117, 191);
   --prices-color-slide3: var(--highlight-color2);
   --prices-color-slide4: var(--highlight-color4);
-  --h2-font-size: 48px;
+  --ac-text-color: var(--text-color);
+  --ac-form-color: rgba(30, 29, 42, 1);
+  --ac-form-back: rgba(255, 255, 255, 0.02);
+  --button-text-color: var(--background-color2);
+  --sch-name-text: rgba(255, 255, 255, 1);
+  --font-size-small: 0.6875rem;
+  --h2-font-size: 3rem;
   --ac-block-font-size: 1.1875rem;
   --sch-in-font-size: 1.0625rem;
-  --ac-text-color-072: var(--text-color);
-  --button-text-color: #222030;
-  --sch-name-text: rgba(255, 255, 255, 1);
 }
