@@ -2,6 +2,7 @@ function init() {
   import("./index.key-speakers-members-carousel-with-clippy.js");
   import("./index.key-speakers-members.js");
   import("./index.header-hero.js");
+  import("./index.header-hero-editable.js");
 }
 
 const totalPartials = document.querySelectorAll(

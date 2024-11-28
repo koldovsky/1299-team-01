@@ -89,6 +89,7 @@
     }
 
     .hero__buy-ticket {
+      position: relative;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -98,6 +99,9 @@
       margin-top: 50px;
 
       button.hero__buy-ticket-button {
+        position: relative; /* Кнопка остается на своем месте */
+        z-index: 2; /* Устанавливаем высокий z-index, чтобы она была над всплывающим изображением */
+        overflow: visible;
         text-align: center;
         width: 158px;
         height: 56px;
@@ -115,6 +119,31 @@
       button.hero__buy-ticket-button:hover {
         background-color: var(--prices-color-slide2);
         cursor: pointer;
+      }
+
+      .hero__buy-ticket-popup-image {
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        transform: translateX(0%, 0%);
+        width: 158px;
+        height: 162px;
+        background-image: url("../img/index/rick.png");
+        opacity: 0;
+        transition: transform 1.5s ease, opacity 0.3s ease;
+        z-index: 1;
+
+        background-size: contain; /* Вписывает изображение в размеры блока, сохраняя пропорции */
+        background-repeat: no-repeat; /* Запрещает повторение изображения */
+        background-position: center; /* Центрирует изображение внутри блока */
+
+        /* display: block; */
+        /* background-color: red; */
+      }
+
+      .hero__buy-ticket-button.active + .hero__buy-ticket-popup-image {
+        opacity: 1;
+        transform: translate(0%, -56px);
       }
 
       .hero__buy-ticket-discover-schedule {
@@ -144,7 +173,7 @@
       .hero__footer-socials {
         display: flex;
         gap: 10px;
-        
+
         a {
           color: var(--highlight-color2);
         }
