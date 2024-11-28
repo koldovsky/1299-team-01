@@ -45,17 +45,65 @@
       }
     }
 
-    .hero__description {
-      margin-top: 45px;
-      font-family: Comme, sans-serif;
-      font-size: 1.1875rem;
-      font-weight: 500;
-      max-width: 720px;
-      overflow-wrap: break-word;
+    .hero__description-edit-container {
+      position: relative;
+      display: inline-block;
 
-      span.hero__accent-color {
-        color: var(--highlight-color2);
+      .hero__description-wrapper {
+        position: relative; /* Для правильного позиционирования кнопки */
+
+        .hero__description {
+          margin-top: 45px;
+          font-family: Comme, sans-serif;
+          font-size: 1.1875rem;
+          font-weight: 500;
+          max-width: 720px;
+          overflow-wrap: break-word;
+
+          .hero__accent-color {
+            color: var(--highlight-color2)
+          }
+        }
+
+        .hero__description[contenteditable="true"] {
+          padding: 5px;
+          border: 1px dashed var(--highlight-color1);
+          background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .edit-button {
+          position: absolute;
+          top: -20px;
+          right: 0;
+          background-color: var(--highlight-color1);
+          border: 1px solid white;
+          border-radius: 25%;
+          padding: 5px;
+          font-size: 1rem;
+          visibility: hidden;
+          transition: opacity 0.3s ease;
+        }
       }
+
+      .hero__description-wrapper:hover {
+        .edit-button {
+          visibility: visible;
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .save-button {
+      position: absolute;
+      right: 0;
+      bottom: -20px;
+      background-color: var(--highlight-color1);
+      padding: 5px;
+      border: 1px solid black;
+      border-radius: 25%;
+      font-size: 1rem;
+      opacity: 0.8;
+      display: none;
     }
 
     .hero__noodle-about-partners {
