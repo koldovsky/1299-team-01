@@ -1,6 +1,7 @@
 function init() {
   import("./index.key-speakers-members-carousel-with-clippy.js");
   import("./index.key-speakers-members.js");
+  import("./index.header-hero.js");
 }
 
 const totalPartials = document.querySelectorAll(
