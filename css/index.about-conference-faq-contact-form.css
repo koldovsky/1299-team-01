@@ -1,25 +1,28 @@
 .about-conference {
     background: url('../img/index/background-about.png') no-repeat center center;
-    max-height: 980px;  
+    max-height: 1070px;  
     background-size: cover; 
 }
 
-.about-conference__container {
-    display: flex; 
-    padding: 220px 15px 175px 15px;
+.about-conference__container { 
     max-width: 1300px;
+    padding: 220px 15px 175px 15px;
     margin: auto; 
+    max-height: 100%;
 }
 .about-conference__content {
     display: flex;
     justify-content: center;
-    max-width: 100%;
+    
+    width: 100%;
+    max-height: 100%;
     padding-left: 40px;
     padding-right: 40px;
     gap: 50px;
 }
-.about-conference__block {
+.about-conference__block {  
     display: flex;
+    max-height: 100%;
     gap: 20px;
     flex-direction: column;
     flex: 1;
@@ -35,6 +38,7 @@
 .about-conference__answers {
     margin-top: 20px;
     font-family: "Albert Sans", sans-serif;
+    text-align: left;
     color: var(--prices-ticket-bt);
     font-weight: 700;
     line-height: clamp(39px, 4vw, 55.2px);
@@ -112,7 +116,7 @@ about-conference__faq {
     font-weight: 700;
     font-size: 14px;
 }
-@media (max-width: 770px) {
+@media (max-width: 780px) {
     .about-conference {
         padding: 110px 0 115px 0; 
         max-height: 100%;
@@ -124,5 +128,10 @@ about-conference__faq {
     }
     .about-conference__block {
         max-width: 100%; 
+    }
+}
+@media (max-width: 1020px) {
+    .about-conference__container {
+        padding: 165px 0 135px 0;
     }
 }

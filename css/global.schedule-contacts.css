@@ -1,11 +1,11 @@
 .event-schedule-contacts {
     display: flex;
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--text-color);
     padding: 30px 0 10px 0;
     max-width: 1200px;
     margin: 20px auto;
     font-family: Comme, sans-serif;
-    font-size: 17px;
+    font-size: var(--sch-in-font-size);
     font-weight: 500;
     line-height: 26.6px;
     gap: 20px;
@@ -27,25 +27,25 @@
     max-height: 100%;
 }
 .schedule__name {
-    color: rgba(255, 255, 255, 1);
+    color: var(--sch-name-text);
     font-family: "Albert Sans", sans-serif;
-    font-size: clamp(22px, 4vw, 26px);
+    font-size: clamp(1.375rem, 4vw, 1.625rem);
     font-weight: 600;
     line-height: 31.2px;
 }
 .schedule__text {
     margin-top: 20px;
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--text-color);
     font-family: Comme, sans-serif;
-    font-size: 19px;
+    font-size: var(--ac-block-font-size);
     font-weight: 500;
     line-height: 26.6px;
 }
 .schedule__text--in {
     margin-top: 20px;
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--text-color);
     font-family: Comme, sans-serif;
-    font-size: 17px;
+    font-size: var(--sch-in-font-size);
     font-weight: 400;
     line-height: 26.6px;
 }
@@ -62,17 +62,17 @@
     height: 70px;
     width: 70px; 
     border-radius: 50%;
-    background-color: rgb(34, 32, 48);
+    background-color: var(--background-color2);
 }
 .contacts--icon {
-   color: rgb(255, 255, 255);
+   color: var(--h3-color);
    height: 40px;
    width: 40px 
 }
 .contacts__text {
-    color: rgb(251, 225, 89);
+    color: var(--highlight-color2);
     font-family: "Anonymous Pro", monospace;
-    font-size: 11px;
+    font-size: var(--font-size-small);
     font-weight: 700;
     text-transform: uppercase;
     font-style: normal;
@@ -80,9 +80,9 @@
     line-height: 14.3px;
 }
 .contacts__date, .contacts__link {
-    color: rgba(255,255,255,0.72);
+    color: var(--text-color);
     font-family: Comme, sans-serif;
-    font-size: 17px;
+    font-size: var(--sch-in-font-size);
     font-style: normal;
     line-height: 25.5px;
     font-weight: 400;

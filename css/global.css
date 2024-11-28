@@ -19,10 +19,10 @@ img {
   scroll-behavior: smooth;
   --background-color: #151419;
   --background-color2: #222030;
-  --h3-color: rgb(255, 255, 255);
+  --h3-color: #ffffff;
   --text-color: rgba(255, 255, 255, 0.72);
   --highlight-color1: rgb(114, 240, 225);
-  --highlight-color2: #fbe159;
+  --highlight-color2: rgb(251, 225, 89);
   --highlight-color3: rgb(255, 19, 146);
   --highlight-color4: rgb(225, 255, 116);
   --carousel-button-color: #ffffff80;
@@ -38,13 +38,15 @@ img {
   --prices-text-title: var(--background-color);
   --prices-ticket-b-hover: rgb(0, 0, 0);
   --prices-text-small-opacity: rgba(35, 33, 49, 0.6);
-  --font-size-small11: 11px;
+  --font-size-small: 0.6875rem;
   --prices-color-slide1: var(--highlight-color1);
-  --prices-color-slide2: rgb(254, 117, 191);
+  --prices-color-slide2: #fe75bf;
   --prices-color-slide3: var(--highlight-color2);
   --prices-color-slide4: var(--highlight-color4);
   --h2-font-size: 48px;
-  --ac-block-font-size: 19px;
+  --ac-block-font-size: 1.1875rem;
+  --sch-in-font-size: 1.0625rem;
   --ac-text-color-072: var(--text-color);
-  --button-text-color: rgb(34, 32, 48);
+  --button-text-color: #222030;
+  --sch-name-text: rgba(255, 255, 255, 1);
 }
