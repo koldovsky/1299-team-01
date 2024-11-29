@@ -1,7 +1,7 @@
 const originalImage = "../img/index/cover-hero.png";
 
 // Preloading a replacing image for avoiding blinking after calling it while it is not in cache
-const replacingImage = "../img/index/cover-hero-rr.png";
+const replacingImage = "/img/index/cover-hero-rr.png";
 new Image().src = replacingImage;
 
 function goWildRR() {
