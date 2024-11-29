@@ -66,9 +66,9 @@
 }
 
 .web__content {
-  margin: 0;
+  margin: -1px;
   background-color: var(--background-color2);
-  padding: 170px 0px 165px;
+  padding: 150px 0px 165px;
   font-family: "Albert Sans", sans-serif;
   font-size: 20px;
   color: var(--h3-color);
@@ -81,7 +81,7 @@
 
 h2 {
   text-align: center;
-  font-size: 44px;
+  font-size: 50px;
   line-height: 1.4;
   margin-bottom: 40px;
 }
@@ -182,3 +182,12 @@ h2 {
     font-size: 1.8em; 
   }
 }
+.roof-top-background{
+    background-color: var(--background-color2);
+    transform-origin: center;
+    margin: 0;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+
