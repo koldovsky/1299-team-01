@@ -46,11 +46,10 @@
     }
 
     .hero__description-edit-container {
-      position: relative;
-      display: inline-block;
+      display: inline-block; /* it has to be inline-block instead of block to take the limited width to place an edit button with 'right: 0px' absolute position */
 
       .hero__description-wrapper {
-        position: relative; /* Для правильного позиционирования кнопки */
+        position: relative; /* it has to be relative because buttons have absolute position that requires non-static position of parent's element (this one) */
 
         .hero__description {
           margin-top: 45px;
@@ -61,49 +60,49 @@
           overflow-wrap: break-word;
 
           .hero__accent-color {
-            color: var(--highlight-color2)
+            color: var(--highlight-color2);
           }
         }
 
-        .hero__description[contenteditable="true"] {
+        .hero__description[contenteditable="true"] {  /* we add this attribute 'contenteditable="true"' to the class via JS — it's a built browsers feature to edit text just inside elements */
           padding: 5px;
           border: 1px dashed var(--highlight-color1);
           background-color: rgba(0, 0, 0, 0.2);
         }
 
         .edit-button {
-          position: absolute;
-          top: -20px;
-          right: 0;
+          position: absolute;  /* we position it according to first parent element with non-static position — .hero__description-wrapper with relative position */
+          top: -20px;  /* put the button 20px hidher then the top border of the parent element */
+          right: 0;  /* put the button to the right border of the parent element */
           background-color: var(--highlight-color1);
           border: 1px solid white;
           border-radius: 25%;
           padding: 5px;
           font-size: 1rem;
-          visibility: hidden;
-          transition: opacity 0.3s ease;
+          visibility: hidden;  /* by default the button is hidden, it becomes visible only after hovering the parent element, we change it to 'visible' via JS */
+          transition: opacity 0.3s ease;  /* adjust visual effect of showing the button up */
+        }
+
+        .save-button {
+          position: absolute;
+          right: 0;
+          bottom: -20px;
+          background-color: var(--highlight-color1);
+          padding: 5px;
+          border: 1px solid black;
+          border-radius: 25%;
+          font-size: 1rem;
+          opacity: 0.8;
+          display: none;  /* by default the button is hidden, it becomes non-hidden only during editing the element — we change it to 'block' via JS */
         }
       }
 
-      .hero__description-wrapper:hover {
+      .hero__description-wrapper:hover {  /* when a cursor hovers the element */
         .edit-button {
-          visibility: visible;
+          visibility: visible;  /* the button gets visible */
           opacity: 0.8;
         }
       }
-    }
-
-    .save-button {
-      position: absolute;
-      right: 0;
-      bottom: -20px;
-      background-color: var(--highlight-color1);
-      padding: 5px;
-      border: 1px solid black;
-      border-radius: 25%;
-      font-size: 1rem;
-      opacity: 0.8;
-      display: none;
     }
 
     .hero__noodle-about-partners {
@@ -137,7 +136,7 @@
     }
 
     .hero__buy-ticket {
-      position: relative;
+      position: relative; /* It should be relative because of Rick Austley picture with absolute position that requires non-static position of a partent element (this one) */
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -147,9 +146,7 @@
       margin-top: 50px;
 
       button.hero__buy-ticket-button {
-        position: relative; /* Кнопка остается на своем месте */
-        z-index: 2; /* Устанавливаем высокий z-index, чтобы она была над всплывающим изображением */
-        overflow: visible;
+        z-index: 2; /* We need it to position the button higher than invisible Rick Austley whose z-index = 1 */
         text-align: center;
         width: 158px;
         height: 56px;
@@ -170,28 +167,31 @@
       }
 
       .hero__buy-ticket-popup-image {
-        position: absolute;
-        bottom: 0%;
-        left: 0%;
-        transform: translateX(0%, 0%);
+        position: absolute; /* pop-up Rick Austley should comes upon other elements and don't break the HTML structure */
+        bottom: 0%; /* The Rick Austley PNG should be placed in the very beginning of the parent element with non-static (relative) position */
+        left: 0%; /* —||—  */
+        transform: translateX(
+          0%,
+          0%
+        ); /* Setting the beginning position (0px X-axis and 0px Y-axis) for future anumation */
         width: 158px;
         height: 162px;
         background-image: url("../img/index/rick.png");
-        opacity: 0;
-        transition: transform 1.5s ease, opacity 0.3s ease;
-        z-index: 1;
+        background-size: contain; /* Rick is the background image for this element and this property helps to minimazi rick for fitting the element's sizes */
 
-        background-size: contain; /* Вписывает изображение в размеры блока, сохраняя пропорции */
-        background-repeat: no-repeat; /* Запрещает повторение изображения */
-        background-position: center; /* Центрирует изображение внутри блока */
-
-        /* display: block; */
-        /* background-color: red; */
+        opacity: 0; /* By default it is invisible, we will make it visible after clicking the button via JS */
+        transition: transform 1.5s ease, opacity 0.3s ease; /* Adhusting visual effects of (1) jumping and (2) becoming non-trasparent */
+        z-index: 1; /* According the fact that Rick Austley PNG takes the same position as button, we should place Rick behind the button (that has z-index = 2) */
       }
 
+      /* After clicking JS adds a class 'active' to the button's class (class=".hero__buy-ticket-button active"), so we finds literally this active-class and use neighbour' combinator (it takes the first '.hero__buy-ticket-popup-image' element that follows the first mentioning element — active-element — and stays in the same hierarсhy level as the first element) */
       .hero__buy-ticket-button.active + .hero__buy-ticket-popup-image {
-        opacity: 1;
-        transform: translate(0%, -56px);
+        /* so this style is for first '.hero__buy-ticket-popup-image' that follows new active-element */
+        opacity: 1; /* it was invisible (transparent) before clicking the button so that after clicking it has to be visible*/
+        transform: translate(
+          0%,
+          -56px
+        ); /* it stays the same X-axis position but moves 56px higher on Y-axis position */
       }
 
       .hero__buy-ticket-discover-schedule {

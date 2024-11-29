@@ -6,15 +6,15 @@
       creativity<span class="hero__accent-color-two">.</span>
     </h2>
     <div class="hero__description-edit-container">
-      <div class="hero__description-wrapper">
+      <div class="hero__description-wrapper">  <!-- We need it to avoid margin when position the edit button with absolute position (for setting 'top: 0px') -->
         <p class="hero__description">
           Join us at the NY Technology, Design & Innovation Conference, the
           premier gathering of visionaries on
           <span class="hero__accent-color">September 17-18, 2024</span>.
         </p>
         <button class="edit-button">✏️</button>
+        <button class="save-button">✅</button>
       </div>
-      <button class="save-button">✅</button>
     </div>
     <p class="hero__noodle-about-partners">20+ Trusted Partners</p>
     <div class="hero__partners-logos">
@@ -245,7 +245,7 @@
     </div>
     <div class="hero__buy-ticket">
       <button class="hero__buy-ticket-button">Buy a ticket</button>
-      <div class="hero__buy-ticket-popup-image"></div>
+      <div class="hero__buy-ticket-popup-image"></div>  <!-- Invisible Rick Austley -->
       <p class="hero__buy-ticket-discover-schedule">Discover the schedule</p>
     </div>
     <div class="hero__footer">
@@ -278,5 +278,5 @@
       </div>
     </div>
   </div>
-  <audio id="rr" src="./audio/rr.mp3" preload="auto"></audio>
+  <audio id="rr" src="./audio/rr.mp3" preload="auto"></audio>  <!-- The beginning of RR that plays after clicking the button -->
 </div>

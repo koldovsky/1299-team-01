@@ -1,6 +1,6 @@
 const originalImage = "../img/index/cover-hero.png";
 
-// Preloading a replacing image for avoiding blinking
+// Preloading a replacing image for avoiding blinking after calling it while it is not in cache
 const replacingImage = "../img/index/cover-hero-rr.png";
 new Image().src = replacingImage;
 
@@ -9,22 +9,20 @@ function goWildRR() {
   const audio = document.getElementById("rr");
   const element = document.querySelector(".hero");
 
-  const replacingBackground = `url(${replacingImage})`;
-  const originalBackground = `url(${originalImage})`;
+  const replacingBackground = `url(${replacingImage})`;  // a variable for storing value for CSS's 'background-image' property
+  const originalBackground = `url(${originalImage})`;  // a variable for storing value for CSS's 'background-image' property
 
-  button.addEventListener("click", () => {
-    element.style.backgroundImage = replacingBackground;
+  button.addEventListener("click", () => {  // after clicking
+    element.style.backgroundImage = replacingBackground;  // replaces 'backgroung-image' in CSS
 
-    // Активируем эффект выезда изображения
-    button.classList.add("active");
+    button.classList.add("active");  // add class 'active' to the button to use CSS styles fo active-element (button after clicking) as non-transparency
 
     audio.play();
 
-    audio.addEventListener("ended", () => {
-      element.style.backgroundImage = originalBackground;
+    audio.addEventListener("ended", () => {  // when audio is ended
+      element.style.backgroundImage = originalBackground;  // replaces new 'backgroung-image' with the previous one in CSS
 
-      // Убираем эффект выезда изображения
-      button.classList.remove("active");
+      button.classList.remove("active");  // deleting newly created active class so that its styles as non-transparant get deleted
     });
   });
 }
