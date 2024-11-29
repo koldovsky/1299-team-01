@@ -1,8 +1,18 @@
 const originalImage = "../img/index/cover-hero.png";
 
-// Preloading a replacing image for avoiding blinking after calling it while it is not in cache
-const replacingImage = "https://koldovsky.github.io/1299-team-01/img/index/cover-hero-rr.png";
+
+const repoName = "1299-team-01"; // Имя репозитория на GitHub Pages
+const isGitHubPages = window.location.pathname.includes(`/${repoName}/`); // Проверяем, есть ли папка репозитория в пути
+
+const basePath = isGitHubPages
+  ? `${window.location.origin}/${repoName}/` // GitHub Pages
+  : `${window.location.origin}/`; // Локальный сервер
+
+const replacingImage = `${basePath}img/index/cover-hero-rr.png`;
 new Image().src = replacingImage;
+
+
+// Preloading a replacing image for avoiding blinking after calling it while it is not in cache
 
 function goWildRR() {
   const button = document.querySelector(".hero__buy-ticket-button");
