@@ -60,27 +60,29 @@
           overflow-wrap: break-word;
 
           .hero__accent-color {
+            font-weight: 700;
             color: var(--highlight-color2);
           }
         }
 
-        .hero__description[contenteditable="true"] {  /* we add this attribute 'contenteditable="true"' to the class via JS — it's a built browsers feature to edit text just inside elements */
+        .hero__description[contenteditable="true"] {
+          /* we add this attribute 'contenteditable="true"' to the class via JS — it's a built browsers feature to edit text just inside elements */
           padding: 5px;
           border: 1px dashed var(--highlight-color1);
           background-color: rgba(0, 0, 0, 0.2);
         }
 
         .edit-button {
-          position: absolute;  /* we position it according to first parent element with non-static position — .hero__description-wrapper with relative position */
-          top: -20px;  /* put the button 20px hidher then the top border of the parent element */
-          right: 0;  /* put the button to the right border of the parent element */
+          position: absolute; /* we position it according to first parent element with non-static position — .hero__description-wrapper with relative position */
+          top: -20px; /* put the button 20px hidher then the top border of the parent element */
+          right: 0; /* put the button to the right border of the parent element */
           background-color: var(--highlight-color1);
           border: 1px solid white;
           border-radius: 25%;
           padding: 5px;
           font-size: 1rem;
-          visibility: hidden;  /* by default the button is hidden, it becomes visible only after hovering the parent element, we change it to 'visible' via JS */
-          transition: opacity 0.3s ease;  /* adjust visual effect of showing the button up */
+          visibility: hidden; /* by default the button is hidden, it becomes visible only after hovering the parent element, we change it to 'visible' via JS */
+          transition: opacity 0.3s ease; /* adjust visual effect of showing the button up */
         }
 
         .save-button {
@@ -93,13 +95,14 @@
           border-radius: 25%;
           font-size: 1rem;
           opacity: 0.8;
-          display: none;  /* by default the button is hidden, it becomes non-hidden only during editing the element — we change it to 'block' via JS */
+          display: none; /* by default the button is hidden, it becomes non-hidden only during editing the element — we change it to 'block' via JS */
         }
       }
 
-      .hero__description-wrapper:hover {  /* when a cursor hovers the element */
+      .hero__description-wrapper:hover {
+        /* when a cursor hovers the element */
         .edit-button {
-          visibility: visible;  /* the button gets visible */
+          visibility: visible; /* the button gets visible */
           opacity: 0.8;
         }
       }
@@ -223,6 +226,8 @@
         gap: 10px;
 
         a {
+          font-weight: 700;
+          letter-spacing: 0.1375rem;
           color: var(--highlight-color2);
         }
       }
@@ -235,6 +240,14 @@
         .hero__footer-arrow {
           color: var(--highlight-color3);
           width: 50px;
+        }
+
+        .hero__footer-more-speakers {
+          a {
+            font-weight: 700;
+            letter-spacing: 0.1375rem;
+            color: var(--highlight-color2);
+          }
         }
 
         .hero__footer-more-speakers:hover {

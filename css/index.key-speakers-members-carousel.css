@@ -76,6 +76,7 @@
           .members-carousel__member-name {
             font-family: "Albert Sans", sans-serif;
             font-size: 1.375rem;
+            font-weight: 700;
             color: var(--h3-color);
             margin: 0 auto;
           }

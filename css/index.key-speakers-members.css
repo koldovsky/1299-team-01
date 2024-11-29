@@ -39,9 +39,12 @@
       color: var(--highlight-color2);
       font-family: "Anonymous Pro", monospace;
       font-size: calc(0.6875rem * var(--responsive-coefficient));
+      font-weight: 700;
+      letter-spacing: 0.1375rem;
     }
 
     .member__description {
+      font-weight: 400;
       color: var(--text-color);
     }
 
@@ -106,6 +109,7 @@
     color: var(--h3-color);
     font-family: "Albert Sans", sans-serif;
     font-size: calc(2.125rem * var(--responsive-coefficient));
+    font-weight: 700;
 
     .additional-info__accent-color {
       color: var(--highlight-color3);
