@@ -42,7 +42,9 @@
         font-size: 11px;
         font-family: 'Anonymous Pro', monospace;
         font-weight: bold;
-        display: block;
+        display: flex;
+        margin-bottom: 10px;
+        align-items: flex-start;
     }
     
     .key-speakers__down-title {
@@ -50,6 +52,7 @@
         font-family: 'Albert Sans', sans-serif;
         font-weight: bold;
         display: block;
+        margin-bottom: 10px;
     }
     
     .key-speakers__down-title span {
@@ -70,6 +73,7 @@
         font-family: 'Comme', sans-serif;
         font-weight: 500;
         display: block;
+        margin-bottom: 10px;
     }
     
     .key-speakers__description {
@@ -159,6 +163,9 @@
     @media (min-width: 1250px) {
         .key-speakers__benefits {
             gap: 50px;
+        }
+        .key-speakers__title {
+            margin-right: 30%;
         }
     }
     @media (min-width: 1300px) {
