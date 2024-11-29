@@ -1,7 +1,16 @@
-const originalImage = "../img/index/cover-hero.png";
+// GitHub Pages broke the fuck up my relative paths so my code used to work on my computer but used to not work on GitHub Pages. So I have to dynamically find a root folder in order to use absolute paths
+
+const repoName = "1299-team-01"; // our folder name on GitHub Pages
+const isGitHubPages = window.location.pathname.includes(`/${repoName}/`); // TRUE if the folder exists in the location path (when I run it on my computer there is no this folder on the URL)
+
+const basePath = isGitHubPages
+  ? `${window.location.origin}/${repoName}/` // if it is GitHub Pages —— uses the whole 'https://XXX.github.io' and adds '/1299-team-01/'
+  : `${window.location.origin}/`; // if it is not — use just the base root adress that it detects
+
+const replacingImage = `${basePath}img/index/cover-hero-rr.png`;
+const originalImage = `${basePath}img/index/cover-hero.png`;
 
 // Preloading a replacing image for avoiding blinking after calling it while it is not in cache
-const replacingImage = "../img/index/cover-hero-rr.png";
 new Image().src = replacingImage;
 
 function goWildRR() {
