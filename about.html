@@ -20,47 +20,47 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/attendees.css">
   </head>
+  <body>
+    <header>
+      <!--Євгеній Ткаченко-->
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
+      <!-- Mykhailo Tymoshchuk (Title) -->
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="about.header-title.html"
+      ></div>
+    </header>
+    <main>
+      <!--Mykhailo Tymoshchuk (Who we are!?)-->
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="about.section-whoweare.html"
+      ></div>
+      <!--Yevhenii Tkachenko-->
+      <div 
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="about.section-attendees.html"
+      ></div>
+    </main>
+    <footer>
+      <!--Anna Khytrych-->
+      <div
+        data-hx-get="global.footer.event-schedule-contacts.partial.html"
+        data-hx-trigger="load"
+      ></div>
+      <!--Yevhenii Tkachenko-->
+      <div
+        data-hx-get="global.footer.partial.html"
+        data-hx-trigger="load"
+      ></div>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
 </html>
-<body>
-  <header>
-    <!--Євгеній Ткаченко-->
-    <nav
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="global.header-nav.partial.html"
-    ></nav>
-    <!-- Mykhailo Tymoshchuk (Title) -->
-    <div
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="about.header-title.html"
-    ></div>
-  </header>
-  <main>
-    <!--Mykhailo Tymoshchuk (Who we are!?)-->
-    <div
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="about.section-whoweare.html"
-    ></div>
-    <!--Yevhenii Tkachenko-->
-    <div 
-    data-hx-trigger="load"
-    data-hx-swap="outerHTML"
-    data-hx-get="about.section-attendees.html"
-    ></div>
-  </main>
-  <footer>
-    <!--Anna Khytrych-->
-    <div
-      data-hx-get="global.footer.event-schedule-contacts.partial.html"
-      data-hx-trigger="load"
-    ></div>
-    <!--Yevhenii Tkachenko-->
-    <div
-      data-hx-get="global.footer.partial.html"
-      data-hx-trigger="load"
-    ></div>
-  </footer>
-  <script src="js/index.js"></script>
-</body>
