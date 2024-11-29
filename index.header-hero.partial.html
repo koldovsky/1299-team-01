@@ -5,11 +5,17 @@
       Where <span class="hero__accent-color-one">technology</span> meets
       creativity<span class="hero__accent-color-two">.</span>
     </h2>
-    <p class="hero__description">
-      Join us at the NY Technology, Design & Innovation Conference, the premier
-      gathering of visionaries on
-      <span class="hero__accent-color">September 17-18, 2024.</span>
-    </p>
+    <div class="hero__description-edit-container">
+      <div class="hero__description-wrapper">  <!-- We need it to avoid margin when position the edit button with absolute position (for setting 'top: 0px') -->
+        <p class="hero__description">
+          Join us at the NY Technology, Design & Innovation Conference, the
+          premier gathering of visionaries on
+          <span class="hero__accent-color">September 17-18, 2024</span>.
+        </p>
+        <button class="edit-button">✏️</button>
+        <button class="save-button">✅</button>
+      </div>
+    </div>
     <p class="hero__noodle-about-partners">20+ Trusted Partners</p>
     <div class="hero__partners-logos">
       <div class="hero__partners-logo-container">
@@ -239,32 +245,38 @@
     </div>
     <div class="hero__buy-ticket">
       <button class="hero__buy-ticket-button">Buy a ticket</button>
+      <div class="hero__buy-ticket-popup-image"></div>  <!-- Invisible Rick Austley -->
       <p class="hero__buy-ticket-discover-schedule">Discover the schedule</p>
     </div>
     <div class="hero__footer">
       <div class="hero__footer-socials">
         <p class="hero__footer-social hero__footer-social--instagram">
-          Instagram
+          <a href="https://youtu.be/dQw4w9WgXcQ">Instagram</a>
         </p>
         <p class="hero__footer-social hero__footer-social--facebook">
-          Facebook
+          <a href="https://youtu.be/dQw4w9WgXcQ">Facebook</a>
         </p>
-        <p class="hero__footer-social hero__footer-social--youtube">YouTube</p>
+        <p class="hero__footer-social hero__footer-social--youtube">
+          <a href="https://youtu.be/dQw4w9WgXcQ">YouTube</a>
+        </p>
       </div>
-      <svg
-        class="hero__footer-arrow"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        version="1.1"
-        viewBox="0 0 100 100"
-        xml:space="preserve"
-      >
-        <path
-          d="M59.999,55.001v15l20-20c0,0-10-10-20-20v15h-40v10H59.999z"
-          fill="currentColor"
-        ></path>
-      </svg>
-      <p class="hero__footer-more-speakers">More speakers</p>
+      <div class="hero__footer-more-speakers-arrow">
+        <svg
+          class="hero__footer-arrow"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+          viewBox="0 0 100 100"
+          xml:space="preserve"
+        >
+          <path
+            d="M59.999,55.001v15l20-20c0,0-10-10-20-20v15h-40v10H59.999z"
+            fill="currentColor"
+          ></path>
+        </svg>
+        <p class="hero__footer-more-speakers">More speakers</p>
+      </div>
     </div>
   </div>
+  <audio id="rr" src="./audio/rr.mp3" preload="auto"></audio>  <!-- The beginning of RR sound that plays after clicking the button. preload="auto" suggests the browser to preload it -->
 </div>
