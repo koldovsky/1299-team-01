@@ -1,24 +1,18 @@
-// Установите дату окончания таймера
-const targetDate = new Date("2026-01-01T00:00:00");
+const countdownEndDate = new Date("2025-12-31T23:59:59").getTime();
 
-// Обновление таймера каждую секунду
-function updateTimer() {
-  const now = new Date();
-  const difference = targetDate - now;
+function updateCountdown() {
+  const now = new Date().getTime();
+  const timeLeft = countdownEndDate - now;
 
-  if (difference <= 0) {
-    clearInterval(timerInterval);
-    document.getElementById("days").textContent = "0";
-    document.getElementById("hours").textContent = "0";
-    document.getElementById("minutes").textContent = "0";
-    document.getElementById("seconds").textContent = "0";
+  if (timeLeft < 0) {
+    document.querySelector(".countdown").innerHTML = "<p>Countdown completed!</p>";
     return;
   }
 
-  const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+  const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
   document.getElementById("days").textContent = days;
   document.getElementById("hours").textContent = hours;
@@ -26,5 +20,6 @@ function updateTimer() {
   document.getElementById("seconds").textContent = seconds;
 }
 
-const timerInterval = setInterval(updateTimer, 1000);
-updateTimer(); // Запуск сразу
+setInterval(updateCountdown, 1000);
+
+updateCountdown();

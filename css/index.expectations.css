@@ -126,6 +126,8 @@ h2 {
 
 .countdown-item {
   text-align: center;
+  flex: 1 1 120px;
+  max-width: 150px; 
 }
 
 .count-value {
@@ -144,27 +146,39 @@ h2 {
   width: 1px;
   height: 86px;
   background-color: var(--carousel-button-color);
-  margin: 0 40px;
+  margin: 0 20px;
 }
 
-.countdown-timer {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  color: white;
-  font-family: "Arial", sans-serif;
+@media screen and (max-width: 768px) {
+  .countdown {
+    gap: 10px;
+  }
+
+  .count-value {
+    font-size: 2em;
+  }
+
+  .count-label {
+    font-size: 0.9em;
+  }
+
+  .separator {
+    height: 60px;
+    margin: 0 10px;
+  }
 }
 
-.countdown-timer__time {
-  text-align: center;
-}
+@media screen and (max-width: 480px) {
+  .countdown {
+    flex-direction: column;
+    gap: 15px;
+  }
 
-.countdown-timer__number {
-  font-size: 3rem;
-  font-weight: bold;
-}
+  .separator {
+    display: none;
+  }
 
-.countdown-timer__label {
-  font-size: 1rem;
-  color: gray;
+  .count-value {
+    font-size: 1.8em; 
+  }
 }
