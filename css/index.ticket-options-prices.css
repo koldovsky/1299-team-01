@@ -10,16 +10,16 @@
 .ticket-options__text--small {
     font-size: var(--font-size-small);
     font-family: "Anonymous Pro", monospace;
-    color: var(--text-color);
+    color: var(--sub-text-color);;
     text-transform: uppercase;
     letter-spacing: 2.2px;
     font-weight: 700;
 }
 .ticket-options__text--title {
     margin-top: 20px;
-    font-size: clamp(34px, 4vw, 48px);
+    font-size: clamp(2.125rem, 4vw, 3rem);
     font-family: "Albert Sans", sans-serif;
-    color: rgb(21, 20, 25)
+    color: var(--background-color);
 }
 .text-highlight--pink {
     color: var(--prices-color-pink);
@@ -29,14 +29,14 @@
 }
 p.ticket-options__text {
     margin-top: 25px;
-    font-size: 19px;
+    font-size: var(--ac-block-font-size);
     font-family: Comme, sans-serif;
     color: var(--sub-text-color);
     font-weight: 500;
 }
 .carousel {
     display: flex;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 50px auto;    
 }
 .carousel__container {
@@ -48,19 +48,21 @@ p.ticket-options__text {
     width: 100%;
 }
 .carousel__slides {
+    padding: 0 15px 0 15px;
     display: flex;
     gap: 30px;
 }
 .ticket { 
     padding: clamp(27px, 4vw, 30px) clamp(31px, 4vw, 40px);
-    text-align: left;  
+    text-align: left; 
+    flex: 1; 
 }
 .ticket__text--small {
     font-size: 11px;
     font-family: "Anonymous Pro", monospace;
     text-transform: uppercase;
     font-weight: 700;
-    color: rgba(34, 32, 48, 0.6);
+    color: var(--prices-text-small-opacity);
     letter-spacing: 2.2px;
     line-height: 14.3px;
 }
@@ -68,7 +70,7 @@ p.ticket-options__text {
     margin-top: 20px;
     color: var(--text-color-black);
     font-family: "Albert Sans", sans-serif;
-    font-size: clamp(22px, 4vw, 26px);
+    font-size: clamp(1.375rem, 4vw, 1.625rem);
     font-weight: 600;
     line-height: 31.2px;
     white-space: nowrap;
@@ -77,13 +79,13 @@ p.ticket-options__text {
     font-size: 21px;
 }
 .ticket__price {
-    font-size: 21px;
+    font-size: 1.3125px;
 }
 .ticket__description {
     margin-top: 20px;
     color: var(--prices-text-small-opacity);
     font-family: Comme, sans-serif;
-    font-size: 17px;
+    font-size: var(--sch-in-font-size);
     font-weight: 400;
     line-height: 25.5px;
 }
@@ -97,7 +99,7 @@ p.ticket-options__text {
 }
 .ticket__feature {
     margin-bottom: 16px;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 25.5px;
     font-weight: 400;
     color: var(--prices-text-small-opacity);
@@ -109,17 +111,17 @@ p.ticket-options__text {
 .ticket__button {
     margin-top: 20px;
     padding: 21px 38px 21px 38px;
-    background-color: rgb(34, 32, 48);
+    background-color: var(--background-color2);
     border: none;
     font-family: Comme, sans-serif;
     cursor: pointer;
-    color: rgb(255, 255, 255);
-    font-size: 14px;
+    color: var(--h3-color);
+    font-size: 0.875rem;
     font-weight: 700;
     line-height: 14px;
 }
 .ticket__button:hover {
-    background-color: #000
+    background-color: var(--prices-ticket-b-hover);
 }
 .ticket--one-day {
     background-color: var(--prices-color-slide1);
@@ -153,23 +155,19 @@ p.ticket-options__text {
 }
 .carousel__arrow-control--prev {
     transform: rotate(180deg);  
-    left: -50px;
-   
+    left: -40px;
 }
 .carousel__arrow-control--next {
-    right: -50px;
-    
+    right: -40px;
 }
 @media (max-width: 320px) {
     .ticket {
         text-align: left;
     }
     .ticket__title {
-        font-size: 22px;
         line-height: 26.4px;
         white-space: wrap;
     }
-    
     .ticket__feature {
         line-height: 21px;
     }
@@ -177,31 +175,31 @@ p.ticket-options__text {
        white-space: nowrap; 
     }
 }
-@media (max-width: 845px) {
+@media (max-width: 860px) {
     .ticket {
         text-align: left;
     }
     .ticket__price {
         white-space: nowrap;
+    } 
+    .ticket-options {
+        padding: 115px 15px 115px 15px;
     }
-    .carousel-container {
-        width: 100%;
-    }  
 }
 @media (max-width: 1200px) {
     .carousel__arrow-control {
         border-radius: 50%;
-        background-color: rgb(21, 20, 25);
+        background-color: var(--background-color);
         opacity: 0.85;
         transition: opacity .2s ease-out;
         }
     .arrow-svg {
-        fill: rgb(255, 255, 255);
+        fill: var(--h3-color);
     } 
     .carousel__arrow-control--next {
-        right: -30px;
+        right: 5px;
     }
     .carousel__arrow-control--prev { 
-        left: -30px;
+        left: 5px;
     }
 }
