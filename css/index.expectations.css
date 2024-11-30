@@ -170,12 +170,15 @@ h2 {
 
 @media screen and (max-width: 480px) {
   .countdown {
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
+    flex-wrap: nowrap;
+    display: flex;
   }
 
   .separator {
     display: none;
+    
   }
 
   .count-value {
