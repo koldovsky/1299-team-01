@@ -23,6 +23,7 @@
         margin: 0;
         align-items: center;
         width: 100%;
+        margin-top: -2px ;
     }
 
     .roof-bottom-background {
@@ -219,7 +220,7 @@
         font-weight: 600;
         margin: 5%;
     }
-
+    
     .features__description {
         margin-left: 5%;
         font-family: 'comme', sans-serif;
@@ -228,7 +229,7 @@
         color: var(--text-color);
         color: rgba(0, 0, 0, 0.5);
     }
-
+    
     .features__learn-more {
         color: black;
         font-family: "Anonymous Pro", monospace;
@@ -237,11 +238,11 @@
         text-transform: uppercase;
         margin: 5%;
     }
-
-
+    
+    
     /**/
     /*icon*/
-
+    
     .early_bird_ticket_icon {
         display: block;
         width: 100%;
@@ -251,7 +252,7 @@
         flex-direction: end;
         margin-left: 5%;
     }
-
+    
     .features__icon_inspiration {
         background-color: #ead14d;
         border-radius: 50%;
@@ -263,7 +264,7 @@
         margin-left: 5%;
         margin-top: 5%;
     }
-
+    
     .features__icon_community {
         background-color: #f067b1;
         border-radius: 50%;
@@ -275,7 +276,7 @@
         margin-left: 5%;
         margin-top: 5%;
     }
-
+    
     .features__icon_challenge {
         background-color: #6ce2d4;
         border-radius: 50%;
@@ -287,7 +288,7 @@
         margin-left: 5%;
         margin-top: 5%;
     }
-
+    
     .features__icon_encouragement {
         background-color: #d4f067;
         border-radius: 50%;
@@ -299,21 +300,28 @@
         margin-left: 5%;
         margin-top: 5%;
     }
-
-
+    
+    
     /**/
     /*position*/
     .features__early-bird {
         display: flex;
         align-items: flex-end;
     }
+    
+    /*media*/
+    @media(min-width: 400px) {
+        .card__features-encouragement:hover {
+            transform: translateY(-320px);
+            transition: 0.4s ease-out;
+        }
+    }
 
-    /**/
     @media (min-width: 465px) {
         .card__features-community:not(:first-child) {
             margin-left: -100px;
         }
-
+        
         .card__features-encouragement:not(:first-child) {
             margin-left: -100px;
         }
@@ -321,17 +329,40 @@
         .card__features-challenge:not(:first-child) {
             margin-left: -100px;
         }
-
+        
         .card__features-inspiration:not(:first-child) {
             margin-left: -100px;
         }
     }
-
+    
+    @media(min-width: 756px) {
+        .card__features-inspiration:hover {
+            transform: translateY(-250px);
+    
+            transition: 0.4s ease-out;
+        }
+        .card__features-community:hover {
+            transform: translateY(-250px);
+    
+            transition: 0.4s ease-out;
+        }
+        .card__features-challenge:hover {
+            transform: translateY(-250px);
+    
+            transition: 0.4s ease-out;
+        }
+        .card__features-encouragement:hover {
+            transform: translateY(-250px);
+            
+            transition: 0.4s ease-out;
+        }
+    }
+    
     @media (min-width: 800px) {
         .card__features-community:not(:first-child) {
             margin-left: -50px;
         }
-
+        
         .card__features-encouragement:not(:first-child) {
             margin-left: -50px;
         }
@@ -359,6 +390,7 @@
             margin-right: 10%
         }
 
+        
         .features__icon_community {
             background-color: #f067b1;
             border-radius: 50%;
@@ -371,7 +403,7 @@
             margin-top: 5%;
             margin-right: 10%
         }
-
+        
         .features__icon_challenge {
             background-color: #6ce2d4;
             border-radius: 50%;
@@ -384,7 +416,7 @@
             margin-top: 5%;
             margin-right: 10%
         }
-
+        
         .features__icon_encouragement {
             background-color: #d4f067;
             border-radius: 50%;
@@ -397,6 +429,27 @@
             margin-top: 5%;
             margin-right: 10%;
         }
+        .card__features-inspiration:hover {
+            transform: translateY(-320px);
+    
+            transition: 0.4s ease-out;
+        }
+        .card__features-community:hover {
+            transform: translateY(-320px);
+    
+            transition: 0.4s ease-out;
+        }
+        .card__features-challenge:hover {
+            transform: translateY(-320px);
+    
+            transition: 0.4s ease-out;
+        }
+        .card__features-encouragement:hover {
+            transform: translateY(-320px);
+            
+            transition: 0.4s ease-out;
+        }
+        
         .features__container {
             height: auto;
             width: auto;
@@ -408,10 +461,4 @@
         }
     }
 
-    @media(min-width: 400px) {
-        .card__features-encouragement:hover {
-            transform: translateY(-320px);
-            transition: 0.4s ease-out;
-        }
-    }
 }
