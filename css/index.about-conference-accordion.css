@@ -39,24 +39,18 @@
     background: none;
     border: none;
     cursor: pointer;
-    transition: transform 0.2s ease;
 }
 .faq__content {
-    max-height: 0;
+    display: none;
     font-family:  Comme, sans-serif;
     font-size: 17px;
     font-weight: 400;
     line-height: 25.5px;
     color: var(--ac-text-color-072);
     overflow: hidden;
+    transition: max-height 0.3s ease-out;
 }
 .faq__content.open {
     margin-top: 20px;
-    display: flex;
-    max-height: 100%;
-    max-height: 100%;
-    overflow: visible;
-}
-input[type="checkbox"] {
-    display: none;
+    display: block;
 }

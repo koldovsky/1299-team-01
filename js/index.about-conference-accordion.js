@@ -1,17 +1,26 @@
-window.toggleAccordion = function(event) {
-    const icon = event.target;
-    const faqItem = icon.closest('.faq__item');
-    const content = faqItem.nextElementSibling;
+function toggleAccordion(event) {
+    const button = event.target;
+    const container = button.closest('.faq__container');
+    if (!container) return;
 
-    icon.classList.toggle('open');
-    content.classList.toggle('open');
+    const content = container.querySelector('.faq__content');
+    if (!content) return;
 
-    icon.textContent = icon.textContent === '+' ? '-' : '+';
+    const isOpen = content.classList.contains('open');
+    content.classList.toggle('open', !isOpen);
+    button.textContent = isOpen ? '+' : '-';
 }
-function addAccordionEvents() {
-    const icons = document.querySelector('.faq__icon');
-    icons.forEach(icon => {
-        icon.onclick = toggleAccordion;
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.body.addEventListener('click', (event) => {
+        if (event.target.classList.contains('faq__icon')) {
+            toggleAccordion(event);
+        }
     });
-}
-document.addEventListener('DOMContentLoaded', addAccordionEvents);
+});
+document.body.addEventListener('click', (event) => {
+    if (event.target.classList.contains('faq__icon')) {
+        console.log('FAQ іконка натиснута:', event.target);
+        toggleAccordion(event);
+    }
+});
