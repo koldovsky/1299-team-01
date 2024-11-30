@@ -27,7 +27,7 @@ function initializeCarousel() {
           class="members-carousel__member-photo-from-onlyfans"
           src="img/index/additional-speaker-i-have-no-chances-with.png"
           alt="Blonde that I have no chances with"
-          stupid-joke="Clippy AI Fact | You are a pretty cake but let's be optimistic, you have no chances with her"/>
+          stupid-joke="Clippy AI Fact | You’re a sweet cupcake, but let’s be honest — you have no chance with her"/>
         <h3 class="members-carousel__member-name">Lucy Smith</h3>
         <p class="members-carousel__member-role">Human relations expert</p>
     </div>`,
@@ -36,7 +36,7 @@ function initializeCarousel() {
           class="members-carousel__member-photo-from-onlyfans"
           src="img/index/additional-speaker-prost-lol.png"
           alt="Dean. Prosto Dean"
-          stupid-joke="Clippy AI Fact | This guy is so cool so that he doesn't need a surname. It's Dean. Prosto Dean"/>
+          stupid-joke="Clippy AI Fact | This guy is so cool, he doesn’t even need a surname. He’s just Dean. Prosto Dean"/>
         <h3 class="members-carousel__member-name">Dean Prost</h3>
         <p class="members-carousel__member-role">AI engineer</p>
     </div>`,
@@ -45,7 +45,7 @@ function initializeCarousel() {
           class="members-carousel__member-photo-from-onlyfans"
           src="img/index/additional-speaker-not-so-well.png"
           alt="Samantha not-so-WELL-as-she-thinks"
-          stupid-joke="Clippy AI Fact | Samantha Well is not so well, because of her glasses at least — eyes work poor"/>
+          stupid-joke="Clippy AI Fact | Samantha Well isn’t doing so well, at least because of her glasses — her eyes work poorly"/>
         <h3 class="members-carousel__member-name">Samantha Well</h3>
         <p class="members-carousel__member-role">Data analyst</p>
     </div>`,
