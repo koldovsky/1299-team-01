@@ -1,0 +1,75 @@
+.background-roof {
+  background-color: var(--background-color);
+  transform: scaleY(-1); /* Віддзеркалення, якщо потрібне */
+  transform-origin: center;
+  margin: -1px; /* Може викликати проблеми */
+  display: flex; /* Якщо треба центрувати вміст */
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 120px;
+}
+
+.testimonials {
+  background-color: var(--background-color);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* В залежності від вашого дизайну */
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Можливо, замінити auto */
+}
+
+.testimonials__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  font-family: "Comme", sans-serif;
+  color: var(--highlight-color2);
+  font-size: 11px;
+}
+
+.testimonials__title {
+  font-size: 34px;
+  padding: 15px;
+  margin: 0;
+  font-family: "Albert Sans", sans-serif;
+  color: var(--overlay-text-color);
+}
+
+.testimonials__title__guests {
+  color: var(--highlight-color1);
+}
+
+.testimonials__title__period {
+  color: var(--highlight-color3);
+}
+
+.testimonials__subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--overlay-text-color);
+  font-family: "Comme", sans-serif;
+  font-size: 19px;
+  width: 100%;
+  height: 100%;
+}
+
+.testimonials__slider-container{
+    padding-top: 39px;
+    padding-bottom: 39px;
+    padding-left: 43px;
+    padding-right: 43px;
+    width: 100%;
+    height: auto;
+}
+
+.testimonial__image {
+  max-height: 585px;
+  max-width: 464px;
+  min-width: 320px;
+}
+
