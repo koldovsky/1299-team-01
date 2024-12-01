@@ -1,30 +1,35 @@
-.background-roof {
-  background-color: var(--background-color);
-  transform: scaleY(-1); /* Віддзеркалення, якщо потрібне */
-  transform-origin: center;
-  margin: -1px; /* Може викликати проблеми */
-  display: flex; /* Якщо треба центрувати вміст */
-  align-items: center;
-  justify-content: center;
-  width: 320px;
-  height: 120px;
-}
-
 .testimonials {
-  background-color: var(--background-color);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/index/cover-hero.png");
+  background-size: cover;
+  transition: background-image 1.5s ease-in-out;
   overflow: hidden;
   display: flex;
-  flex-direction: column; /* В залежності від вашого дизайну */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%; /* Можливо, замінити auto */
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.testimonials__background-roof {
+  transform: scaleY(-1) scale(1.5);
+  transform-origin: center;
+  margin: -1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 120px;
 }
 
 .testimonials__label {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: 100px;
   font-family: "Comme", sans-serif;
   color: var(--highlight-color2);
   font-size: 11px;
@@ -32,7 +37,6 @@
 
 .testimonials__title {
   font-size: 34px;
-  padding: 15px;
   margin: 0;
   font-family: "Albert Sans", sans-serif;
   color: var(--overlay-text-color);
@@ -58,18 +62,51 @@
   height: 100%;
 }
 
-.testimonials__slider-container{
-    padding-top: 39px;
-    padding-bottom: 39px;
-    padding-left: 43px;
-    padding-right: 43px;
-    width: 100%;
-    height: auto;
+.testimonial__text-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--backgroung-color-text-block);
+  padding: 39px 43px;
+  width: 100%;
 }
 
-.testimonial__image {
-  max-height: 585px;
-  max-width: 464px;
-  min-width: 320px;
+.testimonial__quote {
+  font-size: 20px;
+  font-style: italic;
+  color: var(--sub-text-color);
+  margin-bottom: 20px;
 }
 
+.testimonial__author {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-block-color);
+  font-family: "Albert Sans", sans-serif;
+}
+
+.testimonial__position {
+  font-size: 11px;
+  font-family: "Anonymous Pro", monospace;
+  color: var(--highlight-color3);
+  padding: auto;
+  white-space: nowrap;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: gray;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 1;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: darkgray;
+}

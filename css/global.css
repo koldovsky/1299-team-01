@@ -19,8 +19,10 @@ img {
   scroll-behavior: smooth;
   --background-color: #151419;
   --background-color2: #222030;
+  --backgroung-color-text-block: #ffffff;
   --h3-color: #ffffff;
   --text-color: #ffffffb8;
+  --text-block-color: #151419;
   --highlight-color1: #72f0e1;
   --highlight-color2: #fbe159;
   --highlight-color3: #ff1392;
@@ -30,7 +32,7 @@ img {
   --list-text-color: #15141985;
   --overlay-text-color: #ffffffd4;
   --overlay-background-color: #000000cc;
-  --prices-text-small: var(--sub-text-color); 
+  --prices-text-small: var(--sub-text-color);
   --prices-ticket-b: var(--background-color2);
   --prices-color-pink: var(--highlight-color3);
   --prices-color-blue: var(--highlight-color1);
