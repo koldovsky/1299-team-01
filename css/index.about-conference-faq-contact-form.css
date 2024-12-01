@@ -112,6 +112,19 @@
     font-weight: 700;
     font-size: 0.875rem;
 }
+#contact-form-status {
+    padding-top: 20px;
+    font-family: "Albert Sans", sans-serif;
+    font-size: 1.625rem;
+    line-height: 31px;
+    font-weight: 600;
+    color: var(--prices-ticket-bt);
+    opacity: 1;
+    transition: opacity 2s ease;
+}
+#contact-form-status.hidden {
+  opacity: 0; /* Зникає, коли додається клас `hidden` */
+}
 @media (max-width: 780px) {
     .about-conference__container {
         padding: 110px 0 115px 0; 

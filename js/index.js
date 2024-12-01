@@ -7,6 +7,7 @@ function init() {
   import("./index.expectations-countdown.js");
   import("./index.header-hero.js");
   import("./index.header-hero-editable.js");
+  import("./index.contact-form.js");
 }
 
 const totalPartials = document.querySelectorAll(
