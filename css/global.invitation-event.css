@@ -1,0 +1,111 @@
+.invitation {
+    position: relative;
+    background-color: var(--background-color);
+    padding: 165px 15px 30px 15px;
+    max-width: 100%;
+}
+.invitation__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    max-height: 577px;
+}
+.invitation__header {
+    padding: 0 15px 0 15px;
+}
+.invitation__title {
+    text-align: center;
+    font-family: "Albert Sans", sans-serif;
+    font-size: clamp(2.125rem, 4vw, 3rem);
+    color: var(--h3-color);
+    font-weight: 700;
+    line-height: clamp(39px, 4vw, 55.2px);
+}
+.invitation__title--yellow {
+    color: var(--highlight-color2);
+}
+.invitation__title--pink {
+    color: var(--highlight-color3);
+}
+.invitation__title--blue {
+    color: var(--highlight-color1);
+}
+.invitation__cta {
+    margin-top: 25px;
+    font-size: 1.625rem;
+    text-align: center;
+    font-weight: 600;
+    font-family: "Albert Sans", sans-serif;
+    color: var(--h3-color);
+}
+.invitation__cta--link {
+    color: var(--highlight-color3);
+}
+.photo-carousel {
+    margin: 30px auto;
+    display: flex;
+    max-width: 1200px;
+    position: relative;
+}
+.photo-carousel__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 260px;
+    width: 100%;
+}
+.photo-carousel__slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+}
+.photo-carousel__slide {
+    padding: 0 15px 0 15px;
+}
+.photo-carousel__arrow-control {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    fill: var(--prices-ticket-bt);
+    cursor: pointer;
+    width: clamp(20px, 3vw, 35px);
+    height: clamp(20px, 3vw, 35px);
+    position: absolute;
+}
+.arrow-photo--svg {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: clamp(10px, 2vw, 30px);
+    height: clamp(10px, 2vw, 30px);
+}
+.photo-carousel__arrow-control--prev {
+    transform: rotate(180deg);
+    left: -20px;
+}
+.photo-carousel__arrow-control--next {
+    right: -20px; 
+}
+@media (max-width: 1200px) {
+    .photo-carousel__arrow-control {
+        border-radius: 50%;
+        background-color: var(--prices-ticket-bt);
+        opacity: 0.85;
+        transition: opacity .2s ease-out;
+        }
+        .arrow-photo--svg {
+            fill: var(--background-color) ;
+        } 
+        .photo-carousel__arrow-control--prev  {
+            left: -5px;
+        }
+        .photo-carousel__arrow-control--next { 
+            right: -5px;
+        }
+}

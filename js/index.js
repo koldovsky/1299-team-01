@@ -3,6 +3,10 @@ function init() {
   import("./index.key-speakers-members.js");
   import("./index.ticket-prices-carousel.js");
   import("./index.about-conference-accordion.js");
+  import("./global.invitation-carousel.js");
+  import("./index.expectations-countdown.js");
+  import("./index.header-hero.js");
+  import("./index.header-hero-editable.js");
 }
 
 const totalPartials = document.querySelectorAll(

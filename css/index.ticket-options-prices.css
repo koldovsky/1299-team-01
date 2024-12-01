@@ -10,16 +10,16 @@
 .ticket-options__text--small {
     font-size: var(--font-size-small);
     font-family: "Anonymous Pro", monospace;
-    color: var(--text-color);
+    color: var(--sub-text-color);;
     text-transform: uppercase;
     letter-spacing: 2.2px;
     font-weight: 700;
 }
 .ticket-options__text--title {
     margin-top: 20px;
-    font-size: 48px;
+    font-size: clamp(2.125rem, 4vw, 3rem);
     font-family: "Albert Sans", sans-serif;
-    color: rgb(21, 20, 25)
+    color: var(--background-color);
 }
 .text-highlight--pink {
     color: var(--prices-color-pink);
@@ -29,35 +29,40 @@
 }
 p.ticket-options__text {
     margin-top: 25px;
-    font-size: 19px;
+    font-size: var(--ac-block-font-size);
     font-family: Comme, sans-serif;
     color: var(--sub-text-color);
     font-weight: 500;
 }
 .carousel {
-    position: relative;
-    margin: 50px auto;
-    overflow: hidden;    
+    display: flex;
     max-width: 1200px;
+    margin: 50px auto;    
+}
+.carousel__container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
     max-height: 450px;
+    width: 100%;
 }
 .carousel__slides {
-    width: 100%;
+    padding: 0 15px 0 15px;
     display: flex;
     gap: 30px;
-    transition: transform 0.5s ease;
 }
-.carousel .ticket {
-    min-width: 33.33%; 
-    padding: 30px 40px 30px 40px;
-    text-align: left;  
+.ticket { 
+    padding: clamp(27px, 4vw, 30px) clamp(31px, 4vw, 40px);
+    text-align: left; 
+    flex: 1; 
 }
 .ticket__text--small {
-    font-size: var(--font-size-small);
+    font-size: 11px;
     font-family: "Anonymous Pro", monospace;
     text-transform: uppercase;
     font-weight: 700;
-    color: rgba(34, 32, 48, 0.6);
+    color: var(--prices-text-small-opacity);
     letter-spacing: 2.2px;
     line-height: 14.3px;
 }
@@ -65,7 +70,7 @@ p.ticket-options__text {
     margin-top: 20px;
     color: var(--text-color-black);
     font-family: "Albert Sans", sans-serif;
-    font-size: 26px;
+    font-size: clamp(1.375rem, 4vw, 1.625rem);
     font-weight: 600;
     line-height: 31.2px;
     white-space: nowrap;
@@ -74,13 +79,13 @@ p.ticket-options__text {
     font-size: 21px;
 }
 .ticket__price {
-    font-size: 21px;
+    font-size: 1.3125px;
 }
 .ticket__description {
     margin-top: 20px;
     color: var(--prices-text-small-opacity);
     font-family: Comme, sans-serif;
-    font-size: 17px;
+    font-size: var(--sch-in-font-size);
     font-weight: 400;
     line-height: 25.5px;
 }
@@ -94,7 +99,7 @@ p.ticket-options__text {
 }
 .ticket__feature {
     margin-bottom: 16px;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 25.5px;
     font-weight: 400;
     color: var(--prices-text-small-opacity);
@@ -106,17 +111,17 @@ p.ticket-options__text {
 .ticket__button {
     margin-top: 20px;
     padding: 21px 38px 21px 38px;
-    background-color: rgb(34, 32, 48);
+    background-color: var(--background-color2);
     border: none;
     font-family: Comme, sans-serif;
     cursor: pointer;
-    color: rgb(255, 255, 255);
-    font-size: 14px;
+    color: var(--h3-color);
+    font-size: 0.875rem;
     font-weight: 700;
     line-height: 14px;
 }
 .ticket__button:hover {
-    background-color: #000
+    background-color: var(--prices-ticket-b-hover);
 }
 .ticket--one-day {
     background-color: var(--prices-color-slide1);
@@ -130,30 +135,38 @@ p.ticket-options__text {
 .ticket--one-day-early {
     background-color: var(--prices-color-slide4);
 }
-.carousel .carousel__arrow-control {
+.carousel__arrow-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
     all: unset;
-    position: absolute;
-    top: 50%;
     cursor: pointer;
-    transform: translateY(-25%);   
-    width: 30px;
-    height: 30px;
-  }  
-.carousel .carousel__arrow-control--next {
-    right: 20px;
+    width: clamp(30px, 3vw, 35px);
+    height: clamp(30px, 3vw, 35px);
+    position: absolute;
+}  
+.arrow-svg {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: clamp(15px, 3vw, 25px);
+    height: clamp(15px, 3vw, 25px);
 }
-.carousel .carousel__arrow-control--prev {
+.carousel__arrow-control--prev {
     transform: rotate(180deg);  
-    left: 20px; 
+    left: -40px;
+}
+.carousel__arrow-control--next {
+    right: -40px;
 }
 @media (max-width: 320px) {
     .ticket {
-        padding: 27px 31px 27px 31px;
         text-align: left;
     }
     .ticket__title {
-        font-size: 22px;
         line-height: 26.4px;
+        white-space: wrap;
     }
     .ticket__feature {
         line-height: 21px;
@@ -162,18 +175,31 @@ p.ticket-options__text {
        white-space: nowrap; 
     }
 }
-@media (max-width: 845px) {
+@media (max-width: 860px) {
     .ticket {
-        padding: 27px 31px 27px 31px;
         text-align: left;
     }
     .ticket__price {
         white-space: nowrap;
+    } 
+    .ticket-options {
+        padding: 115px 15px 115px 15px;
     }
-    .ticket-options__text--title {
-        font-size: 41px;     
+}
+@media (max-width: 1200px) {
+    .carousel__arrow-control {
+        border-radius: 50%;
+        background-color: var(--background-color);
+        opacity: 0.85;
+        transition: opacity .2s ease-out;
+        }
+    .arrow-svg {
+        fill: var(--h3-color);
+    } 
+    .carousel__arrow-control--next {
+        right: 5px;
     }
-    .carousel-container {
-        width: 100%;
-    }  
+    .carousel__arrow-control--prev { 
+        left: 5px;
+    }
 }

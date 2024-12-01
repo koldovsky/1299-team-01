@@ -1,0 +1,302 @@
+.hero {
+  --responsive-coefficient: 1;
+
+  font-family: "Albert Sans", sans-serif;
+  font-size: calc(1rem * var(--responsive-coefficient));
+  color: var(--h3-color);
+
+  background-image: url("../img/index/cover-hero.png");
+  background-size: cover;
+  transition: background-image 1.5s ease-in-out;
+
+  padding-top: 90px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  .hero__container {
+    margin: 0px auto;
+    max-width: 1170px;
+
+    .hero__header {
+      color: var(--highlight-color2);
+      text-transform: uppercase;
+      font-family: "Anonymous Pro", monospace;
+      font-size: 0.6875rem;
+
+      letter-spacing: 2.2px;
+    }
+
+    .hero__main-thought {
+      margin-top: 20px;
+      font-size: calc(2.375rem * var(--responsive-coefficient));
+      font-weight: 600;
+      text-align: left;
+      overflow-wrap: break-word;
+      line-height: 1;
+      max-width: 720px;
+
+      span.hero__accent-color-one {
+        color: var(--highlight-color1);
+      }
+
+      span.hero__accent-color-two {
+        color: var(--highlight-color3);
+      }
+    }
+
+    .hero__description-edit-container {
+      display: inline-block; /* it has to be inline-block instead of block to take the limited width to place an edit button with 'right: 0px' absolute position */
+
+      .hero__description-wrapper {
+        position: relative; /* it has to be relative because buttons have absolute position that requires non-static position of parent's element (this one) */
+
+        .hero__description {
+          margin-top: 45px;
+          font-family: Comme, sans-serif;
+          font-size: 1.1875rem;
+          font-weight: 500;
+          max-width: 720px;
+          overflow-wrap: break-word;
+
+          .hero__accent-color {
+            font-weight: 700;
+            color: var(--highlight-color2);
+          }
+        }
+
+        .hero__description[contenteditable="true"] {
+          /* we add this attribute 'contenteditable="true"' to the class via JS — it's a built browsers feature to edit text just inside elements */
+          padding: 5px;
+          border: 1px dashed var(--highlight-color1);
+          background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .edit-button {
+          position: absolute; /* we position it according to first parent element with non-static position — .hero__description-wrapper with relative position */
+          top: -20px; /* put the button 20px hidher then the top border of the parent element */
+          right: 0; /* put the button to the right border of the parent element */
+          background-color: var(--highlight-color1);
+          border: 1px solid white;
+          border-radius: 25%;
+          padding: 5px;
+          font-size: 1rem;
+          visibility: hidden; /* by default the button is hidden, it becomes visible only after hovering the parent element, we change it to 'visible' via JS */
+          transition: opacity 0.3s ease; /* adjust visual effect of showing the button up */
+        }
+
+        .save-button {
+          position: absolute;
+          right: 0;
+          bottom: -20px;
+          background-color: var(--highlight-color1);
+          padding: 5px;
+          border: 1px solid black;
+          border-radius: 25%;
+          font-size: 1rem;
+          opacity: 0.8;
+          display: none; /* by default the button is hidden, it becomes non-hidden only during editing the element — we change it to 'block' via JS */
+        }
+      }
+
+      .hero__description-wrapper:hover {
+        /* when a cursor hovers the element */
+        .edit-button {
+          visibility: visible; /* the button gets visible */
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .hero__noodle-about-partners {
+      margin-top: 25px;
+      font-size: 0.875rem;
+      color: rgb(183, 181, 203);
+      text-decoration: underline;
+    }
+
+    .hero__partners-logos {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+      --gap-value: calc(12px * var(--responsive-coefficient));
+      --width_value: calc(138px * var(--responsive-coefficient));
+      gap: var(--gap-value);
+      max-width: calc(var(--gap-value) + 2 * var(--width_value));
+
+      .hero__partners-logo-container {
+        width: var(--width_value);
+        height: calc(78px * var(--responsive-coefficient));
+        display: flex;
+        align-items: center;
+        justify-items: center;
+
+        svg.hero__partner-logo {
+          max-width: 100%;
+        }
+      }
+    }
+
+    .hero__buy-ticket {
+      position: relative; /* It should be relative because of Rick Austley picture with absolute position that requires non-static position of a partent element (this one) */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      font-family: Comme, sans-serif;
+      gap: 10px;
+      margin-top: 50px;
+
+      button.hero__buy-ticket-button {
+        z-index: 2; /* We need it to position the button higher than invisible Rick Austley whose z-index = 1 */
+        text-align: center;
+        width: 158px;
+        height: 56px;
+        color: var(--button-text-color);
+        background-color: var(--highlight-color2);
+        font-size: 0.875rem;
+        font-weight: 700;
+        border: 0px;
+
+        transition-property: background-color;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in;
+      }
+
+      button.hero__buy-ticket-button:hover {
+        background-color: var(--prices-color-slide2);
+        cursor: pointer;
+      }
+
+      .hero__buy-ticket-popup-image {
+        position: absolute; /* pop-up Rick Austley should comes upon other elements and don't break the HTML structure */
+        bottom: 0%; /* The Rick Austley PNG should be placed in the very beginning of the parent element with non-static (relative) position */
+        left: 0%; /* —||—  */
+        transform: translateX(
+          0%,
+          0%
+        ); /* Setting the beginning position (0px X-axis and 0px Y-axis) for future anumation */
+        width: 158px;
+        height: 162px;
+        background-image: url("../img/index/rick.png");
+        background-size: contain; /* Rick is the background image for this element and this property helps to minimazi rick for fitting the element's sizes */
+
+        opacity: 0; /* By default it is invisible, we will make it visible after clicking the button via JS */
+        transition: transform 1.5s ease, opacity 0.3s ease; /* Adhusting visual effects of (1) jumping and (2) becoming non-trasparent */
+        z-index: 1; /* According the fact that Rick Austley PNG takes the same position as button, we should place Rick behind the button (that has z-index = 2) */
+      }
+
+      /* After clicking JS adds a class 'active' to the button's class (class=".hero__buy-ticket-button active"), so we finds literally this active-class and use neighbour' combinator (it takes the first '.hero__buy-ticket-popup-image' element that follows the first mentioning element — active-element — and stays in the same hierarсhy level as the first element) */
+      .hero__buy-ticket-button.active + .hero__buy-ticket-popup-image {
+        /* so this style is for first '.hero__buy-ticket-popup-image' that follows new active-element */
+        opacity: 1; /* it was invisible (transparent) before clicking the button so that after clicking it has to be visible*/
+        transform: translate(
+          0%,
+          -56px
+        ); /* it stays the same X-axis position but moves 56px higher on Y-axis position */
+      }
+
+      .hero__buy-ticket-discover-schedule {
+        font-size: 0.9425rem;
+        font-style: italic;
+        color: var(--highlight-color2);
+      }
+
+      .hero__buy-ticket-discover-schedule:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+
+    .hero__footer {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-top: 80px;
+      text-transform: uppercase;
+      text-decoration: underline;
+      color: var(--highlight-color2);
+
+      font-family: "Anonymous Pro", monospace;
+      font-size: 0.6875rem;
+
+      .hero__footer-socials {
+        display: flex;
+        gap: 10px;
+
+        a {
+          font-weight: 700;
+          letter-spacing: 0.1375rem;
+          color: var(--highlight-color2);
+        }
+      }
+
+      .hero__footer-more-speakers-arrow {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .hero__footer-arrow {
+          color: var(--highlight-color3);
+          width: 50px;
+        }
+
+        .hero__footer-more-speakers {
+          a {
+            font-weight: 700;
+            letter-spacing: 0.1375rem;
+            color: var(--highlight-color2);
+          }
+        }
+
+        .hero__footer-more-speakers:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 385px) {
+  .hero .hero__container .hero__buy-ticket {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    --responsive-coefficient: 1.82;
+
+    background-position: 30% 50%;
+
+    .hero__container {
+      .hero__description {
+        max-width: 465px;
+      }
+
+      .hero__footer {
+        margin-top: 0px;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 60%;
+
+        .hero__footer-socials {
+          align-items: flex-end;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 990px) {
+  .hero {
+    --responsive-coefficient: 2.1;
+
+    background-position: 35% 50%;
+  }
+}

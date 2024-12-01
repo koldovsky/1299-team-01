@@ -19,7 +19,13 @@
   </head>
 
   <body>
-    <header></header>
+    <header>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.header-hero.partial.html"
+      ></section>
+    </header>
     <main>
       <!-- Illya Soroka -->
       <div
@@ -27,11 +33,11 @@
         data-hx-swap="outerHTML"
         data-hx-get="index.key-speakers-members.partial.html"
       ></div>
-      <div
+      <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.key-speakers-members-carousel.partial.html"
-      ></div>
+      ></section>
     </main>
     <script src="js/index.js"></script>
   </body>

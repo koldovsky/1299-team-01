@@ -1,67 +1,112 @@
-@import url(fonts.css);
-@import url(index.css);
 .buy-ticket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #151419;
-    gap: 70px;
-}
-
-.buy-ticket__subtitles {
-    color: #F5DC58;
-    font-size: 16px;
-    font-family: "Comme", sans-serif;
-    font-weight: 300;
-    
-}
-
-.zagolovok {
-    font-weight: 700;
-    font-size: 80px;
+    padding: 100px;
+    position: relative;
+    overflow: hidden; 
+    padding-top: 120px;
+    padding-bottom: 150px
+  }
+  
+  .buy-ticket__content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .buy-ticket__text {
+    flex: 1;
     color: #ffffff;
-    margin-top: 20px;
-    font-family: "Albert Sans", serif; 
-}
-
-.chance {
-    color: #72F0E1;
-}
-
-.punkt {
-    color: #FF1392;
-
-}
-
-.buy-ticket__discription {
-    color: #B6B5B7;
-    font-size: 17px;
+    position: relative;
+    z-index: 2; /* Щоб текст залишався поверх картинки */
+    margin-right: -100px; /* Нахід тексту на картинку */
+  }
+  
+  .buy-ticket__subtitles {
+    color: #f5dc58;
+    font-size: 15px;
     font-family: "Comme", sans-serif;
     font-weight: 300;
-}
-
-.price-ticket {
-    color: #FF1392;
-    height: 96px;
-}
-
-.buy-a-ticket {
+    font-style: italic;
+  }
+  
+  .buy-ticket__title {
+    font-weight: 700;
+    font-size: 60px;
+    margin: 20px 0;
+    font-family: "Albert Sans", serif;
+    line-height: 1.2;
+  }
+  
+  .buy-ticket__chance {
+    color: #72f0e1;
+  }
+  
+  .buy-ticket__punkt {
+    color: #ff1392;
+  }
+  
+  .buy-ticket__description {
+    font-size: 18px;
+    color: #b6b5b7;
+    font-family: "Comme", sans-serif;
+    font-weight: 300;
+    margin: 20px 0;
+  }
+  
+  .buy-ticket__button {
     border: none;
     background-color: #fbe159;
     color: #222030;
-    cursor: pointer;
-    height: 50px;
-    font-size: 14px;
+    padding: 15px 30px;
+    font-size: 16px;
     font-family: "Comme", sans-serif;
     font-weight: 600;
-    line-height: 1.5;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   
-.buy-a-ticket:hover {
+  .buy-ticket__button:hover {
     background-color: #fe75bf;
   }
-
-.early-bird {
-    font-weight: 700;
-    font-size: 26px;
+  
+  .buy-ticket__image {
+    position: relative;
+    flex: 1.5; /* Робимо блок із зображенням більшим */
+    z-index: 1;
+  }
+  
+  .buy-ticket__background-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover; /* Забезпечує покриття картинки без розтягування */
+  }
+  
+  .buy-ticket__price {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-align: right;
     color: #ffffff;
-    margin-top: 20px;
-    font-family: "Albert Sans", sans-serif; 
-}
+  }
+  
+  .buy-ticket__early-bird {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'Albert Sans';
+    font-style: normal;
+  }
+  
+  .buy-ticket__price-value {
+    font-size: 80px;
+    color: #ff1392;
+    font-family: 'Albert Sans';
+    font-style: normal;
+    font-weight: 600;
+  }
+  

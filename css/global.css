@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 
   /* outline: 1px solid red; */
 }
@@ -18,32 +19,37 @@ img {
   scroll-behavior: smooth;
   --background-color: #151419;
   --background-color2: #222030;
-  --h3-color: rgb(255, 255, 255);
-  --text-color: rgba(255, 255, 255, 0.72);
-  --highlight-color1: rgb(114, 240, 225);
+  --h3-color: #ffffff;
+  --text-color: #ffffffb8;
+  --highlight-color1: #72f0e1;
   --highlight-color2: #fbe159;
-  --highlight-color3: rgb(255, 19, 146);
-  --highlight-color4: rgb(225, 255, 116);
+  --highlight-color3: #ff1392;
+  --highlight-color4: #e1ff74;
   --carousel-button-color: #ffffff80;
   --sub-text-color: #808080;
   --list-text-color: #15141985;
   --overlay-text-color: #ffffffd4;
-  --overlay-background-color: rgba(0, 0, 0, 0.8);
+  --overlay-background-color: #000000cc;
   --prices-text-small: var(--sub-text-color); 
   --prices-ticket-b: var(--background-color2);
   --prices-color-pink: var(--highlight-color3);
   --prices-color-blue: var(--highlight-color1);
   --prices-ticket-bt: var(--h3-color);
   --prices-text-title: var(--background-color);
-  --prices-ticket-b-hover: rgb(0, 0, 0);
-  --prices-text-small-opacity: rgba(35, 33, 49, 0.6);
-  --font-size-small11: 11px;
+  --prices-ticket-b-hover: #000000;
+  --prices-text-small-opacity: #23213199;
   --prices-color-slide1: var(--highlight-color1);
-  --prices-color-slide2: rgb(254, 117, 191);
+  --prices-color-slide2: #fe75bf;
   --prices-color-slide3: var(--highlight-color2);
   --prices-color-slide4: var(--highlight-color4);
-  --h2-font-size: 48px;
-  --ac-block-font-size: 19px;
-  --ac-text-color-072: var(--text-color);
-    
+  --ac-text-color: var(--text-color);
+  --ac-form-color: #1e1d2a;
+  --ac-form-back: #ffffff05;
+  --button-text-color: var(--background-color2);
+  --sch-name-text: #ffffff;
+  --font-size-small: 0.6875rem;
+  --h2-font-size: 3rem;
+  --ac-block-font-size: 1.1875rem;
+  --sch-in-font-size: 1.0625rem;
+  --button-text-color: var(--background-color2);
 }
