@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .schedule-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .schedule-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .schedule-title .highlight {
+    color: #ff007a;
+  }
+  
+  .schedule-subtitle {
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  /* Schedule Item */
+  .schedule-item {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .schedule-item:last-child {
+    border-bottom: none;
+  }
+  
+  .time {
+    width: 150px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .details {
+    flex: 1;
+  }
+  
+  .type {
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  .type.introduction {
+    color: #ff007a;
+  }
+  
+  .type.speaker {
+    color: #ff007a;
+  }
+  
+  .type.catering {
+    color: #ff007a;
+  }
+  
+  .details h3 {
+    margin: 5px 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .details p {
+    margin: 5px 0;
+  }
+  
+  .description {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Full Schedule Button */
+  .full-schedule {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .full-schedule-btn {
+    background: #aeae02;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .full-schedule-btn:hover {
+    background: #e6006f;
+  }
+  
