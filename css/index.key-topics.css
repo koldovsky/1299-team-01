@@ -1,9 +1,8 @@
 .key-topics {
   margin-top: 80px;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-bottom: 80px;
-  align-content: center;
+  padding: 0;
+  border: 0;
+  width:auto;
   }
 
 .key-topics__title {
@@ -11,50 +10,53 @@
   font-family: "Anonymous Pro", monospace;
   font-size: 11px;
   text-align: left;
-  vertical-align: baseline
+  vertical-align: baseline;
+  padding-left: clamp(10px, 10%, 250px);
 }
 
 .key-topics__description {
-  display: block;
+  display:block;
   width: auto;
-  height: auto;
-  border: 5px;
+  height: fit-content;
+  line-height: 1;
   font-family: "Albert Sans", sans-serif;
   color: var(--background-color);
-  font-size: 34px;
+  font-size: 48px;
   font-weight: 700;
   box-sizing: border-box;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: clamp(10px, 10%, 250px);
 }
 
 .key-topics__highlight {
-  color: var(--highlight-color3)
+  color: var(--highlight-color3);
 }
 
 .highlight-dot {
-  color: var(--highlight-color1)
+  color: var(--highlight-color1);
 }
 
 .key-topics__list {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: auto;
   height: auto;
-  padding: 15px;
-  margin-top: 50;
-  border: 5px;
+  margin-top: 50px;
   font-family: "Comme", sans-serif;
   font-size: 14px;
   color: var(--list-text-color);
   position: relative;
   line-height: 4;
-  display: flex;
-  align-items: center;
+  align-items:baseline;
   box-sizing: border-box;
+  flex-wrap: wrap;
+  padding-left: clamp(10px, 10%, 250px);
 }
 
 .key-topics__item {
   list-style-image: url(../img/key-topics/yellow-checked-checkbox-19px.png);
-  max-width: 15 px;
-}
+ }
 
 .key-topics__three-images-container {
   display: flex;
@@ -65,11 +67,16 @@
 }
 
 .key-topics__image-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start; /* Вирівнювання всіх зображень */
+  width: 100%; /* Повна ширина */
   position: relative;
   width: 100%;
   max-width: 365px;
   max-height: 440px;
   overflow: hidden;
+  margin-bottom: 50px;
 }
 
 .key-topics__image {
@@ -109,13 +116,6 @@
 }
 
 
-@media (max-width: 500px) {
-  .key-topics__three-images-container {
-      flex-direction: column; 
-      gap: 30px; 
-      height: 323px;
-  }
-}
 
 .key-topics__overlay-title {
   color: var(--h3-color);
@@ -139,7 +139,11 @@ line-height: 1.5;
   align-items: center;
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  text-align: center;
+  padding-left: clamp(10px, 10%, 250px);
+  padding-right: clamp(10px, 10%, 250px);
 }
 
 
@@ -209,4 +213,77 @@ line-height: 1.5;
   vertical-align: baseline;
 }
 
+@media (max-width: 768px) {
+  .key-topics {
+    flex-direction: column;
+  }
+  .key-topics__description,
+  .key-topics__list {
+    flex-basis: 100%; /* Повна ширина для кожного блоку */
+  }
+  .key-topics__description {
+    font-size: 34px;
+  }
 
+}
+
+@media (min-width: 768px) {
+  .key-topics__stats {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .key-topics__stat-number {
+    font-size: 48px;
+  }
+}
+@media (max-width: 400px) {
+  .key-topics__title,
+  .key-topics__description,
+  .key-topics__list {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 768px) {
+  /* Контейнер, що містить блоки */
+  .key-topics {
+    padding-left: clamp(10px, 10%, 260px);  /* Адаптивний відступ зліва */
+    padding-right: clamp(10px, 10%, 260px); /* Адаптивний відступ справа */
+  }
+
+  /* Стиль для заголовка h1 */
+  .key-topics__title {
+    color: var(--sub-text-color);
+    font-family: "Anonymous Pro", monospace;
+    font-size: 11px;
+    text-align: left;
+    vertical-align: baseline;
+    padding-left: 0;  /* Відсутність додаткових відступів */
+    margin-left: 0;  /* Прибираємо зайвий відступ зліва */
+  }
+
+  /* Оновлений стиль для опису */
+  .key-topics__description {
+    flex: 0 0 70%;  /* Лівий блок займає 70% ширини */
+    font-size: 48px; /* Розмір шрифта для опису */
+    padding-left: 0;  /* Прибираємо додаткові відступи */
+  }
+
+  /* Оновлений стиль для списку */
+  .key-topics__list {
+    flex: 0 0 30%;  /* Правий блок займає 30% ширини */
+    margin-top: 0;  /* Прибираємо верхній маргін */
+    margin-bottom: 10px;
+    line-height: 2;  /* Встановлюємо нормальну висоту рядка */
+    text-align:justify;  /* Вирівнювання тексту по лівому краю */
+    padding-left: 0;  /* Прибираємо відступи зліва для списку */
+  }
+
+  /* Контейнер для опису та списку */
+  .key-topics__container {
+    display: flex;
+    justify-content: flex-start;  /* Вирівнювання по лівому краю */
+    align-items: stretch;  /* Розтягнути блоки по висоті */
+    gap: 0px;  /* Відстань між блоками */
+  }
+}
