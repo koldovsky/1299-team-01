@@ -70,6 +70,7 @@
    width: 40px 
 }
 .contacts__text {
+    margin: 0;
     color: var(--highlight-color2);
     font-family: "Anonymous Pro", monospace;
     font-size: var(--font-size-small);
