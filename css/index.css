@@ -2,8 +2,10 @@
 @import "global.css";
 @import "global.header.css";
 @import "global.header-nav.partial.css";
+@import "global.header-nav.partial.css";
 @import "global.invitation-event.css";
 @import "global.schedule-contacts.css";
+@import "global.footer.css";
 @import "index.header-hero.css";
 @import "index.about-conference-accordion.css";
 @import "index.about-conference-faq-contact-form.css";
@@ -15,8 +17,6 @@
 @import "index.key-topics.css";
 @import "index.ticket-options-prices.css";
 @import "index.expectations.css";
-@import "global.footer.css";
-@import "global.header-nav.partial.css";
 @import "index.buy-ticket.css";
 @import "features-should-visit-techcon.css";
 @import "index.schedule.css";
