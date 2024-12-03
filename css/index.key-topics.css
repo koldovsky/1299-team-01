@@ -2,8 +2,8 @@
   margin-top: 80px;
   padding: 0;
   border: 0;
-  width:auto;
-  }
+  width: auto;
+}
 
 .key-topics__title {
   color: var(--sub-text-color);
@@ -15,7 +15,7 @@
 }
 
 .key-topics__description {
-  display:block;
+  display: block;
   width: auto;
   height: fit-content;
   line-height: 1;
@@ -48,7 +48,7 @@
   color: var(--list-text-color);
   position: relative;
   line-height: 4;
-  align-items:baseline;
+  align-items: baseline;
   box-sizing: border-box;
   flex-wrap: wrap;
   padding-left: clamp(10px, 10%, 250px);
@@ -56,7 +56,7 @@
 
 .key-topics__item {
   list-style-image: url(../img/key-topics/yellow-checked-checkbox-19px.png);
- }
+}
 
 .key-topics__three-images-container {
   display: flex;
@@ -69,8 +69,8 @@
 .key-topics__image-container {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start; /* Вирівнювання всіх зображень */
-  width: 100%; /* Повна ширина */
+  align-items: flex-start;
+  width: 100%;
   position: relative;
   width: 100%;
   max-width: 365px;
@@ -81,9 +81,10 @@
 
 .key-topics__image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
   display: block;
-  transition: transform 0.5s ease; 
+  transition: transform 0.5s ease;
   transform-origin: center center;
 }
 
@@ -115,8 +116,6 @@
   transform: scale(1.05);
 }
 
-
-
 .key-topics__overlay-title {
   color: var(--h3-color);
   font-family: "Albert Sans", sans-serif;
@@ -126,12 +125,11 @@
 }
 
 .key-topics__overlay-text {
-color: var(--overlay-text-color);
-font-family: "Comme", sans-serif;
-font-size: 17px;
-font-weight: 400;
-line-height: 1.5;
-
+  color: var(--overlay-text-color);
+  font-family: "Comme", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .key-topics__stats {
@@ -142,10 +140,7 @@ line-height: 1.5;
   flex-direction: column;
   flex-wrap: wrap;
   text-align: center;
-  padding-left: clamp(10px, 10%, 250px);
-  padding-right: clamp(10px, 10%, 250px);
 }
-
 
 .key-topics__stat {
   line-height: 4;
@@ -219,18 +214,22 @@ line-height: 1.5;
   }
   .key-topics__description,
   .key-topics__list {
-    flex-basis: 100%; /* Повна ширина для кожного блоку */
+    flex-basis: 100%;
   }
   .key-topics__description {
     font-size: 34px;
   }
-
 }
 
-@media (min-width: 768px) {
+@media (min-width: 880px) {
   .key-topics__stats {
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-around;
+    padding-left: 0px;
+    padding-right: 0px;
+    align-items: baseline;
+    gap: 20px;
   }
   .key-topics__stat-number {
     font-size: 48px;
@@ -245,45 +244,63 @@ line-height: 1.5;
   }
 }
 @media (min-width: 768px) {
-  /* Контейнер, що містить блоки */
   .key-topics {
-    padding-left: clamp(10px, 10%, 260px);  /* Адаптивний відступ зліва */
-    padding-right: clamp(10px, 10%, 260px); /* Адаптивний відступ справа */
+    padding-left: clamp(10px, 18%, 260px);
+    padding-right: clamp(10px, 18%, 260px);
   }
 
-  /* Стиль для заголовка h1 */
   .key-topics__title {
     color: var(--sub-text-color);
     font-family: "Anonymous Pro", monospace;
     font-size: 11px;
     text-align: left;
     vertical-align: baseline;
-    padding-left: 0;  /* Відсутність додаткових відступів */
-    margin-left: 0;  /* Прибираємо зайвий відступ зліва */
+    padding-left: 0;
+    margin-left: 0;
   }
 
-  /* Оновлений стиль для опису */
   .key-topics__description {
-    flex: 0 0 70%;  /* Лівий блок займає 70% ширини */
-    font-size: 48px; /* Розмір шрифта для опису */
-    padding-left: 0;  /* Прибираємо додаткові відступи */
+    flex: 0 0 70%;
+    font-size: 48px;
+    padding-left: 0;
   }
 
-  /* Оновлений стиль для списку */
   .key-topics__list {
-    flex: 0 0 30%;  /* Правий блок займає 30% ширини */
-    margin-top: 0;  /* Прибираємо верхній маргін */
+    flex: 0 0 30%;
+    margin-top: 0;
     margin-bottom: 10px;
-    line-height: 2;  /* Встановлюємо нормальну висоту рядка */
-    text-align:justify;  /* Вирівнювання тексту по лівому краю */
-    padding-left: 0;  /* Прибираємо відступи зліва для списку */
+    line-height: 2;
+    text-align: justify;
+    padding-left: 0;
   }
 
-  /* Контейнер для опису та списку */
   .key-topics__container {
     display: flex;
-    justify-content: flex-start;  /* Вирівнювання по лівому краю */
-    align-items: stretch;  /* Розтягнути блоки по висоті */
-    gap: 0px;  /* Відстань між блоками */
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 0px;
+  }
+}
+@media (min-width: 760px) {
+  .key-topics__three-images-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1675px;
+    margin: 0 auto;
+  }
+
+  .key-topics__image-container {
+    width: 100%;
+    height: 440px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .key-topics__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
