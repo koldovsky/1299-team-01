@@ -25,6 +25,7 @@
 }
 
 .expect-item img {
+  margin: 10px;
   width: 46px;
   height: 46px;
   align-items: center;
@@ -35,17 +36,18 @@
   display: flex;
   text-align: start;
   font-family: "Albert Sans", sans-serif;
-  font-size: 24px;
+  font-size: 25px;
   font-weight: bold;
   margin: 0;
   color: var(--background-color);
 }
 
 .expect-item h3 {
+  line-height: 25px;
   display: flex;
   flex-direction: column;
   font-family: "Albert Sans", sans-serif;
-  font-size: 17px;
+  font-size: 18px;
   margin: 0;
   width: 180px;
   font-weight: inherit;
@@ -54,8 +56,8 @@
 
 .expect-item p {
   font-family: "Albert Sans", sans-serif;
-  font-size: 1em;
-  margin: 0;
+  font-size: 16px;
+  margin: 1px;
   color: var(--prices-text-small-opacity);
 }
 
@@ -175,6 +177,7 @@ h2 {
     gap: 15px;
     flex-wrap: nowrap;
     display: flex;
+    margin: 18px;
   }
 
   .separator {
