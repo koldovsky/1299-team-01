@@ -5,9 +5,16 @@
   height: 100px;
   font-family: "Comme", sans-serif;
   color: var(--sub-text-color);
-  font-size: 8px;
+  font-size: 10px;
 }
 
+.subtitle {
+  display: flex;
+  font-family: "Comme", sans-serif;
+  color: var(--sub-text-color);
+  font-size: 10px;
+
+}
   .schedule-container {
     max-width: 800px;
     margin: 20px auto;
@@ -59,7 +66,7 @@
     width: 150px;
     font-size: 0.9rem;
     font-weight: bold;
-    color: #666;
+    color: hsla(248, 20%, 16%, 0.7);;
   }
   
   .details {
