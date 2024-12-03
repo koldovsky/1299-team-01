@@ -198,9 +198,12 @@
       }
 
       .hero__buy-ticket-discover-schedule {
+        display: flex;
+        align-items: center;
         font-size: 0.9425rem;
         font-style: italic;
         color: var(--highlight-color2);
+        margin-bottom: 0;
       }
 
       .hero__buy-ticket-discover-schedule:hover {

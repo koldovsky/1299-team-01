@@ -8,6 +8,7 @@ function init() {
   import("./index.header-hero.js");
   import("./index.header-hero-editable.js");
   import("./index.contact-form.js");
+  import("./index.key-topics-list-highlight.js");
 }
 
 const totalPartials = document.querySelectorAll(

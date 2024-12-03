@@ -1,59 +1,62 @@
 .key-topics {
   margin-top: 80px;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-bottom: 80px;
-  align-content: center;
-  }
+  padding: 0;
+  border: 0;
+  width: auto;
+}
 
 .key-topics__title {
   color: var(--sub-text-color);
   font-family: "Anonymous Pro", monospace;
   font-size: 11px;
   text-align: left;
-  vertical-align: baseline
+  vertical-align: baseline;
+  padding-left: clamp(10px, 10%, 250px);
 }
 
 .key-topics__description {
   display: block;
   width: auto;
-  height: auto;
-  border: 5px;
+  height: fit-content;
+  line-height: 1;
   font-family: "Albert Sans", sans-serif;
   color: var(--background-color);
-  font-size: 34px;
+  font-size: 48px;
   font-weight: 700;
   box-sizing: border-box;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: clamp(10px, 10%, 250px);
 }
 
 .key-topics__highlight {
-  color: var(--highlight-color3)
+  color: var(--highlight-color3);
 }
 
 .highlight-dot {
-  color: var(--highlight-color1)
+  color: var(--highlight-color1);
 }
 
 .key-topics__list {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: auto;
   height: auto;
-  padding: 15px;
-  margin-top: 50;
-  border: 5px;
+  margin-top: 50px;
   font-family: "Comme", sans-serif;
   font-size: 14px;
   color: var(--list-text-color);
   position: relative;
   line-height: 4;
-  display: flex;
-  align-items: center;
+  align-items: baseline;
   box-sizing: border-box;
+  flex-wrap: wrap;
+  padding-left: clamp(10px, 10%, 250px);
 }
 
 .key-topics__item {
   list-style-image: url(../img/key-topics/yellow-checked-checkbox-19px.png);
-  max-width: 15 px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .key-topics__three-images-container {
@@ -65,18 +68,24 @@
 }
 
 .key-topics__image-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
   position: relative;
   width: 100%;
   max-width: 365px;
   max-height: 440px;
   overflow: hidden;
+  margin-bottom: 50px;
 }
 
 .key-topics__image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
   display: block;
-  transition: transform 0.5s ease; 
+  transition: transform 0.5s ease;
   transform-origin: center center;
 }
 
@@ -108,15 +117,6 @@
   transform: scale(1.05);
 }
 
-
-@media (max-width: 500px) {
-  .key-topics__three-images-container {
-      flex-direction: column; 
-      gap: 30px; 
-      height: 323px;
-  }
-}
-
 .key-topics__overlay-title {
   color: var(--h3-color);
   font-family: "Albert Sans", sans-serif;
@@ -126,12 +126,11 @@
 }
 
 .key-topics__overlay-text {
-color: var(--overlay-text-color);
-font-family: "Comme", sans-serif;
-font-size: 17px;
-font-weight: 400;
-line-height: 1.5;
-
+  color: var(--overlay-text-color);
+  font-family: "Comme", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .key-topics__stats {
@@ -139,9 +138,10 @@ line-height: 1.5;
   align-items: center;
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  text-align: center;
 }
-
 
 .key-topics__stat {
   line-height: 4;
@@ -209,4 +209,99 @@ line-height: 1.5;
   vertical-align: baseline;
 }
 
+@media (max-width: 768px) {
+  .key-topics {
+    flex-direction: column;
+  }
+  .key-topics__description,
+  .key-topics__list {
+    flex-basis: 100%;
+  }
+  .key-topics__description {
+    font-size: 34px;
+  }
+}
 
+@media (min-width: 880px) {
+  .key-topics__stats {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding-left: 0px;
+    padding-right: 0px;
+    align-items: baseline;
+    gap: 20px;
+  }
+  .key-topics__stat-number {
+    font-size: 48px;
+  }
+}
+@media (max-width: 400px) {
+  .key-topics__title,
+  .key-topics__description,
+  .key-topics__list {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .key-topics {
+    padding-left: clamp(10px, 18%, 260px);
+    padding-right: clamp(10px, 18%, 260px);
+  }
+
+  .key-topics__title {
+    color: var(--sub-text-color);
+    font-family: "Anonymous Pro", monospace;
+    font-size: 11px;
+    text-align: left;
+    vertical-align: baseline;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .key-topics__description {
+    flex: 0 0 70%;
+    font-size: 48px;
+    padding-left: 0;
+  }
+
+  .key-topics__list {
+    flex: 0 0 30%;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 2;
+    text-align: justify;
+    padding-left: 0;
+  }
+
+  .key-topics__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 0px;
+  }
+}
+@media (min-width: 760px) {
+  .key-topics__three-images-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1675px;
+    margin: 0 auto;
+  }
+
+  .key-topics__image-container {
+    width: 100%;
+    height: 440px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .key-topics__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

@@ -25,6 +25,7 @@
 }
 
 .expect-item img {
+  margin: 10px;
   width: 46px;
   height: 46px;
   align-items: center;
@@ -35,17 +36,18 @@
   display: flex;
   text-align: start;
   font-family: "Albert Sans", sans-serif;
-  font-size: 24px;
+  font-size: 25px;
   font-weight: bold;
   margin: 0;
   color: var(--background-color);
 }
 
 .expect-item h3 {
+  line-height: 25px;
   display: flex;
   flex-direction: column;
   font-family: "Albert Sans", sans-serif;
-  font-size: 17px;
+  font-size: 18px;
   margin: 0;
   width: 180px;
   font-weight: inherit;
@@ -54,8 +56,8 @@
 
 .expect-item p {
   font-family: "Albert Sans", sans-serif;
-  font-size: 1em;
-  margin: 0;
+  font-size: 16px;
+  margin: 1px;
   color: var(--prices-text-small-opacity);
 }
 
@@ -66,7 +68,7 @@
 }
 
 .web__content {
-  margin: -1px;
+  margin-bottom: -65px;
   background-color: var(--background-color2);
   padding: 150px 0px 165px;
   font-family: "Albert Sans", sans-serif;
@@ -98,6 +100,7 @@ h2 {
 }
 
 .description {
+  font-family: "Comme", sans-serif;
   text-align: center;
   font-size: 18px;
   line-height: 1.8;
@@ -116,8 +119,8 @@ h2 {
 }
 
 .countdown {
+  font-family: "Comme", sans-serif;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -138,7 +141,7 @@ h2 {
 }
 
 .count-label {
-  font-size: 1em;
+  font-size: 22px;
   color: var(--overlay-text-color);
 }
 
@@ -174,6 +177,7 @@ h2 {
     gap: 15px;
     flex-wrap: nowrap;
     display: flex;
+    margin: 18px;
   }
 
   .separator {

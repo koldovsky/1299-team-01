@@ -20,6 +20,7 @@
     font-size: clamp(2.125rem, 4vw, 3rem);
     font-family: "Albert Sans", sans-serif;
     color: var(--background-color);
+    font-weight: 700;
 }
 .text-highlight--pink {
     color: var(--prices-color-pink);
