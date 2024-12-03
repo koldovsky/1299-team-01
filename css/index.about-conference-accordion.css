@@ -22,6 +22,7 @@
     color: var(--prices-ticket-bt);
     font-weight: 700;
     line-height: 31.2px;
+    margin: 0;
 }
 .faq__answer {
     font-family: Comme, sans-serif;
